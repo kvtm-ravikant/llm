@@ -20,12 +20,7 @@
 		url: the path where the Jasper JRXML file is located
 		reportDateKey: the name of the datasource. This is passed by the controller
 	-->
-	<bean id="pdfReport"
-	   class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
-		p:url="classpath:niograph-template.jrxml"
-		p:reportDataKey="datasource" />
-
-	
+		
 	<bean id="ilm_statement_pdfReport"
 		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
 		p:url="classpath:nclusivere_statement.jrxml"
