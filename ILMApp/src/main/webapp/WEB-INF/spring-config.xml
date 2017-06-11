@@ -1,0 +1,90 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:component-scan base-package="com.ilm.controller" />
+	<import resource="jasper-views.xml" />
+	<mvc:resources mapping="/resouces/**" location="/resouces/"/>
+	<mvc:resources mapping="/client/**" location="/client/"/>
+	
+	<mvc:annotation-driven />
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<!-- <property name="url" value="jdbc:mysql://104.200.17.97:3306/ilm_db" />
+		<property name="username" value="root" />
+		<property name="password" value="niograph" /> -->
+		<property name="url" value="jdbc:mysql://localhost:3306/ilm_db" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.ilm.model.User</value>
+				<value>com.ilm.model.Assessment</value>
+				<value>com.ilm.model.Level</value>
+				<value>com.ilm.model.Option</value>
+				<value>com.ilm.model.Question</value>
+				<value>com.ilm.model.Suggestion</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.use_sql_comments">true</prop>
+				<!-- <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.show_sql">${hibernate.format_sql}</prop> 
+				<prop key="hibernate.use_sql_comments">${hibernate.format_sql_comments}</prop>-->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="persistenceExceptionTranslationPostProcessor"
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+<!-- 
+	Resolves view names based on the their literal names. These names are then matched
+	inside the /WEB-INF/jsp/ folder. If a match is found, the JSP page is served.
+	Take note of the ordering of this ViewResolver.
+	-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
+    		p:prefix="/WEB-INF/" p:suffix=".html" p:order="1" />
+
+	<!-- Resolves view names based on the names declared on the declared xml 
+		location All our Jasper views are declared inside the specified xml location. 
+		Take note of the ordering of this ViewResolver. -->
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver"
+		p:location="/WEB-INF/jasper-views.xml" p:order="0" />
+
+
+
+	<bean id="dataDao" class="com.ilm.dao.DataDaoImpl"></bean>
+	<bean id="dataServices" class="com.ilm.services.DataServicesImpl"></bean>
+	
+	<bean id="userDao" class="com.ilm.dao.UserDaoImpl"></bean>
+	<bean id="userServices" class="com.ilm.services.UserServicesImpl"></bean>
+	
+	<bean id="AssessmentDao" class="com.ilm.dao.AssessmentDaoImpl"></bean>
+	<bean id="AssessmentServices" class="com.ilm.services.AssessmentServicesImpl"></bean>
+	
+	
+</beans>
