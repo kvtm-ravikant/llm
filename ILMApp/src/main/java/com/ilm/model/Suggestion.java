@@ -68,4 +68,11 @@ public class Suggestion {
 		this.suggestion = suggestion;
 	}
 
+	@Override
+	public String toString() {
+		return "Suggestion [id=" + id + ", questionId=" + questionId + ", optionId=" + optionId + ", levelId=" + levelId
+				+ ", suggestion=" + suggestion + "]";
+	}
+
+	
 }

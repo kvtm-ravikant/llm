@@ -77,14 +77,14 @@
 
 
 
-	<bean id="dataDao" class="com.ilm.dao.DataDaoImpl"></bean>
-	<bean id="dataServices" class="com.ilm.services.DataServicesImpl"></bean>
+	<bean id="dataDao" class="com.ilm.dao.impl.DataDaoImpl"></bean>
+	<bean id="dataServices" class="com.ilm.services.impl.DataServicesImpl"></bean>
 	
-	<bean id="userDao" class="com.ilm.dao.UserDaoImpl"></bean>
-	<bean id="userServices" class="com.ilm.services.UserServicesImpl"></bean>
+	<bean id="userDao" class="com.ilm.dao.impl.UserDaoImpl"></bean>
+	<bean id="userServices" class="com.ilm.services.impl.UserServicesImpl"></bean>
 	
-	<bean id="AssessmentDao" class="com.ilm.dao.AssessmentDaoImpl"></bean>
-	<bean id="AssessmentServices" class="com.ilm.services.AssessmentServicesImpl"></bean>
+	<bean id="AssessmentDao" class="com.ilm.dao.impl.AssessmentDaoImpl"></bean>
+	<bean id="AssessmentServices" class="com.ilm.services.impl.AssessmentServicesImpl"></bean>
 	
 	
 </beans>

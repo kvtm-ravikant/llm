@@ -56,4 +56,11 @@ public class Option {
 	public void setValue(Integer value) {
 		this.value = value;
 	}
+
+	@Override
+	public String toString() {
+		return "Option [id=" + id + ", option=" + option + ", desc=" + desc + ", value=" + value + "]";
+	}
+	
+	
 }

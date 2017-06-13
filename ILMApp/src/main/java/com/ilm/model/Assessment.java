@@ -24,9 +24,12 @@ public class Assessment {
 	@Column(name = "assessment_id")
 	private Integer assessmentId;
 
-	/*@Column(name = "user_id")
+	@Column(name = "user_id")
 	private Integer userId;
-	 */
+	
+	/*@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "user_id", referencedColumnName = "user_id")
+	private User user;*/
 	
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "question_id", referencedColumnName = "id")
@@ -39,10 +42,6 @@ public class Assessment {
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "level_id", referencedColumnName = "id")
 	private Level level;
-	
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "user_id", referencedColumnName = "user_id")
-	private User user;
 	
 	@Column(name = "date")
 	private Timestamp date;
@@ -66,21 +65,21 @@ public class Assessment {
 		this.assessmentId = assessmentId;
 	}
 
-	/*public Integer getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
 
 	public void setUserId(Integer userId) {
 		this.userId = userId;
-	}*/
+	}
 
-	public User getUser() {
+	/*public User getUser() {
 		return user;
 	}
 
 	public void setUser(User user) {
 		this.user = user;
-	}
+	}*/
 
 	public Question getQuestion() {
 		return question;
@@ -121,5 +120,13 @@ public class Assessment {
 	public void setScore(Integer score) {
 		this.score = score;
 	}
+
+	@Override
+	public String toString() {
+		return "Assessment [id=" + id + ", assessmentId=" + assessmentId + ", userId=" + userId + ", question="
+				+ question + ", option=" + option + ", level=" + level + ", date=" + date + ", score=" + score + "]";
+	}
+	
+	
 	
 }

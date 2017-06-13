@@ -3,14 +3,6 @@
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="27"/>
-	<field name="firstName" class="java.lang.String"/>
-	<field name="middleName" class="java.lang.String"/>
-	<field name="lastName" class="java.lang.String"/>
-	<field name="jobTitle" class="java.lang.String"/>
-	<field name="workEmail" class="java.lang.String"/>
-	<field name="org" class="java.lang.String"/>
-	<field name="businessUnit" class="java.lang.String"/>
-	<field name="dtCompleted" class="java.util.Date"/>
 	<detail>
 		<band height="555" splitType="Stretch">
 			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
@@ -30,42 +22,42 @@
 Measurement ™ Report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="84" width="42" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="84" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Name: ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="105" width="60" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="105" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Job Title:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="127" width="100" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="127" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Business Unit:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="148" width="100" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="148" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Organisation:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="169" width="50" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="169" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Level:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement  x="429" y="190" width="40" height="16" forecolor="#FFFFFF"/>
+				<reportElement  x="429" y="190" width="342" height="16" forecolor="#FFFFFF"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -82,34 +74,9 @@ Measurement ™ Report]]></text>
 +44 (0) 330 2233 548
 support@inclusiveleaders.co.uk]]></text>
 			</staticText>
-			<textField>
-				<reportElement  x="472" y="86" width="280" height="16" forecolor="#FFFFFF"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement  x="492" y="107" width="260" height="16" forecolor="#FFFFFF"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement  x="530" y="128" width="230" height="16" forecolor="#FFFFFF"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement  x="532" y="148" width="230" height="16" forecolor="#FFFFFF"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement  x="470" y="192" width="230" height="16" forecolor="#FFFFFF"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{dtCompleted}.toString()]]></textFieldExpression>
-			</textField>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<rectangle>
 				<reportElement  x="0" y="41" width="782" height="39" forecolor="#FFFFFF" backcolor="#003399"/>
 			</rectangle>
@@ -189,7 +156,7 @@ development needs.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="42"/>
 				<imageExpression><![CDATA["page_3.jpg"]]></imageExpression>
@@ -210,7 +177,7 @@ development needs.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -307,7 +274,7 @@ business.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -448,7 +415,7 @@ business.]]></text>
 			</staticText>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -531,7 +498,7 @@ different ideas.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -614,7 +581,7 @@ different ideas.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -686,7 +653,7 @@ different ideas.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -831,7 +798,7 @@ different ideas.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<image>
 				<reportElement  x="0" y="0" width="782" height="99"/>
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -993,7 +960,7 @@ workplace.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<rectangle>
 				<reportElement  x="0" y="99" width="561" height="327" forecolor="#999999" backcolor="#999999"/>
 			</rectangle>
@@ -1125,7 +1092,7 @@ workplace.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<rectangle>
 				<reportElement  x="0" y="417" width="36" height="108" forecolor="#000066" backcolor="#000066"/>
 			</rectangle>
@@ -1257,7 +1224,7 @@ workplace.]]></text>
 			</image>
 		</band>
 		<band height="555">
-			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+		<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
 			<rectangle>
 				<reportElement  x="0" y="417" width="36" height="108" forecolor="#000066" backcolor="#000066"/>
 			</rectangle>

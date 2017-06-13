@@ -1,4 +1,4 @@
-package com.ilm.dao;
+package com.ilm.dao.impl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.ilm.dao.DataDao;
 import com.ilm.model.Employee;
 
 public class DataDaoImpl implements DataDao {

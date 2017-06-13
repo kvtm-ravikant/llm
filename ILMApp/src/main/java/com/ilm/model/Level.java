@@ -45,4 +45,11 @@ public class Level {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+
+	@Override
+	public String toString() {
+		return "Level [id=" + id + ", name=" + name + ", desc=" + desc + "]";
+	}
+	
+	
 }

@@ -5,9 +5,8 @@ import java.util.List;
 import com.ilm.model.Assessment;
 
 public interface ReportServices {
+	
+	public List<Assessment> getAssessment();
 
-	public interface ReportService {
-		public List<Assessment> getAssessment();
-		public Assessment saveAssessment( Assessment assessment);
-	}
+	public Assessment saveAssessment(Assessment assessment);
 }

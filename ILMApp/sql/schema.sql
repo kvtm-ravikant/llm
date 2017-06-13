@@ -22,8 +22,9 @@ INSERT INTO `ilm_db`.`USER_TABLE`
 (
 	`FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `JOB_TITLE`, `WORK_EMAIL`, `ORGANISATION`,`BUSINESS_UNIT`,`ASSESSMENT_LEVEL`, `COUNTRY`)
 VALUES
-	('Puneet','','Shekhar','SW','abc@mail.coom','SELF','SELF','5','IN');
-	
+	('Puneet','','Shekhar','SW','abc@mail.coom','SELF','SELF','5','IN'),
+	('Dan','','Gallagher ','CLIENT','dan@articasearch.com','articasearch','research','5','UK');
+  	
 --
 -- Table structure for table `assessment_table`
 --

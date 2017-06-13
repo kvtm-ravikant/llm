@@ -1,7 +1,8 @@
-package com.ilm.dao;
+package com.ilm.dao.impl;
 
 import java.util.List;
 
+import com.ilm.dao.SuggestionDao;
 import com.ilm.model.Suggestion;
 
 public class SuggestionDaoImpl implements SuggestionDao{

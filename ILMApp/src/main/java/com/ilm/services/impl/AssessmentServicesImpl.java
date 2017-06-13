@@ -1,4 +1,4 @@
-package com.ilm.services;
+package com.ilm.services.impl;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.ilm.dao.AssessmentDao;
 import com.ilm.model.Assessment;
+import com.ilm.services.AssessmentServices;
 
 public class AssessmentServicesImpl implements AssessmentServices{
 	
@@ -21,7 +22,7 @@ public class AssessmentServicesImpl implements AssessmentServices{
 	@Override
 	public List<Assessment> findByUserId(Integer userId) {
 		// TODO Auto-generated method stub
-		return null;
+		return assessmentDao.findByUserId(userId);
 	}
 
 	@Override

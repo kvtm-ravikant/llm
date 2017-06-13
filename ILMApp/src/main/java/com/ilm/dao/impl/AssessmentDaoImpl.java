@@ -1,15 +1,22 @@
-package com.ilm.dao;
+package com.ilm.dao.impl;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.ilm.controller.UserController;
+import com.ilm.dao.AssessmentDao;
 import com.ilm.model.Assessment;
 
 public class AssessmentDaoImpl implements AssessmentDao{
+	
+	static final Logger LOGGER = Logger.getLogger(UserController.class);
 	
 	@Autowired
 	SessionFactory sessionFactory;
@@ -25,8 +32,18 @@ public class AssessmentDaoImpl implements AssessmentDao{
 
 	@Override
 	public List<Assessment> findByUserId(Integer userId) {
-		// TODO Auto-generated method stub
-		return null;
+
+		LOGGER.info("userId : "+userId);
+		session = sessionFactory.openSession();
+		tx = session.beginTransaction();
+		Criteria cr =session.createCriteria(Assessment.class);
+		cr.add(Restrictions.eq("userId", userId));
+		List<Assessment> assessment = cr.list();
+		
+//		User user = (User) session.get(User.class, userName);
+		tx.commit();
+		session.close();
+		return assessment;
 	}
 
 	@Override
