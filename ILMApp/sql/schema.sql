@@ -22,7 +22,7 @@ INSERT INTO `ilm_db`.`USER_TABLE`
 (
 	`FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `JOB_TITLE`, `WORK_EMAIL`, `ORGANISATION`,`BUSINESS_UNIT`,`ASSESSMENT_LEVEL`, `COUNTRY`)
 VALUES
-	('Puneet','','Shekhar','SW','abc@mail.coom','SELF','SELF','5','IN'),
+	('Puneet','','Shekhar','SW','abc@mail.com','SELF','SELF','5','IN'),
 	('Dan','','Gallagher ','CLIENT','dan@articasearch.com','articasearch','research','5','UK');
   	
 --
@@ -55,7 +55,34 @@ INSERT INTO `assessment_table` VALUES (1,1,1,1,2,'2017-06-03 13:52:59',1,1);
 INSERT INTO `assessment_table` VALUES (2,1,1,2,1,'2017-06-03 13:52:59',1,2);
 /*!40000 ALTER TABLE `assessment_table` ENABLE KEYS */;
 UNLOCK TABLES;
-	
+
+DROP TABLE IF EXISTS `suggestion_master_table`;
+CREATE TABLE `suggestion_master_table` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question_id` int(11) DEFAULT NULL,
+  `option_id` int(11) DEFAULT NULL,
+  `level_id` int(11) DEFAULT NULL,
+  `suggestion` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+INSERT INTO `suggestion_master_table` VALUES 
+(1,1,1,1,'•	Learn about the cultural backgrounds, lives and interests of employees outside of the workplace.'),
+(2,1,1,1,'•	Be creative, flexible and look for new ways of doing things.'),
+(3,1,1,1,'•	Acknowledge all faiths present in your workplace.'),
+(4,1,1,1,'•	Showing acceptance of everyone without bias.'),
+(5,1,1,1,'•	Have self-awareness of how preconceived views can influence behaviour towards others.');
+  commit;
+
+INSERT INTO `suggestion_master_table` VALUES 
+(6,2,1,1,'•	Demonstrate a knowledge and interest in other cultures.'),
+(7,2,1,1,'•	Admit that you don’t have the answer when you don’t, and seek opinions from those around you. '),
+(8,2,1,1,'•	Exert effort to identify their own biases, and find ways to manage them in the workplace.'),
+(9,2,1,1,'•	Aim to create a welcoming culture within the business, coupled with a strong personal sense of responsibility towards others.'),
+(10,2,1,1,'•	Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.');
+  commit;
+
+
 	
 -- Dumping structure for table employee_db.employee
 CREATE TABLE IF NOT EXISTS `employee` (

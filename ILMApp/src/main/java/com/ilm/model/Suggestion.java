@@ -26,7 +26,7 @@ public class Suggestion {
 	private Integer levelId;
 
 	@Column(name = "suggestion")
-	private Integer suggestion;
+	private String suggestion;
 
 	public Integer getId() {
 		return id;
@@ -60,11 +60,11 @@ public class Suggestion {
 		this.levelId = levelId;
 	}
 
-	public Integer getSuggestion() {
+	public String getSuggestion() {
 		return suggestion;
 	}
 
-	public void setSuggestion(Integer suggestion) {
+	public void setSuggestion(String suggestion) {
 		this.suggestion = suggestion;
 	}
 

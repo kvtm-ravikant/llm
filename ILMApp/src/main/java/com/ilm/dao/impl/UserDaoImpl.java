@@ -10,14 +10,13 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.ilm.controller.UserController;
 import com.ilm.dao.UserDao;
 import com.ilm.model.User;
 
 
 public class UserDaoImpl implements UserDao{
 	
-	static final Logger LOGGER = Logger.getLogger(UserController.class);
+	static final Logger LOGGER = Logger.getLogger(UserDaoImpl.class);
 
 	@Autowired
 	SessionFactory sessionFactory;

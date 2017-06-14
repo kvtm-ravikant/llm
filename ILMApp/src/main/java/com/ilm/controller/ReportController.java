@@ -14,8 +14,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ilm.dao.DemoDAO;
 import com.ilm.model.Assessment;
+import com.ilm.model.Suggestion;
 import com.ilm.model.User;
 import com.ilm.services.AssessmentServices;
+import com.ilm.services.SuggestionServices;
 import com.ilm.services.UserServices;
 
 import net.sf.jasperreports.engine.JRDataSource;
@@ -34,6 +36,9 @@ public class ReportController {
 	
 	@Autowired
 	AssessmentServices assessmentServices;
+	
+	@Autowired 
+	SuggestionServices suggestionServices;
 
 	/**
 	 * Handles and retrieves the download page
@@ -105,12 +110,16 @@ public class ReportController {
 		List<User> userList = null;
 		User user = null;
 		List<Assessment> assessmentList = null;
+		List<Suggestion> suggestionList = null;
 		
 		userList = userServices.findByWorkMail(email);
 		user = userList.get(0);
 	
 		assessmentList = assessmentServices.findByUserId(user.getUserId());
 
+		suggestionList = suggestionServices.findByLvlId(1);
+		LOGGER.info("suggestionList "+suggestionList.toString());
+		
 //		LOGGER.info("assessmentList "+assessmentList.toString());
 		
 		// Retrieve our data from a custom data provider
