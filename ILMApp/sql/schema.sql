@@ -3,6 +3,7 @@ CREATE DATABASE IF NOT EXISTS `ilm_db` ;
 USE `ilm_db`;
 
 -- USERS TABLE
+
 CREATE TABLE IF NOT EXISTS `USER_TABLE` (
   `USER_ID` INT(11) NOT NULL AUTO_INCREMENT,
   `FIRST_NAME` VARCHAR(100) NOT NULL,
@@ -24,6 +25,8 @@ INSERT INTO `ilm_db`.`USER_TABLE`
 VALUES
 	('Puneet','','Shekhar','SW','abc@mail.com','SELF','SELF','5','IN'),
 	('Dan','','Gallagher ','CLIENT','dan@articasearch.com','articasearch','research','5','UK');
+
+
   	
 --
 -- Table structure for table `assessment_table`
@@ -59,6 +62,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `suggestion_master_table`;
 CREATE TABLE `suggestion_master_table` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `page_id` int(11) DEFAULT NULL,
   `question_id` int(11) DEFAULT NULL,
   `option_id` int(11) DEFAULT NULL,
   `level_id` int(11) DEFAULT NULL,
@@ -66,20 +70,21 @@ CREATE TABLE `suggestion_master_table` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+
 INSERT INTO `suggestion_master_table` VALUES 
-(1,1,1,1,'•	Learn about the cultural backgrounds, lives and interests of employees outside of the workplace.'),
-(2,1,1,1,'•	Be creative, flexible and look for new ways of doing things.'),
-(3,1,1,1,'•	Acknowledge all faiths present in your workplace.'),
-(4,1,1,1,'•	Showing acceptance of everyone without bias.'),
-(5,1,1,1,'•	Have self-awareness of how preconceived views can influence behaviour towards others.');
+(1,1,1,1,1,'•	Learn about the cultural backgrounds, lives and interests of employees outside of the workplace.'),
+(2,1,1,1,1,'•	Be creative, flexible and look for new ways of doing things.'),
+(3,1,1,1,1,'•	Acknowledge all faiths present in your workplace.'),
+(4,1,1,1,1,'•	Showing acceptance of everyone without bias.'),
+(5,1,1,1,1,'•	Have self-awareness of how preconceived views can influence behaviour towards others.');
   commit;
 
 INSERT INTO `suggestion_master_table` VALUES 
-(6,2,1,1,'•	Demonstrate a knowledge and interest in other cultures.'),
-(7,2,1,1,'•	Admit that you don’t have the answer when you don’t, and seek opinions from those around you. '),
-(8,2,1,1,'•	Exert effort to identify their own biases, and find ways to manage them in the workplace.'),
-(9,2,1,1,'•	Aim to create a welcoming culture within the business, coupled with a strong personal sense of responsibility towards others.'),
-(10,2,1,1,'•	Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.');
+(6,1,2,1,1,'•	Demonstrate a knowledge and interest in other cultures.'),
+(7,1,2,1,1,'•	Admit that you don’t have the answer when you don’t, and seek opinions from those around you. '),
+(8,1,2,1,1,'•	Exert effort to identify their own biases, and find ways to manage them in the workplace.'),
+(9,1,2,1,1,'•	Aim to create a welcoming culture within the business, coupled with a strong personal sense of responsibility towards others.'),
+(10,1,2,1,1,'•	Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.');
   commit;
 
 

@@ -29,4 +29,10 @@ public class SuggestionServicesImpl implements SuggestionServices{
 		return suggestionDao.findByLvlId(id);
 	}
 
+	@Override
+	public List findUserAssessmentStatement(Integer id) {
+		
+		return suggestionDao.findUserAssessmentStatement(id);
+	}
+
 }

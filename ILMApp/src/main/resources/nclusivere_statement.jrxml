@@ -10,6 +10,7 @@
 	<field name="workEmail" class="java.lang.String"/>
 	<field name="org" class="java.lang.String"/>
 	<field name="businessUnit" class="java.lang.String"/>
+	<field name="level" class="java.lang.String"/>
 	<field name="dtCompleted" class="java.util.Date"/>
 	<detail>
 		<band height="555" splitType="Stretch">

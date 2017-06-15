@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "USER_TABLE")
+@Table(name = "user_table")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User implements Serializable{
 	

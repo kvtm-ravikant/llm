@@ -10,4 +10,5 @@ public interface SuggestionServices {
 
 	public List<Suggestion> findByLvlId(Integer id);
 
+	public List findUserAssessmentStatement(Integer id);
 }

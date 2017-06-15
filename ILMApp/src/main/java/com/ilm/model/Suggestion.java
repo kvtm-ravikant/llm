@@ -16,6 +16,9 @@ public class Suggestion {
 	@Column(name = "id")
 	private Integer id;
 
+	@Column(name = "page_id")
+	private Integer pageId;
+
 	@Column(name = "question_id")
 	private Integer questionId;
 
@@ -36,6 +39,15 @@ public class Suggestion {
 		this.id = id;
 	}
 
+	public Integer getPageId() {
+		return pageId;
+	}
+
+	public void setPageId(Integer pageId) {
+		this.pageId = pageId;
+	}
+
+	
 	public Integer getQuestionId() {
 		return questionId;
 	}

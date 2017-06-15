@@ -115,10 +115,11 @@ public class ReportController {
 		userList = userServices.findByWorkMail(email);
 		user = userList.get(0);
 	
-		assessmentList = assessmentServices.findByUserId(user.getUserId());
+//		assessmentList = assessmentServices.findByUserId(user.getUserId());
+//		suggestionList = suggestionServices.findByLvlId(1);
 
-		suggestionList = suggestionServices.findByLvlId(1);
-		LOGGER.info("suggestionList "+suggestionList.toString());
+		List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
+//		LOGGER.info("dataList "+dataList.toString());
 		
 //		LOGGER.info("assessmentList "+assessmentList.toString());
 		
@@ -130,7 +131,9 @@ public class ReportController {
 		// Assign the datasource to an instance of JRDataSource
 		// JRDataSource is the datasource that Jasper understands
 		// This is basically a wrapper to Java's collection classes
-		JRDataSource datasource = dataprovider.getDataSource(user);
+		JRDataSource datasource = dataprovider.getDataSource(user, statements);
+		
+		LOGGER.info("datasource "+datasource.toString());
 
 		// In order to use Spring's built-in Jasper support,
 		// We are required to pass our datasource as a map parameter

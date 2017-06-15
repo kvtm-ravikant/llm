@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -45,6 +46,32 @@ public class SuggestionDaoImpl implements SuggestionDao {
 		List<Suggestion> dataList = cr.list();
 		tx.commit();
 		session.close();
+		return dataList;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Object[]> findUserAssessmentStatement(Integer id) {
+		// TODO Auto-generated method stub
+		session = sessionFactory.openSession();
+//		Query query = session.createSQLQuery("select sgg.* from suggestion_master_table sgg, assessment_table ass "
+//				+ " where ass.question_id = sgg.question_id " + " and ass.option_id = sgg.option_id ");
+
+		Query  query = session.createSQLQuery("select sgg.* "
+				+ " from assessment_table ass, user_table usr, suggestion_master_table sgg"
+				+ " where ass.user_id = usr.user_id"
+				+ " and ass.question_id = sgg.question_id"
+				+ " and usr.assessment_level = sgg.level_id"
+				+ " and ass.option_id <3"
+				+ " and usr.user_id = "+id);
+		
+		List<Object[]> dataList = query.list();
+		/*for (Object[] row : dataList) {
+			for (Object obj : row) {
+				LOGGER.info(obj + "::");
+			}
+			LOGGER.info("\n");
+		}*/
 		return dataList;
 	}
 
