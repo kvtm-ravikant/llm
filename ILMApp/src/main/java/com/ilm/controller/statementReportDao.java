@@ -70,6 +70,11 @@ public class statementReportDao {
 		}
 
 		LOGGER.info(pageOneData.toString());
+		LOGGER.info("pageOneData length "+pageOneData.size());
+		LOGGER.info("pageTwoData length "+pageTwoData.size());
+		LOGGER.info("pageThreeData length "+pageThreeData.size());
+		LOGGER.info("pageFourData length "+pageFourData.size());
+		LOGGER.info("pageFiveData length "+pageFiveData.size());
 
 		stData.setInclusiveLeadershipStmt(pageOneData);
 		stData.setCommercialImpactDiversityStmt(pageTwoData);

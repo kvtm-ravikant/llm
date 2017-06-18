@@ -66,7 +66,7 @@ CREATE TABLE `suggestion_master_table` (
   `question_id` int(11) DEFAULT NULL,
   `option_id` int(11) DEFAULT NULL,
   `level_id` int(11) DEFAULT NULL,
-  `suggestion` varchar(300) DEFAULT NULL,
+  `suggestion` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 

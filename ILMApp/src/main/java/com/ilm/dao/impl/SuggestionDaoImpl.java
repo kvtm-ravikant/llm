@@ -62,7 +62,7 @@ public class SuggestionDaoImpl implements SuggestionDao {
 				+ " where ass.user_id = usr.user_id"
 				+ " and ass.question_id = sgg.question_id"
 				+ " and usr.assessment_level = sgg.level_id"
-				+ " and ass.option_id <3"
+				+ " and ass.option_id<4"
 				+ " and usr.user_id = "+id);
 		
 		List<Object[]> dataList = query.list();
