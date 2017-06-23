@@ -25,7 +25,12 @@ public class statementReportModel {
 	private List<String> inclusiveTeamsandTeamworkStmt;
 	private List<String> inclusiveGoalsandObjectivesStmt;
 	private List<String> inclusiveRolesResponsibilitiesStmt;
-
+	private List<String> challengingPrejudiceStmt;
+	private List<String> ethicalPracticeStmt;
+	private List<String> commitmentToDifferenceStmt;
+	private List<String> collaborativePracticeValuesStmt;
+	private List<String> collaborativeCommunicationsStmt;
+	
 	public int getId() {
 		return id;
 	}
@@ -150,15 +155,60 @@ public class statementReportModel {
 		this.inclusiveRolesResponsibilitiesStmt = inclusiveRolesResponsibilitiesStmt;
 	}
 
+
+	
+	public List<String> getChallengingPrejudiceStmt() {
+		return challengingPrejudiceStmt;
+	}
+
+	public void setChallengingPrejudiceStmt(List<String> challengingPrejudice) {
+		this.challengingPrejudiceStmt = challengingPrejudice;
+	}
+
+	public List<String> getEthicalPracticeStmt() {
+		return ethicalPracticeStmt;
+	}
+
+	public void setEthicalPracticeStmt(List<String> ethicalPractice) {
+		this.ethicalPracticeStmt = ethicalPractice;
+	}
+
+	public List<String> getCommitmentToDifferenceStmt() {
+		return commitmentToDifferenceStmt;
+	}
+
+	public void setCommitmentToDifferenceStmt(List<String> commitmentToDiff) {
+		this.commitmentToDifferenceStmt = commitmentToDiff;
+	}
+
+	public List<String> getCollaborativePracticeValuesStmt() {
+		return collaborativePracticeValuesStmt;
+	}
+
+	public void setCollaborativePracticeValuesStmt(List<String> collaborativePracticeValues) {
+		this.collaborativePracticeValuesStmt = collaborativePracticeValues;
+	}
+
+	public List<String> getCollaborativeCommunicationsStmt() {
+		return collaborativeCommunicationsStmt;
+	}
+
+	public void setCollaborativeCommunicationsStmt(List<String> collaborativeCommunications) {
+		this.collaborativeCommunicationsStmt = collaborativeCommunications;
+	}
+
 	@Override
 	public String toString() {
 		return "statementReportModel [id=" + id + ", firstName=" + firstName + ", middleName=" + middleName
 				+ ", lastName=" + lastName + ", jobTitle=" + jobTitle + ", workEmail=" + workEmail + ", org=" + org
-				+ ", businessUnit=" + businessUnit + ", dtCompleted=" + dtCompleted + ", inclusiveLeadershipStmt="
-				+ inclusiveLeadershipStmt + ", commercialImpactDiversityStmt=" + commercialImpactDiversityStmt
-				+ ", inclusiveTeamsandTeamworkStmt=" + inclusiveTeamsandTeamworkStmt
+				+ ", businessUnit=" + businessUnit + ", level=" + level + ", dtCompleted=" + dtCompleted
+				+ ", inclusiveLeadershipStmt=" + inclusiveLeadershipStmt + ", commercialImpactDiversityStmt="
+				+ commercialImpactDiversityStmt + ", inclusiveTeamsandTeamworkStmt=" + inclusiveTeamsandTeamworkStmt
 				+ ", inclusiveGoalsandObjectivesStmt=" + inclusiveGoalsandObjectivesStmt
-				+ ", inclusiveRolesResponsibilitiesStmt=" + inclusiveRolesResponsibilitiesStmt + "]";
+				+ ", inclusiveRolesResponsibilitiesStmt=" + inclusiveRolesResponsibilitiesStmt
+				+ ", challengingPrejudiceStmt=" + challengingPrejudiceStmt + ", ethicalPracticeStmt=" + ethicalPracticeStmt
+				+ ", commitmentToDifferenceStmt=" + commitmentToDifferenceStmt + ", collaborativePracticeValuesStmt="
+				+ collaborativePracticeValuesStmt + ", collaborativeCommunicationsStmt=" + collaborativeCommunicationsStmt + "]";
 	}
 
 	

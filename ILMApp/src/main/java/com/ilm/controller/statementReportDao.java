@@ -27,6 +27,11 @@ public class statementReportDao {
 		List<String> pageThreeData = new ArrayList<>();
 		List<String> pageFourData = new ArrayList<>();
 		List<String> pageFiveData = new ArrayList<>();
+		List<String> pageSixData = new ArrayList<>();
+		List<String> pageSevenData = new ArrayList<>();
+		List<String> pageEightData = new ArrayList<>();
+		List<String> pageNineData = new ArrayList<>();
+		List<String> pageTenData = new ArrayList<>();
 
 		// Create an array list of DemoModal
 		List<statementReportModel> stmtReportList = new ArrayList<statementReportModel>();
@@ -67,6 +72,21 @@ public class statementReportDao {
 			if(row[1].equals(Integer.valueOf(5))){
 				pageFiveData.add(row[5].toString());
 			}
+			if(row[1].equals(Integer.valueOf(6))){
+				pageSixData.add(row[5].toString());
+			}
+			if(row[1].equals(Integer.valueOf(7))){
+				pageSevenData.add(row[5].toString());
+			}
+			if(row[1].equals(Integer.valueOf(8))){
+				pageEightData.add(row[5].toString());
+			}
+			if(row[1].equals(Integer.valueOf(9))){
+				pageNineData.add(row[5].toString());
+			}
+			if(row[1].equals(Integer.valueOf(10))){
+				pageTenData.add(row[5].toString());
+			}
 		}
 
 		LOGGER.info(pageOneData.toString());
@@ -75,12 +95,22 @@ public class statementReportDao {
 		LOGGER.info("pageThreeData length "+pageThreeData.size());
 		LOGGER.info("pageFourData length "+pageFourData.size());
 		LOGGER.info("pageFiveData length "+pageFiveData.size());
+		LOGGER.info("pageSixData length "+pageSixData.size());
+		LOGGER.info("pageSevenData length "+pageSevenData.size());
+		LOGGER.info("pageEightData length "+pageEightData.size());
+		LOGGER.info("pageNineData length "+pageNineData.size());
+		LOGGER.info("pageTenData length "+pageTenData.size());
 
 		stData.setInclusiveLeadershipStmt(pageOneData);
 		stData.setCommercialImpactDiversityStmt(pageTwoData);
 		stData.setInclusiveTeamsandTeamworkStmt(pageThreeData);
 		stData.setInclusiveGoalsandObjectivesStmt(pageFourData);
 		stData.setInclusiveRolesResponsibilitiesStmt(pageFiveData);
+		stData.setChallengingPrejudiceStmt(pageSixData);
+		stData.setEthicalPracticeStmt(pageSevenData);
+		stData.setCommitmentToDifferenceStmt(pageEightData);
+		stData.setCollaborativePracticeValuesStmt(pageNineData);
+		stData.setCollaborativeCommunicationsStmt(pageTenData);
 		
 		LOGGER.info("stData :"+stData.toString());
 
