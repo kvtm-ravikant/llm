@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 4.6.0  -->
+<!-- 2017-06-26T12:50:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="782" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="1cedf35a-f7c3-40cc-91f1-521fd55224c5">
+	<property name="ireport.zoom" value="0.90909090909091"/>
+	<property name="ireport.x" value="26"/>
+	<property name="ireport.y" value="1603"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="inclusiveLeadershipStmt" class="java.util.List" isForPrompting="false"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="middleName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="jobTitle" class="java.lang.String"/>
+	<field name="workEmail" class="java.lang.String"/>
+	<field name="org" class="java.lang.String"/>
+	<field name="businessUnit" class="java.lang.String"/>
+	<field name="level" class="java.lang.String"/>
+	<field name="dtCompleted" class="java.util.Date"/>
+	<field name="inclusiveLeadershipStmt" class="java.util.List"/>
+	<field name="commercialImpactDiversityStmt" class="java.util.List"/>
+	<field name="inclusiveTeamsandTeamworkStmt" class="java.util.List"/>
+	<field name="inclusiveGoalsandObjectivesStmt" class="java.util.List"/>
+	<field name="inclusiveRolesResponsibilitiesStmt" class="java.util.List"/>
+	<field name="challengingPrejudiceStmt" class="java.util.List"/>
+	<field name="ethicalPracticeStmt" class="java.util.List"/>
+	<field name="commitmentToDifferenceStmt" class="java.util.List"/>
+	<field name="collaborativePracticeValuesStmt" class="java.util.List"/>
+	<field name="collaborativeCommunicationsStmt" class="java.util.List"/>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="555" uuid="de84bb03-9494-4388-b2b9-f4f653d824ea"/>
+				<imageExpression><![CDATA["Background_wide.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="425" y="8" width="349" height="204" forecolor="#FFFFFF" backcolor="#000066" uuid="ea364991-fd80-414f-b60d-d82a0f0ec13a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="12" width="342" height="68" forecolor="#006699" uuid="1af903f1-60ab-4986-b8b9-fa3bf316cd20"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders
+Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="84" width="40" height="16" forecolor="#FFFFFF" uuid="8f7fa00b-9429-4355-8ca8-a58a2ff3c801">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="105" width="55" height="16" forecolor="#FFFFFF" uuid="30688971-0d47-455a-bea8-d6843b779c3c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Job Title:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="127" width="86" height="16" forecolor="#FFFFFF" uuid="10c87fc0-3fe6-4cad-a6cd-8dd4f196c178">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Business Unit:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="148" width="81" height="16" forecolor="#FFFFFF" uuid="60d9e2a2-74af-4fc8-a9d7-7c5c48c148f3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Organisation:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="169" width="36" height="16" forecolor="#FFFFFF" uuid="241c887d-5c04-453b-b9b6-2c64aff932ec"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Level:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="190" width="40" height="16" forecolor="#FFFFFF" uuid="a7c2416f-839f-4d8f-9968-c920d34c113b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="425" y="421" width="349" height="60" forecolor="#FFFFFF" backcolor="#000066" uuid="5cbff274-4dbe-4828-acd4-2d87ea04e68b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="425" width="342" height="53" forecolor="#FFFFFF" uuid="1983af7f-9588-4bda-9fc2-8fbae7cde498"/>
+				<text><![CDATA[© Inclusive Leaders LLP
+22 Upper Ground, London, SE1 9PD
++44 (0) 330 2233 548
+support@inclusiveleaders.co.uk]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="468" y="86" width="280" height="16" forecolor="#FFFFFF" uuid="b6105d99-d604-426c-bc04-af7aae9acb7a">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="107" width="260" height="16" forecolor="#FFFFFF" uuid="5ee79a95-3c99-4702-a3dd-9115f070be37"/>
+				<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="128" width="235" height="16" forecolor="#FFFFFF" uuid="a8987b43-7c2d-46eb-adf8-e82218e25f7b">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="148" width="245" height="16" forecolor="#FFFFFF" uuid="313b4b0b-4908-483a-9a60-15446e646646">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="192" width="230" height="16" forecolor="#FFFFFF" uuid="3726636d-a71e-4a15-b0f3-899f2ba2fb6f"/>
+				<textFieldExpression><![CDATA[$F{dtCompleted}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="170" width="240" height="16" forecolor="#FFFFFF" uuid="7d54a92e-f86c-4072-9381-0ae939658a51">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="41" width="782" height="39" forecolor="#FFFFFF" backcolor="#003399" uuid="eed2e4ca-8454-412a-8f77-15cad30cb247"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="782" height="43" uuid="dfba0372-35d0-4d9e-93d1-9a63b8564201"/>
+				<imageExpression><![CDATA["header_1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="51" width="541" height="20" forecolor="#FFFFFF" uuid="604b33a9-ae6c-4fa7-b7a8-b52c5e22798c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="80" width="588" height="446" forecolor="#FFFFFF" backcolor="#FF6600" uuid="95ab3c19-ef56-4454-8072-99a2af431130"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="110" width="541" height="20" forecolor="#FFFFFF" uuid="4495076a-cb40-43c7-8c81-4787c5a4c53f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Introduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="144" width="541" height="20" forecolor="#FFFFFF" uuid="e733f4c5-0880-47de-be71-5f5ef3db43f6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Aim and usage of the Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="180" width="541" height="80" forecolor="#FFFFFF" uuid="e7b10896-2939-49e3-bade-f9f5963390d6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The report produced on completion of this assessment aims to obtain a better insight into a
+participant’s inclusive leadership behaviour in a particular working environment. On the basis of
+the obtained information, it is possible to make well informed decisions concerning internal and
+external recruitment, promotion, learning and development, training etc. The results should not
+be used outside of this context.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="270" width="541" height="109" forecolor="#FFFFFF" uuid="ad1f8133-98b5-482e-8510-3c02f63d5b70"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The value of this report is limited in time. Its content is intended to support decision-making
+but at a specific time and in relation to specific criteria. It is not, therefore, advisable to use it for
+other purposes. It should also not be used in isolation, nor should it be the sole input into the
+decision making process. It should be used in conjunction with other information about the
+participant such as performance data and should facilitate decision making, rather than be the
+deciding factor. It should also be used as a basis of discussion with the participant so as to obtain
+their views on the points raised and to add supplementary information to these conclusions.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="390" width="541" height="47" forecolor="#FFFFFF" uuid="c6b89496-40d8-4b02-b4dc-edc920cd00e4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[This report is being sent to named recipients and it is each person’s responsibility to ensure this
+report and its contents are kept confidential and are not passed to third parties, or used for any
+purposes other than those specified above.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="450" width="541" height="47" forecolor="#FFFFFF" uuid="fbfcf95b-a981-4623-8c1d-6d8a014a0dd3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The participant will recieve a copy of this report and will also have the opportunity of a further
+validation meeting wiht the consultant to review and discuss its content and identify
+development needs.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="588" y="80" width="194" height="475" uuid="6b07c7ee-e023-4ff1-890f-81a693386146"/>
+				<imageExpression><![CDATA["page_2.jpg"]]></imageExpression>
+			</image>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="42" uuid="58efffc0-4d23-4d5d-904b-645aaf3f4afe"/>
+				<imageExpression><![CDATA["page_3.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="39" width="782" height="39" forecolor="#FFFFFF" backcolor="#003399" uuid="64837d5b-520f-4c6b-b220-98a7040d83e1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="49" width="541" height="20" forecolor="#FFFFFF" uuid="46b40bb1-1ea7-4301-ae25-ee47f4a5ba6f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="78" width="782" height="477" uuid="42c4d0dd-3478-4cf4-b92c-7e1a874c0475"/>
+				<imageExpression><![CDATA["page_2_1.jpg"]]></imageExpression>
+			</image>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="838732cc-3149-4622-bcd9-1de779ae630b"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="46" width="522" height="20" forecolor="#FFFFFF" uuid="b2dd47e2-6e71-418b-bfed-2d697080f075"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="99" width="525" height="283" forecolor="#FF0066" backcolor="#FF0066" uuid="b4c7cd35-2667-4495-abe3-d523fcd8a3bb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="36" y="393" width="525" height="129" forecolor="#FF0066" backcolor="#FF0066" uuid="20b82979-cef9-40f4-a9bb-dcc1a2396947"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="99" width="36" height="283" forecolor="#000066" backcolor="#000066" uuid="4d714506-b7b2-4bcd-ae41-624c231e4347"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="393" width="36" height="129" forecolor="#000066" backcolor="#000066" uuid="e25c573c-2b9c-47c4-97ef-2383c81b2db4"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="1" y="150" width="32" height="150" forecolor="#FFFFFF" uuid="b68a0b73-c20e-4b5e-acac-76752fb2e4ac"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" rotation="None">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[INCLUSIVE LEADERSHIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="7" y="398" width="23" height="120" forecolor="#FFFFFF" uuid="e30e81c3-e55b-4b7e-ab3f-aa9a9dd0d78a"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="398" width="513" height="20" forecolor="#FF9900" uuid="6402ba04-82e9-4ea2-bd97-a483dcff36c4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="561" y="99" width="221" height="456" uuid="2b8efa79-3d1a-4cde-b182-32ccf6b80074"/>
+				<imageExpression><![CDATA["p4-2.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="39" y="110" width="255" height="30" forecolor="#FFFFFF" uuid="28fc515d-ea45-4431-8d02-b74069305dfe"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>0?"• "+$F{inclusiveLeadershipStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="145" width="255" height="30" forecolor="#FFFFFF" uuid="c1c39ec4-3a17-4990-b008-2e21d71c3941">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>1?"• "+$F{inclusiveLeadershipStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="110" width="250" height="30" forecolor="#FFFFFF" uuid="9b1e16d8-fb93-4748-bb85-10b0e9eab658"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>6?"• "+$F{inclusiveLeadershipStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="180" width="255" height="30" forecolor="#FFFFFF" uuid="c7eec804-9fb9-49bd-b107-e3d8640cbe8d">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>2?"• "+$F{inclusiveLeadershipStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="215" width="255" height="30" forecolor="#FFFFFF" uuid="ff66d96b-45bc-4989-99e5-8730b9ac704c">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>3?"• "+$F{inclusiveLeadershipStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="250" width="255" height="30" forecolor="#FFFFFF" uuid="7a170ee7-2b63-42f2-b6e2-caea1f8259b5">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>4?"• "+$F{inclusiveLeadershipStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="285" width="255" height="30" forecolor="#FFFFFF" uuid="834dc89a-7cef-42cc-bcff-e1b32cd3fd15">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>5?"• "+$F{inclusiveLeadershipStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="145" width="250" height="30" forecolor="#FFFFFF" uuid="b3fd8d90-0d61-4506-a52c-98f3727032e5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>7?"• "+$F{inclusiveLeadershipStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="180" width="250" height="30" forecolor="#FFFFFF" uuid="6a9427eb-1225-4757-a663-82d8a0a6ac13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>8?"• "+$F{inclusiveLeadershipStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="215" width="250" height="30" forecolor="#FFFFFF" uuid="d31ff9ee-2fca-46a4-98bb-d0c6f1e185a9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[9<$F{inclusiveLeadershipStmt}.size()?"• "+$F{inclusiveLeadershipStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="250" width="250" height="30" forecolor="#FFFFFF" uuid="38dd62af-4fb2-41e4-8550-65d5e1443021"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>10?"• "+$F{inclusiveLeadershipStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="285" width="250" height="30" forecolor="#FFFFFF" uuid="eb1a5d04-77a8-4490-a32b-043127af9c2c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>11?"• "+$F{inclusiveLeadershipStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="320" width="250" height="30" forecolor="#FFFFFF" uuid="eafa219e-b909-40a5-a328-e31d0dc2bfbd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>12?"• "+$F{inclusiveLeadershipStmt}.get( 12 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="430" width="504" height="18" forecolor="#FFFFFF" uuid="137e4823-7c4d-44eb-a3e1-2f94ec076c8c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>0?"• Inclusive Leadership":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="450" width="504" height="18" forecolor="#FFFFFF" uuid="c78102ea-491d-41e2-bc47-e01497469542">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>0?"• Unconscious Bias":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="470" width="504" height="18" forecolor="#FFFFFF" uuid="7d0eaf60-601b-4760-88ed-50700822958e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveLeadershipStmt}.size()>0?"• Managing Diversity & Inclusion":""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="e4a7eb8a-0114-431b-a244-560c305f77d0"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="46" width="522" height="20" forecolor="#FFFFFF" uuid="17a8e2ae-f7e2-45c8-91d1-c9497213a769"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="98" width="561" height="316" forecolor="#9999FF" backcolor="#9999FF" uuid="91ab1f71-b0bf-4778-8a52-e6c9a27f712c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="103" width="522" height="22" forecolor="#000066" uuid="6da09acd-3261-496a-a529-c9f584d5b2b8"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REALISING THE COMMERCIAL IMPACT OF DIVERSITY]]></text>
+			</staticText>
+			<image>
+				<reportElement x="561" y="99" width="221" height="456" uuid="689c084e-39ab-454b-8e96-fecf15e97bab"/>
+				<imageExpression><![CDATA["p4-3.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="422" width="561" height="105" forecolor="#9999FF" backcolor="#9999FF" uuid="32c2497a-39ec-4842-a5fc-a2490f07765f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="422" width="36" height="105" forecolor="#000066" backcolor="#000066" uuid="71edfb68-49e1-4c3b-8746-b9103906b953"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="7" y="422" width="23" height="105" forecolor="#FFFFFF" uuid="b49d7d65-a9f6-4b07-bd68-94f3286b9340"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="55ec0031-3d07-4a88-b205-dfd72809b587"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>0?"• "+$F{commercialImpactDiversityStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="166" width="255" height="30" uuid="c472bd6a-2f7d-4d13-bb61-22cc12968d53"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>1?"• "+$F{commercialImpactDiversityStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="201" width="255" height="30" forecolor="#FFFFFF" uuid="96e5fe3e-04f8-4316-a7f5-a55d476cca35"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>2?"• "+$F{commercialImpactDiversityStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="235" width="255" height="30" uuid="de5f68aa-2172-45f6-a13e-d310f980f6a5"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>3?"• "+$F{commercialImpactDiversityStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="271" width="255" height="30" forecolor="#FFFFFF" uuid="1a55e1c9-1736-4515-acf1-5c9477d2a902"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>4?"• "+$F{commercialImpactDiversityStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="308" width="255" height="30" uuid="17584316-b707-47d8-a62b-5c9ab512a419"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>5?"• "+$F{commercialImpactDiversityStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="345" width="255" height="30" forecolor="#FFFFFF" uuid="5f6ea912-baca-4ff7-adfd-d892317005bf"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>6?"• "+$F{commercialImpactDiversityStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="129" width="255" height="30" forecolor="#FFFFFF" uuid="45d30e49-e018-4a3c-b127-899d43d2066c"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>7?"• "+$F{commercialImpactDiversityStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="165" width="255" height="30" uuid="9ce4872b-0c32-46c5-a46e-a87e3070e2fc"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>8?"• "+$F{commercialImpactDiversityStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="200" width="255" height="30" forecolor="#FFFFFF" uuid="2a85eb58-ab1f-4bb5-8f85-fd3cb821ef46"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>9?"• "+$F{commercialImpactDiversityStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="234" width="255" height="30" uuid="efda4391-75d4-4e41-af4c-a79534f25db5"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>10?"• "+$F{commercialImpactDiversityStmt}.get( 10):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="270" width="255" height="30" forecolor="#FFFFFF" uuid="d075800e-23f9-42c6-9b25-673d4abd8b7a"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>11?"• "+$F{commercialImpactDiversityStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="307" width="255" height="30" uuid="8aa09337-6027-4721-9932-dce4ebdc36d7"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>12?"• "+$F{commercialImpactDiversityStmt}.get( 12 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="344" width="255" height="30" forecolor="#FFFFFF" uuid="a0d20337-3e7a-4c56-b6df-c63c0c0a96ca"/>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>13?"• "+$F{commercialImpactDiversityStmt}.get( 13 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="430" width="504" height="18" forecolor="#FFFFFF" uuid="c28981d7-e43b-4394-b84b-d20b78c9d755">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>0?"• Diversity in the Workplace Managers":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="450" width="504" height="18" forecolor="#FFFFFF" uuid="72ae66c2-e61a-4797-b250-5b031c2585c2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>0?"• Equality and Diversity in the Workplace for Staff":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="470" width="504" height="18" forecolor="#FFFFFF" uuid="3a87afa0-7897-446f-a8e6-8ca4e24432ba">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commercialImpactDiversityStmt}.size()>0?"• Equality Analysis":""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="4a2e2808-099f-4aaa-9e6e-38645d0c13bd"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="30" y="47" width="522" height="20" forecolor="#FFFFFF" uuid="695f2112-4e49-491b-8c68-cf5489516a4a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="305" forecolor="#000066" backcolor="#000066" uuid="29779cca-3c35-4355-823a-0c622b1f97a1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="103" width="522" height="22" forecolor="#FFCC66" uuid="3da540b6-d783-44d6-a824-12e7cebb0a5c"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INCLUSIVE GOALS & OBJECTIVES]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="411" width="561" height="111" forecolor="#000066" backcolor="#000066" uuid="314eb3fb-14ab-46a4-b152-a2c75ecd80ee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="411" width="36" height="111" forecolor="#CC9900" backcolor="#CC9900" uuid="5d730382-5a20-4573-9fcf-03f1e9e03d90"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="7" y="411" width="23" height="109" forecolor="#FFFFFF" uuid="aec11334-3c22-40df-bea7-638ac00ed162"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="413" width="510" height="17" forecolor="#CC9900" uuid="e7519b6a-abfb-41f4-85e5-f83d65adfb9a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="456" uuid="4c5baef8-3e3f-45bd-8bb2-37758de2aa4a"/>
+				<imageExpression><![CDATA["p6-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="294" y="270" width="255" height="30" forecolor="#FFFFFF" uuid="9aebb78f-56c5-44a2-a924-3d6b7a44d633"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>11?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="234" width="255" height="30" forecolor="#FFFFFF" uuid="a2c56579-9b70-4d4f-9013-256fdcf0c5fd"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>10?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 10):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="282ad0bf-e3e1-4cfe-99bc-6eee51c9debf"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>0?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="235" width="255" height="30" forecolor="#FFFFFF" uuid="ae17e5c7-62a7-4bc5-b183-2eec9a906185"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>3?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="344" width="255" height="30" forecolor="#FFFFFF" uuid="a91655e9-4e7a-4f95-a0d3-fcde3925ce66"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>13?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 13 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="307" width="255" height="30" forecolor="#FFFFFF" uuid="f0952bb0-5644-4d05-8a98-96c7d5232743"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>12?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 12 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="271" width="255" height="30" forecolor="#FFFFFF" uuid="2598adb2-33ce-4b11-90fd-da8d954522a4"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>4?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="129" width="255" height="30" forecolor="#FFFFFF" uuid="e2de1030-f30a-48e1-9a2b-38d5a9b6d83c"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>7?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="308" width="255" height="30" forecolor="#FFFFFF" uuid="a35ff26c-63cf-49e8-9fcf-46f74f425b14"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>5?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="200" width="255" height="30" forecolor="#FFFFFF" uuid="8769f430-723e-4baa-8e7a-819b839c9622"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>9?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="165" width="255" height="30" forecolor="#FFFFFF" uuid="29bba347-5c95-4b8b-8370-513c196dce12"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>8?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="345" width="255" height="30" forecolor="#FFFFFF" uuid="94065ac4-2c56-4dab-9134-a1e692d9abe8"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>6?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="166" width="255" height="30" forecolor="#FFFFFF" uuid="6f68961a-b903-4a28-b23a-a60116b88201"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>1?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="201" width="255" height="30" forecolor="#FFFFFF" uuid="9d702b01-da1c-498b-8cf2-2c59601ab0e2"/>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>2?"• "+$F{inclusiveGoalsandObjectivesStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="440" width="504" height="18" forecolor="#FFFFFF" uuid="32823d77-ba0a-489a-bf51-3200587049f9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>0?"• Communication":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="460" width="504" height="18" forecolor="#FFFFFF" uuid="e7bcc9ea-7bb0-48f1-821e-129fe77ebc8f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>0?"• Wellbeing at work":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="480" width="504" height="18" forecolor="#FFFFFF" uuid="7a61627e-cfd6-4a60-9032-01b14c454de1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveGoalsandObjectivesStmt}.size()>0?"• Managing the appriasal process":""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="de04b8d5-6c1c-428e-b24c-1c3766fc0e3f"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="30" y="46" width="522" height="20" forecolor="#FFFFFF" uuid="e79f4412-d7ba-4a72-862f-2053deb71596"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="98" width="561" height="305" forecolor="#009966" backcolor="#009966" uuid="b458a22f-a0eb-426e-9bed-0da794bed990"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="101" width="522" height="22" forecolor="#000066" uuid="cc6590a3-3e13-4957-8e03-cac039b2239c"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INCLUSIVE TEAMS & TEAMWORK]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="411" width="525" height="111" forecolor="#009966" backcolor="#009966" uuid="2dc3ec87-ad18-4065-9bb8-e3cfa44e9950"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="411" width="36" height="111" forecolor="#000066" backcolor="#000066" uuid="79f3728a-d67b-4b2e-8493-2fe806d16a10"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="7" y="412" width="23" height="109" forecolor="#FFFFFF" uuid="4b3a38b2-2da6-49a0-ba7d-cbc93aa1770f"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="414" width="510" height="17" forecolor="#000066" uuid="9fedbabf-e761-4af8-84bc-30fbaa14cceb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="424" uuid="be81243c-2ca4-4197-a141-cf993e89bc51"/>
+				<imageExpression><![CDATA["p7-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="518272bc-f2a1-4a97-be69-4260a083401f"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>0?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="270" width="255" height="30" forecolor="#FFFFFF" uuid="3b1477ab-4a39-432b-a4f6-958290e15770"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>11?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="344" width="255" height="30" forecolor="#FFFFFF" uuid="424fb603-9dc0-4963-a986-6a2647f36c27"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>13?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 13 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="307" width="255" height="30" forecolor="#FFFFFF" uuid="a537ab0a-7e4a-4d2e-aec2-62abca4c4761"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>12?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 12 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="166" width="255" height="30" forecolor="#FFFFFF" uuid="13fcf94d-5c69-43b5-8096-567f80986aab"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>1?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="201" width="255" height="30" forecolor="#FFFFFF" uuid="747df6f3-b6a1-424b-92ef-b2cf72f2e5b6"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>2?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="235" width="255" height="30" forecolor="#FFFFFF" uuid="730a9a68-21bd-4d45-9ef2-36f94ba3ed0d"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>3?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="271" width="255" height="30" forecolor="#FFFFFF" uuid="0d61b8e4-3b82-49e8-b851-e68bff788a0a"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>4?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="308" width="255" height="30" forecolor="#FFFFFF" uuid="80fcf91c-4143-4fb0-9010-5cb1d57bb9c1"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>5?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="345" width="255" height="30" forecolor="#FFFFFF" uuid="82ed73fc-527f-478f-8071-8139428ecbb4"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>6?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="129" width="255" height="30" forecolor="#FFFFFF" uuid="294a0f6c-cb19-437b-9745-8e6a2e7f1311"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>7?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="165" width="255" height="30" forecolor="#FFFFFF" uuid="068774ed-d9ae-4e21-ad2b-7f94e0018012"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>8?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="200" width="255" height="30" forecolor="#FFFFFF" uuid="9962a3d3-d09e-46f9-a7c3-1b1ac6241d88"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>9?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="234" width="255" height="30" forecolor="#FFFFFF" uuid="f9863d28-4812-48e7-a16b-93b629fb3796"/>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>10?"• "+$F{inclusiveTeamsandTeamworkStmt}.get( 10):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="440" width="504" height="18" forecolor="#FFFFFF" uuid="c2d659b5-ffb5-4f0d-8ce2-cbf7077ccdd6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>0?"• Diversity in the Workplace Managers":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="460" width="504" height="18" forecolor="#FFFFFF" uuid="adcab3c0-b427-4f0d-9d7d-f9f9b16f3493">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>0?"• Equality and Diversity in the Workplace for Staff":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="480" width="504" height="18" forecolor="#FFFFFF" uuid="fce11e89-b6d5-4f7f-a3ec-a0c9a9e7526a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveTeamsandTeamworkStmt}.size()>0?"• Stress Management":""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="79c27cb8-9237-474e-acd9-a4252b0e2f32"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="27" y="45" width="522" height="20" forecolor="#FFFFFF" uuid="407d3a64-4b4b-4864-bf6f-255e46f52b4e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="290" forecolor="#0099CC" backcolor="#0099CC" uuid="31da9f5f-20e0-4497-a433-2fb45a0db64d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="27" y="103" width="522" height="22" forecolor="#000066" uuid="352d8217-8a85-4afe-aca0-6f25ceaa80b1"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INCLUSIVE ROLES & RESPONSIBILITIES]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="397" width="525" height="132" forecolor="#0099CC" backcolor="#0099CC" uuid="a8e53ed9-2fbb-4f4a-9cfe-12b7340bacda"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="397" width="36" height="132" forecolor="#000066" backcolor="#000066" uuid="8e5db5cb-4f00-4e67-a254-3d734672bf09"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="7" y="400" width="23" height="127" forecolor="#FFFFFF" uuid="a36d854b-a42a-480f-8f25-10185ae5ddf2"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="401" width="510" height="17" forecolor="#000066" uuid="bfc2b8a5-660d-43cd-9252-1d033a7ba2f9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="434" uuid="99845e49-6c04-4fa3-a78a-eba07b5a7a0e"/>
+				<imageExpression><![CDATA["p8-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="34" y="235" width="255" height="30" forecolor="#FFFFFF" uuid="4466425d-4a40-4bd8-88d5-07aeb51217ad"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>3?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="6a5b5f81-2997-443e-bd9c-9e6a483705a4"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>0?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="201" width="255" height="30" forecolor="#FFFFFF" uuid="ee7eb47d-d3d5-4b78-b82d-7cd84e6a2225"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>2?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="166" width="255" height="30" forecolor="#FFFFFF" uuid="c7000dff-c2aa-4887-9a7d-69ff2d263d0d"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>1?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="271" width="255" height="30" forecolor="#FFFFFF" uuid="6e95c9d9-4010-4a53-8b0c-25791f15b8e2"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>4?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="308" width="255" height="30" forecolor="#FFFFFF" uuid="b7ad9611-ad73-423b-a951-ee1ad00edb52"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>5?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="345" width="255" height="30" forecolor="#FFFFFF" uuid="4cfbf2e9-45b4-4d31-b914-1d4a48107902"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>6?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="129" width="255" height="30" forecolor="#FFFFFF" uuid="2f412774-d2de-4216-817f-878ad19cd5a4"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>7?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="165" width="255" height="30" forecolor="#FFFFFF" uuid="aaaf9850-4902-49fe-b52b-62ae080a6979"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>8?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="200" width="255" height="30" forecolor="#FFFFFF" uuid="da875b52-ed23-460d-8e96-1ab2a8f7f0b9"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>9?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="234" width="255" height="30" forecolor="#FFFFFF" uuid="517d99db-852b-4fc3-aba4-3bcdf22b3ba5"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>10?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 10):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="270" width="255" height="30" forecolor="#FFFFFF" uuid="50c8beb3-b542-4d35-b9cb-ce2ab819cb32"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>11?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="307" width="255" height="30" forecolor="#FFFFFF" uuid="d0442d45-01c8-4e00-9500-9fceb94c5625"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>12?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 12 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="344" width="255" height="30" forecolor="#FFFFFF" uuid="38d292f8-0dc3-4360-afd5-e572336dba75"/>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>13?"• "+$F{inclusiveRolesResponsibilitiesStmt}.get( 13 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="420" width="504" height="18" forecolor="#FFFFFF" uuid="29580065-0edd-4bd5-854a-fd3049f897cd">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>0?"• Unconscious Bias":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="440" width="504" height="18" forecolor="#FFFFFF" uuid="d5fea4a5-43f9-4b9a-85d8-36f7fffbc898">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>0?"• Inclusive Leadership":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="460" width="504" height="18" forecolor="#FFFFFF" uuid="af3fd117-102a-467a-87b0-9dd4ad8fbfb8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>0?"• Managing Disciplines & Grievances":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="480" width="504" height="18" forecolor="#FFFFFF" uuid="30fc5107-7c41-45e4-8de1-188128eb47bc">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{inclusiveRolesResponsibilitiesStmt}.size()>0?"• Performance Management":""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="b947ed75-3a8a-4caf-a3ad-a5a8e9d41d8a"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="25" y="45" width="522" height="20" forecolor="#FFFFFF" uuid="a5844d9a-a8c9-4ce5-aa2c-dfe5457aa24f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="128" width="250" height="258" forecolor="#FFFFFF" uuid="933b397e-6fd5-44be-8260-859f9e04668c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[• Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.
+• Be creative, flexible and look for new ways of doing things.
+• Acknowledge all faiths present in your workplace.
+• Demonstrate a knowledge and interest in other cultures.
+• Admit you don’t know the answer when you don’t, and seek opinions from those around you.
+• Exert effort to identify your own biases, and find ways to manage them in the workplace.
+• Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="424" width="525" height="103" forecolor="#FFCC66" backcolor="#FFCC66" uuid="2f3f35c4-ae8b-4eb8-a3b6-01568bd25206"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="315" forecolor="#FFCC66" backcolor="#FFCC66" uuid="eb1fe644-cc63-4439-9d18-dd99bd29c783"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="424" width="36" height="105" forecolor="#000066" backcolor="#000066" uuid="97c9402e-26f2-4467-acad-2d6cd0f0d2be"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="39" y="428" width="510" height="17" forecolor="#000066" uuid="109cabd5-6a68-4f28-8603-b6dd96933624"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="103" width="522" height="22" forecolor="#000066" uuid="eaba0923-0027-413c-b80e-edc4a4668e9a"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CHALLENGING PREJUDICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="427" width="23" height="99" forecolor="#FFFFFF" uuid="c48a983f-77cc-420b-b037-590f990e6b3a"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="430" uuid="7f9def3c-8cc1-400e-93e1-c0c83a97275c"/>
+				<imageExpression><![CDATA["p9-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="a38547e3-2f50-458a-845e-464c94c062fa"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>0?"• "+$F{challengingPrejudiceStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="170" width="255" height="30" forecolor="#FFFFFF" uuid="9d3fc20e-8d35-491a-8086-edb2a0ab0b2d"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>1?"• "+$F{challengingPrejudiceStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="210" width="255" height="30" forecolor="#FFFFFF" uuid="2207ca6b-88a7-4f15-b66d-12bdfaa91cd8"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>2?"• "+$F{challengingPrejudiceStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="250" width="255" height="30" forecolor="#FFFFFF" uuid="12711def-7c8c-4b25-8562-3fb4022ca0bd"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>4?"• "+$F{challengingPrejudiceStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="290" width="255" height="30" forecolor="#FFFFFF" uuid="67a46742-146e-4cfc-800f-85c93ffef201"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>5?"• "+$F{challengingPrejudiceStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="130" width="255" height="30" forecolor="#FFFFFF" uuid="1f12aa99-ff49-4659-914c-0af0fd7f2e43"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>6?"• "+$F{challengingPrejudiceStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="170" width="255" height="30" forecolor="#FFFFFF" uuid="375fb1bd-dfda-41f6-afe5-c476b1256e2a"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>7?"• "+$F{challengingPrejudiceStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="210" width="255" height="30" forecolor="#FFFFFF" uuid="c25b106f-3b1d-4832-80da-9dfec22e5c57"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>8?"• "+$F{challengingPrejudiceStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="250" width="255" height="30" forecolor="#FFFFFF" uuid="bf2ff69e-daf3-4b07-8620-2b5fb9d5cde7"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>9?"• "+$F{challengingPrejudiceStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="290" width="255" height="30" forecolor="#FFFFFF" uuid="e5071b9f-ef32-4738-a871-cc2ab896c3be"/>
+				<textFieldExpression><![CDATA[$F{challengingPrejudiceStmt}.size()>10?"• "+$F{challengingPrejudiceStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="7c579972-1d3c-4af5-b4f6-f032b770f169"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="27" y="46" width="522" height="20" forecolor="#FFFFFF" uuid="7a6d75d2-9e8a-447e-b781-9c28625e772c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="427" width="23" height="99" forecolor="#FFFFFF" uuid="2993e2de-1f28-4f32-8447-910d56d82ef5"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="325" forecolor="#FF6633" backcolor="#FF6633" uuid="49cf38e6-b792-4f67-acec-cb44e76e214c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="36" y="434" width="525" height="93" forecolor="#FF6633" backcolor="#FF6633" uuid="a96dff18-e865-4262-b2fa-9f71ae58be41"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="434" width="36" height="93" forecolor="#000066" backcolor="#000066" uuid="7b8463bc-549a-47c3-9450-7423b68bed6d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" uuid="6c677b83-ae02-4c1a-ba97-fd967b19c9b3"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEMONSTRATING ETHICAL PRACTICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="437" width="23" height="87" forecolor="#FFFFFF" uuid="e9dab83b-dfd3-4e78-87f5-535c2a2e5a76"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="437" width="510" height="17" forecolor="#000066" uuid="9d60f98e-edb8-4a56-9e7b-21718cd5c6dd"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="428" uuid="42277686-374b-42dd-a63a-e8a5b153a59c"/>
+				<imageExpression><![CDATA["P10-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" uuid="c4819842-f465-46a3-88f0-0908b1370d22">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>0?"• "+$F{ethicalPracticeStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="130" width="255" height="30" uuid="5dc501a8-0e9f-4fa6-b361-71968c1d0cbf">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>6?"• "+$F{ethicalPracticeStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="169" width="255" height="30" uuid="4b28e9d5-c760-4b2b-8ff2-5e313e494d9c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>1?"• "+$F{ethicalPracticeStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="169" width="255" height="30" uuid="d32fb415-526e-4c9c-9234-530019de0c64">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>7?"• "+$F{ethicalPracticeStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="207" width="255" height="30" uuid="b1e3b8ad-99be-40e5-beff-9a3fe817ecc1">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>2?"• "+$F{ethicalPracticeStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="207" width="255" height="30" uuid="7de263c4-c93f-4a4d-92ad-e41cbdf97b2c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>8?"• "+$F{ethicalPracticeStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="244" width="255" height="30" uuid="ca70c1eb-b58b-40fe-8b35-6161d6032c0d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>9?"• "+$F{ethicalPracticeStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="244" width="255" height="30" uuid="62cd570b-f468-45ce-b5d4-8c7ff43cd160">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>3?"• "+$F{ethicalPracticeStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="282" width="255" height="30" uuid="c4ffa638-c866-4e33-8d1b-31a43b5fd8c7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>10?"• "+$F{ethicalPracticeStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="282" width="255" height="30" uuid="23a3a246-e902-473e-92c6-5e9d8992b313">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>4?"• "+$F{ethicalPracticeStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="321" width="255" height="30" uuid="5caed295-7920-4ccb-b8c0-83293b18c547">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>11?"• "+$F{ethicalPracticeStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="321" width="255" height="30" uuid="e9c4daf9-0293-48e0-b99f-1d4fe0c82a56">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>5?"• "+$F{ethicalPracticeStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="327" forecolor="#999999" backcolor="#999999" uuid="3a47a1c9-3685-4f2d-a384-40df6c5d50fb"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="b588515f-f23d-4c81-97ba-c32c77e06fda"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="45" width="522" height="20" forecolor="#FFFFFF" uuid="5744f3f7-ebec-4008-9ad1-8aa5631875e2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" uuid="f454ae33-8e3a-4bb6-81db-0eff2b7d4a5b"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMMITTMENT TO DIFFERENCE]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="432" width="36" height="93" forecolor="#000066" backcolor="#000066" uuid="573fc50e-3aa4-46f8-ba99-ec8a08348072"/>
+			</rectangle>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="435" width="23" height="87" forecolor="#FFFFFF" uuid="98895536-db1c-4f32-964f-88d60200f04c"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="432" width="525" height="93" forecolor="#999999" backcolor="#999999" uuid="617dd880-0df8-4f4c-86ff-087cebd71a6d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="39" y="435" width="510" height="17" forecolor="#000066" uuid="72b71ac7-0961-4920-9a89-cdb1f9d88f4a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="426" uuid="efa437fe-287e-46b0-a7ff-3ff3fdc84611"/>
+				<imageExpression><![CDATA["p-11-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="35" y="130" width="255" height="30" uuid="84787d72-ce8c-420a-9ca2-8dbaf6d70685">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>0?"• "+$F{commitmentToDifferenceStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="131" width="255" height="30" uuid="ad4d4f8a-85ac-41f5-a638-b2f40e32bb63">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>6?"• "+$F{commitmentToDifferenceStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="168" width="255" height="30" uuid="3e0fb40a-993b-4853-b295-79cd33c05aac">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>7?"• "+$F{commitmentToDifferenceStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="167" width="255" height="30" uuid="29604f1a-c8a1-4647-9dda-d8f3ef9f821a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>1?"• "+$F{commitmentToDifferenceStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="207" width="255" height="30" uuid="c24d034e-ed51-41ea-88d8-68d1ed0ddf4e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>8?"• "+$F{commitmentToDifferenceStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="206" width="255" height="30" uuid="f8cfd819-8b39-4cf1-a72f-afc1b1067446">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>2?"• "+$F{commitmentToDifferenceStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="246" width="255" height="30" uuid="bbe5e011-e4fc-4cdc-97a0-3cef9a264d1e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>9?"• "+$F{commitmentToDifferenceStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="245" width="255" height="30" uuid="55e0ebd7-82d7-4e67-8712-5ae50bc54d31">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>3?"• "+$F{commitmentToDifferenceStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="285" width="255" height="30" uuid="b90c50ac-a9bb-44c4-9633-152316fe2136">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>10?"• "+$F{commitmentToDifferenceStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="284" width="255" height="30" uuid="13480563-3947-4e0f-b864-0318cbc870b7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>4?"• "+$F{commitmentToDifferenceStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="324" width="255" height="30" uuid="97c16f2f-e320-4f02-ba65-6014b5503bea">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>11?"• "+$F{commitmentToDifferenceStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="323" width="255" height="30" uuid="047665b5-fae7-43ab-bc38-1a8570e08f34">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>5?"• "+$F{commitmentToDifferenceStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="417" width="36" height="108" forecolor="#000066" backcolor="#000066" uuid="be17fca9-5287-452b-af38-761fef4e1928"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="9e971671-8496-4a58-b913-5cc307021b52"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="312" forecolor="#A5057C" backcolor="#A5057C" uuid="75086845-c21a-4328-b8ee-94b40d95464c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="45" width="522" height="20" forecolor="#FFFFFF" uuid="13a8ce96-6960-40e9-95b2-ea61085d4dcb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="420" width="23" height="102" forecolor="#FFFFFF" uuid="7ecbe4ba-ff13-4083-878c-c2af5e715865"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="36" y="417" width="525" height="108" forecolor="#A5057C" backcolor="#A5057C" uuid="11a76823-cf8c-477e-ba8d-aa79324e0fee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" uuid="36be5ba2-cafa-406d-93b9-59d9d4be4c20"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COLLABORATIVE PRACTICE VALUES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="420" width="510" height="17" forecolor="#000066" uuid="52e8ab44-180e-4bd4-ba10-3a2068b58aec"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="562" y="99" width="220" height="426" uuid="2de3a24c-938d-4d2c-afb7-129ff05f952b"/>
+				<imageExpression><![CDATA["p12-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="35" y="133" width="255" height="30" uuid="1a44062c-45cb-4880-af46-006aa8c3db08">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>0?"• "+$F{collaborativePracticeValuesStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="133" width="255" height="30" uuid="4c54969f-21c7-4a4a-afa7-025e6937bf3f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>6?"• "+$F{collaborativePracticeValuesStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="171" width="255" height="30" uuid="882229cb-cde2-41d1-83c4-2eb035193c80">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>1?"• "+$F{collaborativePracticeValuesStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="171" width="255" height="30" uuid="f3aad757-c0da-4fcd-bd5f-e791389dafd8">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>7?"• "+$F{collaborativePracticeValuesStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="210" width="255" height="30" uuid="ae436d4a-1347-40be-80ca-196e565e8b92">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>2?"• "+$F{collaborativePracticeValuesStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="210" width="255" height="30" uuid="3110491c-30ee-40a7-8241-4bfebd968b45">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>8?"• "+$F{collaborativePracticeValuesStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="249" width="255" height="30" uuid="fd3a5d1f-b838-47c7-8a08-d27efd0a1b42">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>3?"• "+$F{collaborativePracticeValuesStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="249" width="255" height="30" uuid="67f4a870-c73e-4664-92a9-3a7b0dbe5e4c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>9?"• "+$F{collaborativePracticeValuesStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="288" width="255" height="30" uuid="e7325617-6441-46f1-b010-b0d6f89e37a4">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>4?"• "+$F{collaborativePracticeValuesStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="288" width="255" height="30" uuid="6f78a79f-8900-455b-92c8-7daf659f9fdf">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>10?"• "+$F{collaborativePracticeValuesStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="38" y="328" width="255" height="30" uuid="86f07f48-ad71-44ce-aaa2-0a7c035c7158">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>5?"• "+$F{collaborativePracticeValuesStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="328" width="255" height="30" uuid="23811380-b833-424e-ada5-c99b730474cd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>11?"• "+$F{collaborativePracticeValuesStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="417" width="36" height="108" forecolor="#000066" backcolor="#000066" uuid="3e1dca0d-16b8-483a-b564-450266deb936"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="36" y="417" width="525" height="108" forecolor="#DC9CAA" backcolor="#DC9CAA" uuid="0b6d8f9e-82b6-4a42-8e4e-1475c888014a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="99" width="561" height="312" forecolor="#DC9CAA" backcolor="#DC9CAA" uuid="7c75d42d-c1e7-4177-9f68-2f380b450483"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="782" height="99" uuid="6da25d06-e89e-42d0-a944-3d34aa797dd0"/>
+				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="39" y="420" width="510" height="17" forecolor="#000066" uuid="9d048a5f-34d4-45ec-a8c3-7f7698fc4884"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" uuid="a7a206c2-e1e5-4d5b-8adb-287de0022de1"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COLLABORATE COMMUNICATIONS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="45" width="522" height="20" forecolor="#FFFFFF" uuid="340d6fcf-e075-42c3-8ac6-2252f1ec7bac"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="6" y="420" width="23" height="102" forecolor="#FFFFFF" uuid="0cab6399-4530-4a1e-a5d7-2f88cd148179"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEARNING]]></text>
+			</staticText>
+			<image>
+				<reportElement x="561" y="99" width="221" height="426" uuid="2b232240-08a9-4e46-922e-abc2dc7c5db0"/>
+				<imageExpression><![CDATA["p13-1.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="35" y="130" width="255" height="30" uuid="87680e06-6216-4480-9214-6b17342337d5">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>0?"• "+$F{collaborativeCommunicationsStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="130" width="255" height="30" uuid="42b1fc4d-eed3-4151-9d58-a87a2140e87c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>6?"• "+$F{collaborativeCommunicationsStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="33" y="168" width="255" height="30" uuid="5c0ae65a-94c5-40df-a732-ecb6455a1881">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>1?"• "+$F{collaborativeCommunicationsStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="168" width="255" height="30" uuid="03538de1-e052-4a0f-ba08-edffcc857c80">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>7?"• "+$F{collaborativeCommunicationsStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="208" width="255" height="30" uuid="075e7ac6-30e0-4803-bc9e-f459a7bbf71a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>2?"• "+$F{collaborativeCommunicationsStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="208" width="255" height="30" uuid="45ed6867-f532-4a02-aa7a-26a11c00f3f0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>8?"• "+$F{collaborativeCommunicationsStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="247" width="255" height="30" uuid="66d6381a-59af-477d-8225-7b98ccad2f85">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>3?"• "+$F{collaborativeCommunicationsStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="247" width="255" height="30" uuid="e4a66a59-b66c-4176-8981-b2edd36a597b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>9?"• "+$F{collaborativeCommunicationsStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="286" width="255" height="30" uuid="e3594ca0-efd5-4423-be85-776c386fad67">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>4?"• "+$F{collaborativeCommunicationsStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="286" width="255" height="30" uuid="470d0439-446a-420a-af63-3139abab7ef2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>10?"• "+$F{collaborativeCommunicationsStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="327" width="255" height="30" uuid="90e2d83e-8253-4aa8-98d8-c41d71c583a7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>11?"• "+$F{collaborativeCommunicationsStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="327" width="255" height="30" uuid="0823bb94-5d62-4285-9de1-ba39e252e788">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>5?"• "+$F{collaborativeCommunicationsStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
