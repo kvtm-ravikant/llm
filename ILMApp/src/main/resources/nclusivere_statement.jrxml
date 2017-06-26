@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-23T21:57:58 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 4.6.0  -->
+<!-- 2017-06-26T12:50:38 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="782" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" >
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -1024,27 +1024,6 @@ development needs.]]></text>
 				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="39" y="281" width="250" height="47" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Admit you don’t know the answer when you don’t, and seek opinions from those around you.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="278" width="250" height="63" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="246" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate a knowledge and interest in other cultures.]]></text>
-			</staticText>
-			<staticText>
 				<reportElement isPrintRepeatedValues="false" x="6" y="427" width="23" height="99" forecolor="#FFFFFF" />
 				<textElement textAlignment="Center" rotation="Left">
 					<font size="16" isBold="true"/>
@@ -1054,76 +1033,18 @@ development needs.]]></text>
 			<rectangle>
 				<reportElement x="0" y="99" width="561" height="325" forecolor="#FF6633" backcolor="#FF6633" />
 			</rectangle>
-			<staticText>
-				<reportElement x="297" y="128" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Ensure that information systems that guide decision making are free of bias.]]></text>
-			</staticText>
 			<rectangle>
 				<reportElement x="36" y="434" width="525" height="93" forecolor="#FF6633" backcolor="#FF6633" />
 			</rectangle>
-			<staticText>
-				<reportElement x="39" y="207" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Acknowledge all faiths present in your workplace.]]></text>
-			</staticText>
 			<rectangle>
 				<reportElement x="0" y="434" width="36" height="93" forecolor="#000066" backcolor="#000066" />
 			</rectangle>
-			<staticText>
-				<reportElement x="297" y="213" width="250" height="63" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="125" width="250" height="46" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="172" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Be creative, flexible and look for new ways of doing things.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="278" width="250" height="63" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" />
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[DEMONSTRATING ETHICAL PRACTICE]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="326" width="250" height="46" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Exert effort to identify your own biases,
-and find ways to manage them in the
-workplace.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="164" width="250" height="46" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement isPrintRepeatedValues="false" x="6" y="437" width="23" height="87" forecolor="#FFFFFF" />
@@ -1133,44 +1054,124 @@ workplace.]]></text>
 				<text><![CDATA[LEARNING]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="39" y="242" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate a knowledge and interest in other cultures.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="277" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Admit you don’t know the answer when you don’t, and seek opinions from those around you.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="374" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="39" y="437" width="510" height="17" forecolor="#000066" />
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="297" y="344" width="250" height="49" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Within the resource groups seek real assignments that are of tangible benefit to the business.]]></text>
-			</staticText>
 			<image>
 				<reportElement x="562" y="99" width="220" height="428" />
 				<imageExpression><![CDATA["P10-1.jpg"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="36" y="130" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>0?"• "+$F{ethicalPracticeStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="130" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>6?"• "+$F{ethicalPracticeStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="169" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>1?"• "+$F{ethicalPracticeStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="169" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>7?"• "+$F{ethicalPracticeStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="207" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>2?"• "+$F{ethicalPracticeStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="207" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>8?"• "+$F{ethicalPracticeStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="244" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>9?"• "+$F{ethicalPracticeStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="244" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>3?"• "+$F{ethicalPracticeStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="282" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>10?"• "+$F{ethicalPracticeStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="282" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>4?"• "+$F{ethicalPracticeStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="321" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>11?"• "+$F{ethicalPracticeStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="321" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ethicalPracticeStmt}.size()>5?"• "+$F{ethicalPracticeStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
 		</band>
 		<band height="555">
 			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
@@ -1189,95 +1190,11 @@ workplace.]]></text>
 				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="39" y="277" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Admit you don’t know the answer when you don’t, and seek opinions from those around you.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="128" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Ensure that information systems that guide decision making are free of bias.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="344" width="250" height="49" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Within the resource groups seek real assignments that are of tangible benefit to the business.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="278" width="250" height="63" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" />
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[COMMITTMENT TO DIFFERENCE]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="326" width="250" height="48" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Exert effort to identify your own biases, and find ways to manage them in the workplace.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="242" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate a knowledge and interest in other cultures.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="172" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Be creative, flexible and look for new ways of doing things.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="164" width="250" height="46" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="213" width="250" height="63" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="376" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="125" width="250" height="46" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="207" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Acknowledge all faiths present in your workplace.]]></text>
 			</staticText>
 			<rectangle>
 				<reportElement x="0" y="432" width="36" height="93" forecolor="#000066" backcolor="#000066" />
@@ -1303,6 +1220,114 @@ workplace.]]></text>
 				<reportElement x="562" y="99" width="220" height="426" />
 				<imageExpression><![CDATA["p-11-1.jpg"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="35" y="130" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>0?"• "+$F{commitmentToDifferenceStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="131" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>6?"• "+$F{commitmentToDifferenceStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="168" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>7?"• "+$F{commitmentToDifferenceStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="167" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>1?"• "+$F{commitmentToDifferenceStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="207" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>8?"• "+$F{commitmentToDifferenceStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="206" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>2?"• "+$F{commitmentToDifferenceStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="246" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>9?"• "+$F{commitmentToDifferenceStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="245" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>3?"• "+$F{commitmentToDifferenceStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="285" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>10?"• "+$F{commitmentToDifferenceStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="284" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>4?"• "+$F{commitmentToDifferenceStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="324" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>11?"• "+$F{commitmentToDifferenceStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="323" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{commitmentToDifferenceStmt}.size()>5?"• "+$F{commitmentToDifferenceStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
 		</band>
 		<band height="555">
 			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
@@ -1317,53 +1342,11 @@ workplace.]]></text>
 				<reportElement x="0" y="99" width="561" height="312" forecolor="#A5057C" backcolor="#A5057C" />
 			</rectangle>
 			<staticText>
-				<reportElement x="297" y="160" width="250" height="46" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="208" width="250" height="63" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="277" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Admit you don’t know the answer when you don’t, and seek opinions from those around you.]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="36" y="45" width="522" height="20" forecolor="#FFFFFF" />
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="125" width="250" height="46" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="273" width="250" height="63" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="242" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate a knowledge and interest in other cultures]]></text>
 			</staticText>
 			<staticText>
 				<reportElement isPrintRepeatedValues="false" x="6" y="420" width="23" height="102" forecolor="#FFFFFF" />
@@ -1372,30 +1355,9 @@ workplace.]]></text>
 				</textElement>
 				<text><![CDATA[LEARNING]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="39" y="359" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.]]></text>
-			</staticText>
 			<rectangle>
 				<reportElement x="36" y="417" width="525" height="108" forecolor="#A5057C" backcolor="#A5057C" />
 			</rectangle>
-			<staticText>
-				<reportElement x="297" y="337" width="250" height="49" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Within the resource groups seek real assignments that are of tangible benefit to the business.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="207" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Acknowledge all faiths present in your workplace.]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" />
 				<textElement>
@@ -1404,37 +1366,118 @@ workplace.]]></text>
 				<text><![CDATA[COLLABORATIVE PRACTICE VALUES]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="297" y="125" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Ensure that information systems that guide decision making are free of bias.]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="39" y="420" width="510" height="17" forecolor="#000066" />
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="39" y="172" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Be creative, flexible and look for new ways of doing things.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="326" width="250" height="32" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Exert effort to identify your own biases, and find ways to manage them in the workplace.]]></text>
-			</staticText>
 			<image>
 				<reportElement x="562" y="99" width="220" height="426" />
 				<imageExpression><![CDATA["p12-1.jpg"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="35" y="133" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>0?"• "+$F{collaborativePracticeValuesStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="133" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>6?"• "+$F{collaborativePracticeValuesStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="171" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>1?"• "+$F{collaborativePracticeValuesStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="171" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>7?"• "+$F{collaborativePracticeValuesStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="210" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>2?"• "+$F{collaborativePracticeValuesStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="210" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>8?"• "+$F{collaborativePracticeValuesStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="249" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>3?"• "+$F{collaborativePracticeValuesStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="249" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>9?"• "+$F{collaborativePracticeValuesStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="288" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>4?"• "+$F{collaborativePracticeValuesStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="288" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>10?"• "+$F{collaborativePracticeValuesStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="38" y="328" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>5?"• "+$F{collaborativePracticeValuesStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="328" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativePracticeValuesStmt}.size()>11?"• "+$F{collaborativePracticeValuesStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
 		</band>
 		<band height="555">
 			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
@@ -1447,13 +1490,6 @@ workplace.]]></text>
 			<rectangle>
 				<reportElement x="0" y="99" width="561" height="312" forecolor="#DC9CAA" backcolor="#DC9CAA" />
 			</rectangle>
-			<staticText>
-				<reportElement x="297" y="208" width="250" height="63" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.]]></text>
-			</staticText>
 			<image>
 				<reportElement x="0" y="0" width="782" height="99" />
 				<imageExpression><![CDATA["p4-1.jpg"]]></imageExpression>
@@ -1466,46 +1502,11 @@ workplace.]]></text>
 				<text><![CDATA[SUGGESTED LEARNING & DEVELOPMENT TASKS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="297" y="160" width="250" height="46" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="27" y="101" width="522" height="22" forecolor="#000066" />
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[COLLABORATE COMMUNICATIONS]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="242" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate a knowledge and interest in other cultures.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="207" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Acknowledge all faiths present in your workplace.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="277" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Admit you don’t know the answer when you don’t, and seek opinions from those around you.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="172" width="250" height="34" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Be creative, flexible and look for new ways of doing things.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="36" y="45" width="522" height="20" forecolor="#FFFFFF" />
@@ -1521,52 +1522,118 @@ workplace.]]></text>
 				</textElement>
 				<text><![CDATA[LEARNING]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="297" y="273" width="250" height="63" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="326" width="250" height="32" forecolor="#000066" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Exert effort to identify your own biases, and find ways to manage them in the workplace.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="337" width="250" height="49" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Within the resource groups seek real assignments that are of tangible benefit to the business.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="125" width="250" height="46" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="297" y="125" width="250" height="34" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Ensure that information systems that guide decision making are free of bias.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="359" width="250" height="48" forecolor="#FFFFFF" />
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[• Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.]]></text>
-			</staticText>
 			<image>
 				<reportElement x="561" y="99" width="221" height="426" />
 				<imageExpression><![CDATA["p13-1.jpg"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="35" y="130" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>0?"• "+$F{collaborativeCommunicationsStmt}.get( 0 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="130" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>6?"• "+$F{collaborativeCommunicationsStmt}.get( 6 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="33" y="168" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>1?"• "+$F{collaborativeCommunicationsStmt}.get( 1 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="168" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>7?"• "+$F{collaborativeCommunicationsStmt}.get( 7 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="208" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>2?"• "+$F{collaborativeCommunicationsStmt}.get( 2 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="208" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>8?"• "+$F{collaborativeCommunicationsStmt}.get( 8 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="247" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>3?"• "+$F{collaborativeCommunicationsStmt}.get( 3 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="247" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>9?"• "+$F{collaborativeCommunicationsStmt}.get( 9 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="286" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>4?"• "+$F{collaborativeCommunicationsStmt}.get( 4 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="286" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>10?"• "+$F{collaborativeCommunicationsStmt}.get( 10 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="327" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>11?"• "+$F{collaborativeCommunicationsStmt}.get( 11 ):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="327" width="255" height="30" >
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{collaborativeCommunicationsStmt}.size()>5?"• "+$F{collaborativeCommunicationsStmt}.get( 5 ):""]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 </jasperReport>
