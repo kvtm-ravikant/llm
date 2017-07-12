@@ -16,8 +16,8 @@ angular
   .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when('/dashboard', '/dashboard/overview');
-//    $urlRouterProvider.otherwise('/login');
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/login');
+//    $urlRouterProvider.otherwise('/dashboard');
 
     $stateProvider
       .state('base', {

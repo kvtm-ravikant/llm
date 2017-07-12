@@ -106,6 +106,8 @@ public class ReportController {
 
 		LOGGER.debug("Received request to download PDF report");
 		LOGGER.info("Received request to download PDF report");
+		
+		boolean isValidUser = true;
 
 		List<User> userList = null;
 		User user = null;
@@ -114,8 +116,15 @@ public class ReportController {
 		
 		userList = userServices.findByWorkMail(email);
 		
-		user = userList.get(0);
-	
+		if(userList.isEmpty() || userList == null){
+			isValidUser = false;
+		}else{
+			user = userList.get(0);	
+		}
+		
+		
+		if(isValidUser){
+			
 //		assessmentList = assessmentServices.findByUserId(user.getUserId());
 //		suggestionList = suggestionServices.findByLvlId(1);
 
@@ -145,8 +154,13 @@ public class ReportController {
 
 		// pdfReport is the View of our application
 		// This is declared inside the /WEB-INF/jasper-views.xml
-		modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);
-
+			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);	
+		}
+		else{
+//			modelAndView.addObject("errorMessage", "No data found");
+			ModelAndView mav = new ModelAndView("/404");
+		}
+		
 		// Return the View and the Model combined
 		return modelAndView;
 	}
