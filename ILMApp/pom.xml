@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ilm</groupId>
 	<artifactId>ILMApp</artifactId>
-	<packaging>war</packaging>
+ 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>Inclusive Leaders Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -62,7 +62,7 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
@@ -91,7 +91,12 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
-			<version>4.5.0</version>
+			<version>6.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 	</dependencies>
 </project>

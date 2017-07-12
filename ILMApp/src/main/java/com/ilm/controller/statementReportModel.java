@@ -1,10 +1,14 @@
 package com.ilm.controller;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+
+import com.ilm.model.Message;
+import com.ilm.model.MessageFragment;
 
 public class statementReportModel {
 
@@ -31,6 +35,96 @@ public class statementReportModel {
 	private List<String> collaborativePracticeValuesStmt;
 	private List<String> collaborativeCommunicationsStmt;
 	
+	private List<Message> inclusiveLeadershipStmtList;
+	private List<Message> commercialImpactDiversityStmtList;
+	private List<Message> inclusiveTeamsandTeamworkStmtList;
+	private List<Message> inclusiveGoalsandObjectivesStmtList;
+	private List<Message> inclusiveRolesResponsibilitiesStmtList;
+	private List<Message> challengingPrejudiceStmtList;
+	private List<Message> ethicalPracticeStmtList;
+	private List<Message> commitmentToDifferenceStmtList;
+	private List<Message> collaborativePracticeValuesStmttList;
+	private List<Message> collaborativeCommunicationsStmtList;
+	
+	public List<Message> getInclusiveLeadershipStmtList() {
+		return inclusiveLeadershipStmtList;
+	}
+
+	public void setInclusiveLeadershipStmtList(List<Message> inclusiveLeadershipStmtList) {
+		this.inclusiveLeadershipStmtList = inclusiveLeadershipStmtList;
+	}
+	public List<Message> getCommercialImpactDiversityStmtList() {
+		return commercialImpactDiversityStmtList;
+	}
+
+	public void setCommercialImpactDiversityStmtList(List<Message> commercialImpactDiversityStmtList) {
+		this.commercialImpactDiversityStmtList = commercialImpactDiversityStmtList;
+	}
+
+	public List<Message> getInclusiveTeamsandTeamworkStmtList() {
+		return inclusiveTeamsandTeamworkStmtList;
+	}
+
+	public void setInclusiveTeamsandTeamworkStmtList(List<Message> inclusiveTeamsandTeamworkStmtList) {
+		this.inclusiveTeamsandTeamworkStmtList = inclusiveTeamsandTeamworkStmtList;
+	}
+
+	public List<Message> getInclusiveGoalsandObjectivesStmtList() {
+		return inclusiveGoalsandObjectivesStmtList;
+	}
+
+	public void setInclusiveGoalsandObjectivesStmtList(List<Message> inclusiveGoalsandObjectivesStmtList) {
+		this.inclusiveGoalsandObjectivesStmtList = inclusiveGoalsandObjectivesStmtList;
+	}
+
+	public List<Message> getInclusiveRolesResponsibilitiesStmtList() {
+		return inclusiveRolesResponsibilitiesStmtList;
+	}
+
+	public void setInclusiveRolesResponsibilitiesStmtList(List<Message> inclusiveRolesResponsibilitiesStmtList) {
+		this.inclusiveRolesResponsibilitiesStmtList = inclusiveRolesResponsibilitiesStmtList;
+	}
+
+	public List<Message> getChallengingPrejudiceStmtList() {
+		return challengingPrejudiceStmtList;
+	}
+
+	public void setChallengingPrejudiceStmtList(List<Message> challengingPrejudiceStmtList) {
+		this.challengingPrejudiceStmtList = challengingPrejudiceStmtList;
+	}
+
+	public List<Message> getEthicalPracticeStmtList() {
+		return ethicalPracticeStmtList;
+	}
+
+	public void setEthicalPracticeStmtList(List<Message> ethicalPracticeStmtList) {
+		this.ethicalPracticeStmtList = ethicalPracticeStmtList;
+	}
+
+	public List<Message> getCommitmentToDifferenceStmtList() {
+		return commitmentToDifferenceStmtList;
+	}
+
+	public void setCommitmentToDifferenceStmtList(List<Message> commitmentToDifferenceStmtList) {
+		this.commitmentToDifferenceStmtList = commitmentToDifferenceStmtList;
+	}
+
+	public List<Message> getCollaborativePracticeValuesStmttList() {
+		return collaborativePracticeValuesStmttList;
+	}
+
+	public void setCollaborativePracticeValuesStmttList(List<Message> collaborativePracticeValuesStmttList) {
+		this.collaborativePracticeValuesStmttList = collaborativePracticeValuesStmttList;
+	}
+
+	public List<Message> getCollaborativeCommunicationsStmtList() {
+		return collaborativeCommunicationsStmtList;
+	}
+
+	public void setCollaborativeCommunicationsStmtList(List<Message> collaborativeCommunicationsStmtList) {
+		this.collaborativeCommunicationsStmtList = collaborativeCommunicationsStmtList;
+	}
+
 	public int getId() {
 		return id;
 	}

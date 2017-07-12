@@ -113,6 +113,7 @@ public class ReportController {
 		List<Suggestion> suggestionList = null;
 		
 		userList = userServices.findByWorkMail(email);
+		
 		user = userList.get(0);
 	
 //		assessmentList = assessmentServices.findByUserId(user.getUserId());

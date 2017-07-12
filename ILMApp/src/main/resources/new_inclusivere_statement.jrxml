@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-07-11T21:26:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
+	<property name="ireport.zoom" value="0.90909090909091"/>
+	<property name="ireport.x" value="26"/>
+	<property name="ireport.y" value="1603"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="inclusiveLeadershipStmt" class="java.util.List" isForPrompting="false"/>
+	<parameter name="commercialImpactDiversityStmt" class="java.util.List" isForPrompting="false"/>
+	<parameter name="inclusiveTeamsandTeamworkStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="inclusiveGoalsandObjectivesStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="inclusiveRolesResponsibilitiesStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="challengingPrejudiceStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="ethicalPracticeStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="commitmentToDifferenceStmtList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="collaborativePracticeValuesStmttList" class="java.util.List" isForPrompting="false"/>
+        <parameter name="collaborativeCommunicationsStmtList" class="java.util.List" isForPrompting="false"/>
+	
+	<field name="firstName" class="java.lang.String"/>
+	<field name="middleName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="jobTitle" class="java.lang.String"/>
+	<field name="workEmail" class="java.lang.String"/>
+	<field name="org" class="java.lang.String"/>
+	<field name="businessUnit" class="java.lang.String"/>
+	<field name="level" class="java.lang.String"/>
+	<field name="dtCompleted" class="java.util.Date"/>
+	<field name="inclusiveLeadershipStmt" class="java.util.List"/>
+	<field name="commercialImpactDiversityStmt" class="java.util.List"/>
+	<field name="inclusiveTeamsandTeamworkStmt" class="java.util.List"/>
+	<field name="inclusiveGoalsandObjectivesStmt" class="java.util.List"/>
+	<field name="inclusiveRolesResponsibilitiesStmt" class="java.util.List"/>
+	<field name="challengingPrejudiceStmt" class="java.util.List"/>
+	<field name="ethicalPracticeStmt" class="java.util.List"/>
+	<field name="commitmentToDifferenceStmt" class="java.util.List"/>
+	<field name="collaborativePracticeValuesStmt" class="java.util.List"/>
+	<field name="collaborativeCommunicationsStmt" class="java.util.List"/>
+	<field name="inclusiveLeadershipStmtList" class="java.util.List"/>
+	<field name="commercialImpactDiversityStmtList" class="java.util.List"/>
+	<field name="inclusiveTeamsandTeamworkStmtList" class="java.util.List"/>
+        <field name="inclusiveGoalsandObjectivesStmtList" class="java.util.List"/>
+        <field name="inclusiveRolesResponsibilitiesStmtList" class="java.util.List"/>
+        <field name="challengingPrejudiceStmtList" class="java.util.List"/>
+        <field name="ethicalPracticeStmtList" class="java.util.List"/>
+        <field name="commitmentToDifferenceStmtList" class="java.util.List"/>
+        <field name="collaborativePracticeValuesStmttList" class="java.util.List"/>
+        <field name="collaborativeCommunicationsStmtList" class="java.util.List"/>
+	<detail>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="842" height="595" uuid="48d7a712-87d3-4acf-910f-66d6e7758dec"/>
+				<imageExpression><![CDATA["bg1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="291" y="542" width="480" height="53" forecolor="#FFFFFF" uuid="7d9c658e-90a8-45a2-b878-1e81df70d659"/>
+				<text><![CDATA[nclusion, 22 Upper Ground, London, SE1 9PD
++44 (0) 330 2233 548 support@inclusiveleaders.co.uk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="0" width="562" height="200" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f"/>
+				<box leftPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INCLUSIVE PERFORMANCE
+MEASURE™ REPORT]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="270" y="200" width="572" height="240" uuid="f8d04f15-4314-411d-ae9c-91e97fd781d0">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<box padding="20"/>
+				<frame>
+					<reportElement x="0" y="0" width="532" height="35" uuid="2318f427-e415-4b4e-a0a1-0e79654972de">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="35" forecolor="#FFFFFF" uuid="29aafd41-7b3f-465b-9773-0a1af1ccaaa3">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Name: ]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="35" forecolor="#FFFFFF" uuid="0c5477dc-2aae-4164-a398-29d1b692811a">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="35" width="532" height="33" uuid="638541ab-5ff7-4c18-b7c4-f301af45f1b0">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="5296d993-25fd-4053-9435-401e2d6d83e8">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Job Title:]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="0f573bdc-50f7-4cb4-8e60-868354aa0892"/>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="68" width="532" height="33" uuid="b95f9efb-3b49-4c3a-9a40-b7ff563aec6f">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="354e18df-debc-4e7e-9748-08908c8908f3">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Business Unit:]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="cc47a5d9-c02d-491e-963a-a41a6eb2c7e6">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="101" width="532" height="33" uuid="840d9079-cc34-40c4-9d70-36f45a45deb0">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="fb0afa9a-3543-44fc-b9de-9e1b0d41156a"/>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Organisation:]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="56d20b47-f379-45eb-9c80-a3ff3d4008d0">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="134" width="532" height="33" uuid="c48e7432-a7b8-4806-81ac-49f4c42ffdb9">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="af91d472-e42f-4960-8336-d38fdbb83157"/>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Level:]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="7d805d2b-6c0b-417e-8111-1273a23da69f">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="167" width="532" height="33" uuid="cfff0857-071b-4c43-a372-fd88bdc4af79">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					</reportElement>
+					<staticText>
+						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="ee267900-1ac3-4e9b-bba6-b68c60269876"/>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Date:]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="cf4d4507-73d7-4d6c-aaed-19fb2b64d7a1"/>
+						<textElement>
+							<font fontName="Arial" size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{dtCompleted}.toString()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+		<band height="595">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement mode="Opaque" x="0" y="0" width="842" height="595" uuid="76d059a4-b7a6-4656-bfd1-a34787d4eabd"/>
+				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="70" y="0" width="499" height="100" forecolor="#ED6826" uuid="6917a404-5f06-4db4-82c6-503ca2e86a79"/>
+				<box topPadding="25" leftPadding="25"/>
+				<textElement verticalAlignment="Bottom" markup="styled">
+					<font fontName="Arial" size="26" isBold="false"/>
+				</textElement>
+				<text><![CDATA[<b>Inclusive Leaders
+Measurement</b>™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="112" width="498" height="30" forecolor="#ED6826" uuid="ac6dec09-c868-4ee7-9b4d-69bf23131ec6"/>
+				<box leftPadding="25"/>
+				<textElement>
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<text><![CDATA[Introduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="150" width="498" height="444" forecolor="#FFFFFF" uuid="8d431ffd-65ef-47c6-a3b0-9d0d35d48759"/>
+				<box leftPadding="25" rightPadding="25"/>
+				<textElement markup="styled">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[<b>Aim and usage of the Inclusive Leaders Measurement ™ Report</b> 
+
+The report produced on completion of this assessment aims to obtain a better insight into a participant’s inclusive leadership behaviour in a particular working environment. On the basis of the obtained information, it is possible to make well informed decisions concerning internal and external recruitment, promotion, learning and development, training etc. The results should not be used outside of this context.
+
+The value of this report is limited in time. Its content is intended to support decision-making but at a specific time and in relation to specific criteria. It is not, therefore, advisable to use it for other purposes. It should also not be used in isolation, nor should it be the sole input into the decision making process. It should be used in conjunction with other information about the participant such as performance data and should facilitate decision making, rather than be the deciding factor. It should also be used as a basis of discussion with the participant so as to obtain their views on the points raised and to add supplementary information to these conclusions.
+
+This report is being sent to named recipients and it is each person’s responsibility to ensure this report and its contents are kept confidential and are not passed to third parties, or used for any purposes other than those specified above. The participant will recieve a copy of this report and will also have the opportunity of a further validation meeting with the consultant to review and discuss its content and identify development needs.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="96" y="102" width="460" height="1" forecolor="#ED6826" uuid="93eecb3a-3bc1-42c6-9e4d-4c65cac81704">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+		</band>
+		<band height="595">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement mode="Opaque" x="0" y="0" width="842" height="595" uuid="76d059a4-b7a6-4656-bfd1-a34787d4eabd"/>
+				<imageExpression><![CDATA["bg3.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="70" y="0" width="499" height="100" forecolor="#ED6826" uuid="6917a404-5f06-4db4-82c6-503ca2e86a79"/>
+				<box topPadding="25" leftPadding="25"/>
+				<textElement verticalAlignment="Bottom" markup="styled">
+					<font fontName="Arial" size="26" isBold="false"/>
+				</textElement>
+				<text><![CDATA[<b>Inclusion Performance
+Measure</b>™ Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="96" y="102" width="460" height="1" forecolor="#ED6826" uuid="e0f7ef71-cea8-4e92-9f3b-1a98e75b64f5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<frame>
+				<reportElement x="70" y="121" width="498" height="389" uuid="562af855-86a8-4e88-ba05-10ed7349e505">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<frame>
+					<reportElement x="0" y="0" width="498" height="30" uuid="9b7a95f3-098a-4d10-a021-e5fd070f18a5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<frame>
+						<reportElement x="160" y="0" width="334" height="30" uuid="b204ad43-60c6-4c1b-997a-4e500ee9e91a">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<staticText>
+							<reportElement x="0" y="0" width="70" height="30" uuid="f5447682-3729-4606-a5df-9980566c6b00">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Center">
+								<font fontName="Arial" size="8" isBold="true"/>
+							</textElement>
+							<text><![CDATA[VERY POOR MATCH ]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="70" y="0" width="66" height="30" uuid="c36d4879-bae5-4108-b1c8-d7b12054b7ad">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Center">
+								<font fontName="Arial" size="8" isBold="true"/>
+							</textElement>
+							<text><![CDATA[POOR
+MATCH]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="136" y="0" width="66" height="30" uuid="d969ac6a-2b21-4cd5-9d38-0705b2aab448">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Center">
+								<font fontName="Arial" size="8" isBold="true"/>
+							</textElement>
+							<text><![CDATA[AVERAGE
+MATCH]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="202" y="0" width="66" height="30" uuid="8b87c501-dcbf-4f1e-9eee-ca1205e028b2"/>
+							<textElement textAlignment="Center">
+								<font fontName="Arial" size="8" isBold="true"/>
+							</textElement>
+							<text><![CDATA[GOOD
+MATCH]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="268" y="0" width="66" height="30" uuid="9a3e9528-602c-4bed-8be0-f93a87abc8fe"/>
+							<textElement textAlignment="Center">
+								<font fontName="Arial" size="8" isBold="true"/>
+							</textElement>
+							<text><![CDATA[VERY GOOD
+MATCH]]></text>
+						</staticText>
+					</frame>
+				</frame>
+				<frame>
+					<reportElement x="0" y="35" width="498" height="30" uuid="b4cfa159-337f-44de-a80d-6fc7160e9438">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<frame>
+						<reportElement x="160" y="0" width="334" height="30" uuid="82911a5b-cfc4-47e3-98d5-5a681f3a46c3">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+						</reportElement>
+						<frame>
+							<reportElement x="0" y="0" width="334" height="15" uuid="db9f9f8a-a65b-4d2d-940a-44edf5abedb1">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<frame>
+								<reportElement x="0" y="0" width="70" height="15" uuid="378fdb54-058b-4ced-8328-f99ceabdf2f7"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="2ee8f4f7-9870-4247-a755-5859ab33a689">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="8245ad1b-455a-42fd-a788-10ef7b0fad1f">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="551d8b45-9ab3-4205-9ce9-79bc8d245641">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="0b53439b-6b62-4cdb-9a20-a9a7f2e86dca">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="70" y="0" width="66" height="15" uuid="dec8293d-47c8-40f1-8f97-49e7d348041d">
+									<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+								</reportElement>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="4f7ef587-424e-4967-bae9-1f389186d8a2">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="064485d7-c86e-4a31-abf4-5ef1c1ff0cfa">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="4a7a192c-412e-4886-8e50-4e697e33584d">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="3f88cbcb-8952-41e3-9539-3f0479b5069e">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="136" y="0" width="66" height="15" uuid="920e8811-9371-4aa2-bd3d-18caa6b493c6"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="0ffa1e92-959d-4258-9d42-617dc9fcb2af">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="0f886666-d527-4f27-9299-96e33910257d">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="9e7df407-66e1-42df-8d35-68f1ba21d6c2">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="c1b8fcda-3fc5-4218-b137-5167a5253bb1">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="202" y="0" width="66" height="15" uuid="bbdee6cc-f495-41a3-84f5-1ed6461df41a">
+									<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+								</reportElement>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="74c5325f-ea09-45aa-ba9d-5cf3109e0062">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="1fbc5ce7-2ea9-450a-a187-9a1897cf2c29">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="5b652a4f-abb2-4ffe-9054-6b73a23a7c83">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="1e03070e-4721-4d0e-884f-d42e37a28786">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="268" y="0" width="66" height="15" uuid="9900a046-2121-4d8c-97a3-782a533af6cc"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="a884a495-5d7b-4b36-b5ef-491dbd34069f">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="89f5eda8-a4c4-45b0-965b-3a7d8f1f72a7">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="bdd27a09-f4a9-497d-a5ca-b3696de17913">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="da4939cd-41b2-4118-95c1-ea6f5f4c651d">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+						</frame>
+						<frame>
+							<reportElement x="0" y="15" width="334" height="15" uuid="422c5e4a-4b95-424d-8f74-c13b52258e17">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<frame>
+								<reportElement x="0" y="0" width="70" height="15" uuid="1d86bce6-2753-463d-b12e-a752c825529e"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="0e1d7943-b842-49f0-83be-b14676e61850">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="f7e5b5ce-7108-451e-a271-cd01ff361cc3">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="65590a74-23bd-41ec-b77a-ed94bffdb157">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="c67f403c-4a01-4b29-9c1c-58309df52b4b">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="70" y="0" width="66" height="15" uuid="3b809158-fbc9-4d28-8bee-b834a93f4cd8">
+									<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+								</reportElement>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="363dfed9-f8b0-403d-b808-421d6985c745">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="25554fa8-fbd0-45eb-becc-d475cf656cca">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="0eebd0bc-e295-4498-81a2-92f697c2f56a">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="75823808-6e3e-4102-aedd-e00f6b826462">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="136" y="0" width="66" height="15" uuid="a6d06a05-03a0-4e0a-808f-d91966501dbf"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="16247741-0146-40ce-9c97-7c2512549b03">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="577f9dc9-4273-46cc-b239-50de2c4ca7cf">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="bd76b1e7-7bcd-4c57-b2ca-c4e53ad3dc7d">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="a96e85cb-452f-4034-8f63-5fcca1e335b7">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="202" y="0" width="66" height="15" uuid="5413b8d1-1498-49b7-a536-dee4e68518f6">
+									<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+								</reportElement>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="61f89bb0-f11b-4f9b-90e0-c2adf8d24091">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="288e2a5e-1eb6-4438-a0ac-68001fb58d76">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="af7c3c91-2cea-4e10-a63b-696957ed384f">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="338d6ed1-9a3e-46e9-8085-3d68c273e4e1">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+							<frame>
+								<reportElement x="268" y="0" width="66" height="15" uuid="c9d15dfb-706e-43e1-81fb-0a73805cde67"/>
+								<ellipse>
+									<reportElement x="0" y="0" width="12" height="12" backcolor="#DE201D" uuid="f6e7ec1f-e0d7-4486-8c2d-14ac4156a1ab">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="15" y="0" width="12" height="12" backcolor="#DE201D" uuid="50e98b6e-0136-4955-8452-f6e452826695">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="30" y="0" width="12" height="12" backcolor="#DE201D" uuid="a98fa302-236e-442e-8b27-e7e8dcf591fb">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+								<ellipse>
+									<reportElement x="45" y="0" width="12" height="12" backcolor="#DE201D" uuid="65e2db25-51bb-48ef-a054-f65c0b586f02">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<graphicElement>
+										<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+									</graphicElement>
+								</ellipse>
+							</frame>
+						</frame>
+					</frame>
+					<staticText>
+						<reportElement x="60" y="0" width="90" height="30" forecolor="#DE201D" backcolor="#FFFFFF" uuid="3ba97ba8-f910-41ae-a27a-a2a27ac216c6"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="Arial"/>
+						</textElement>
+						<text><![CDATA[INCLUSIVE LEADERSHIP]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="7" y="0" width="36" height="30" forecolor="#DE201D" uuid="e8949e64-9c28-4aa0-810f-f3e780bef7b4"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="22" isBold="true"/>
+						</textElement>
+						<text><![CDATA[A]]></text>
+					</staticText>
+				</frame>
+			</frame>
+			<staticText>
+				<reportElement x="96" y="520" width="444" height="40" uuid="d50a4b23-7051-404a-b737-cd8d5d38ba57"/>
+				<textElement markup="styled">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[<b>Validity of these results</b>
+RDDPM endorsed 10 items on the Inclusive Leadership Measurement Consistency Scale.
+This score indicates that the profile is valid and interpretable.]]></text>
+			</staticText>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{inclusiveLeadershipStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_inclusive_leadership_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{commercialImpactDiversityStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_commercial_impact_of_diversity_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{inclusiveTeamsandTeamworkStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_inclusive_teams_and_teamwork_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{inclusiveGoalsandObjectivesStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_inclusive_goals_and_objectives_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{inclusiveRolesResponsibilitiesStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_inclusive_roles_and_responsibilities_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{challengingPrejudiceStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_challenging_prejudice_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ethicalPracticeStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_demonstrating_ethical_practice_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{commitmentToDifferenceStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_commitment_to_difference_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{collaborativePracticeValuesStmttList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_collaborative_practice_values_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="595" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="842" height="595" uuid="66f26c67-44a0-4470-a3ae-d83313b09f84"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{collaborativeCommunicationsStmtList})]]></dataSourceExpression>
+				<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[net.sf.jasperreports.engine.JasperCompileManager.compileReport(getClass().getResource("new_collaborative_communications_subreport.jrxml").openStream())]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

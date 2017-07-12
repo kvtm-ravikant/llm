@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-07-12T16:21:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<field name="text" class="java.lang.String"/>
+	<background>
+		<band height="595">
+			<image>
+				<reportElement x="0" y="0" width="842" height="595" uuid="d4511bc2-b701-4495-9f43-5b7a25dff039"/>
+				<imageExpression><![CDATA["bg4.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="140" splitType="Prevent">
+			<frame>
+				<reportElement mode="Opaque" x="67" y="0" width="510" height="140" uuid="14343f05-9433-40bb-bd06-a057ab1635e0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="0.0" lineColor="#FFFFFF"/>
+				</box>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="30" width="500" height="70" forecolor="#00CC33" backcolor="#FFFFFF" uuid="4db1bd6e-f508-4da1-9c10-e884accd7b0a">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
+						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font fontName="Arial" size="25" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Inclusion Performance
+Measure™ Report]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="103" width="500" height="30" forecolor="#00CC33" uuid="8566f1e1-994e-4f43-a638-a33abca8e559">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box leftPadding="25"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="19"/>
+					</textElement>
+					<text><![CDATA[Inclusive Goals & Objectives]]></text>
+				</staticText>
+				<line>
+					<reportElement x="20" y="100" width="480" height="1" forecolor="#00CC33" uuid="8741043a-3011-403a-8fd8-eed5595457cf">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="1.0"/>
+					</graphicElement>
+				</line>
+			</frame>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="455" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="67" y="0" width="510" height="320" backcolor="#FFFFFF" uuid="8f41eddf-3197-4693-b62c-bcc26811ace0">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" bottomPadding="0"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement mode="Opaque" x="0" y="0" width="500" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box topPadding="10" leftPadding="25" bottomPadding="10" rightPadding="25">
+						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+					</box>
+					<textElement verticalAlignment="Top" markup="html">
+						<font fontName="Arial" size="9" isBold="false"/>
+						<paragraph lineSpacing="Double" lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement key="" positionType="Float" mode="Opaque" x="67" y="320" width="510" height="135" backcolor="#FFFFFF" uuid="056e0c36-fb0e-4eea-925e-061b68cf300c">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<staticText>
+					<reportElement mode="Opaque" x="15" y="0" width="470" height="120" isPrintInFirstWholeBand="true" forecolor="#2A3768" backcolor="#C4C2C2" uuid="10bb1a58-98f4-4aba-be9d-682a03ce7bbd"/>
+					<box topPadding="10" leftPadding="20" bottomPadding="0" rightPadding="0">
+						<pen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Top" markup="none">
+						<font fontName="Arial" size="16" isBold="true"/>
+						<paragraph lineSpacing="Single" lineSpacingSize="0.0" firstLineIndent="0"/>
+					</textElement>
+					<text><![CDATA[Learning & Development Tasks]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

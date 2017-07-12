@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-07-05T21:41:57 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="57f1fbeb-0d86-4184-af48-8b76baabfc48">
+	<property name="ireport.zoom" value="0.90909090909091"/>
+	<property name="ireport.x" value="26"/>
+	<property name="ireport.y" value="1603"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="4aa24211-4bf1-4664-8334-5b2f1e1e50df">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="name" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="inclusiveLeadershipStmt" class="java.util.List" isForPrompting="false"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="middleName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="jobTitle" class="java.lang.String"/>
+	<field name="workEmail" class="java.lang.String"/>
+	<field name="org" class="java.lang.String"/>
+	<field name="businessUnit" class="java.lang.String"/>
+	<field name="level" class="java.lang.String"/>
+	<field name="dtCompleted" class="java.util.Date"/>
+	<field name="inclusiveLeadershipStmtObj" class="java.util.List"/>
+	<field name="inclusiveLeadershipStmt" class="java.util.List"/>
+	<field name="commercialImpactDiversityStmt" class="java.util.List"/>
+	<field name="inclusiveTeamsandTeamworkStmt" class="java.util.List"/>
+	<field name="inclusiveGoalsandObjectivesStmt" class="java.util.List"/>
+	<field name="inclusiveRolesResponsibilitiesStmt" class="java.util.List"/>
+	<field name="challengingPrejudiceStmt" class="java.util.List"/>
+	<field name="ethicalPracticeStmt" class="java.util.List"/>
+	<field name="commitmentToDifferenceStmt" class="java.util.List"/>
+	<field name="collaborativePracticeValuesStmt" class="java.util.List"/>
+	<field name="collaborativeCommunicationsStmt" class="java.util.List"/>
+	<detail>
+		<band height="595" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<image>
+				<reportElement x="0" y="0" width="782" height="555" uuid="7726171f-c1cb-4a51-99b3-2355a893081f"/>
+				<imageExpression><![CDATA["Background_wide.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="425" y="8" width="349" height="204" forecolor="#FFFFFF" backcolor="#000066" uuid="09e45348-d11e-4ca2-8a01-eb912f298807"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="12" width="342" height="68" forecolor="#006699" uuid="816d96b0-4337-4244-a0da-3b17cab53e36"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders
+Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="84" width="40" height="16" forecolor="#FFFFFF" uuid="5429e2b3-c27e-4918-bfb0-9eba7c139f58">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="105" width="55" height="16" forecolor="#FFFFFF" uuid="eef5e46d-f44a-46e8-8603-db1f581503f6">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Job Title:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="127" width="86" height="16" forecolor="#FFFFFF" uuid="f7de13a3-ef56-4477-a744-677429f1ebed">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Business Unit:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="148" width="81" height="16" forecolor="#FFFFFF" uuid="531b2b52-90de-4afd-b516-f84571dd1994"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Organisation:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="169" width="36" height="16" forecolor="#FFFFFF" uuid="c231dbd3-2b9f-4600-847c-abd1f86d15b9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Level:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="190" width="40" height="16" forecolor="#FFFFFF" uuid="2dd5737a-31c6-4166-bb5e-7aee7b03bf44"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="425" y="421" width="349" height="60" forecolor="#FFFFFF" backcolor="#000066" uuid="49485d4d-a098-44fd-95ca-1d83574087f4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="425" width="342" height="53" forecolor="#FFFFFF" uuid="a007d698-c913-4185-af2f-da5170cacb1e"/>
+				<text><![CDATA[© Inclusive Leaders LLP
+22 Upper Ground, London, SE1 9PD
++44 (0) 330 2233 548
+support@inclusiveleaders.co.uk]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="468" y="86" width="280" height="16" forecolor="#FFFFFF" uuid="2375d05f-7fb5-43fd-afa5-5315530e4c26">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="107" width="260" height="16" forecolor="#FFFFFF" uuid="e7bb716f-15e7-4358-9501-0bcec9e552c2"/>
+				<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="128" width="235" height="16" forecolor="#FFFFFF" uuid="55752a2e-3d7d-4e45-a06f-9a0790d5984d">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="148" width="245" height="16" forecolor="#FFFFFF" uuid="9d7670e8-afb3-4abf-8226-38dfaf29e8bc">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="192" width="230" height="16" forecolor="#FFFFFF" uuid="b33d12fe-9292-4b95-afaf-f053f0f22558"/>
+				<textFieldExpression><![CDATA[$F{dtCompleted}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="170" width="240" height="16" forecolor="#FFFFFF" uuid="50009d2d-0540-4e0d-90f8-9c302a82b1e9">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="595">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<rectangle>
+				<reportElement x="0" y="41" width="782" height="39" forecolor="#FFFFFF" backcolor="#003399" uuid="c226a3cc-1edf-49ef-a211-a53dee46ed2a"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="782" height="43" uuid="5a84d752-6e6f-4b2a-ae75-79773c1d5549"/>
+				<imageExpression><![CDATA["header_1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="51" width="541" height="20" forecolor="#FFFFFF" uuid="a51fd5b5-93c9-4c49-a571-c1672677e49b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="80" width="588" height="446" forecolor="#FFFFFF" backcolor="#FF6600" uuid="24a5d7fc-1526-4bcc-a2af-d7b5de7a05f6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="110" width="541" height="20" forecolor="#FFFFFF" uuid="30ee2a2f-ee78-478a-93a9-07a3093dc058"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Introduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="144" width="541" height="20" forecolor="#FFFFFF" uuid="997e3481-7758-4939-bc9b-addf75351507"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Aim and usage of the Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="180" width="541" height="80" forecolor="#FFFFFF" uuid="8faccc42-473c-4fb5-aa1c-5e26aa07a207"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The report produced on completion of this assessment aims to obtain a better insight into a
+participant’s inclusive leadership behaviour in a particular working environment. On the basis of
+the obtained information, it is possible to make well informed decisions concerning internal and
+external recruitment, promotion, learning and development, training etc. The results should not
+be used outside of this context.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="270" width="541" height="109" forecolor="#FFFFFF" uuid="6c66b8d2-5cf0-45fd-9a3f-1fcdec5993f2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The value of this report is limited in time. Its content is intended to support decision-making
+but at a specific time and in relation to specific criteria. It is not, therefore, advisable to use it for
+other purposes. It should also not be used in isolation, nor should it be the sole input into the
+decision making process. It should be used in conjunction with other information about the
+participant such as performance data and should facilitate decision making, rather than be the
+deciding factor. It should also be used as a basis of discussion with the participant so as to obtain
+their views on the points raised and to add supplementary information to these conclusions.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="390" width="541" height="47" forecolor="#FFFFFF" uuid="27146fa8-e2da-4db2-b800-78ea635a0a71"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[This report is being sent to named recipients and it is each person’s responsibility to ensure this
+report and its contents are kept confidential and are not passed to third parties, or used for any
+purposes other than those specified above.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="450" width="541" height="47" forecolor="#FFFFFF" uuid="c240f168-6415-4e95-a95c-fd3b61fcd23b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The participant will recieve a copy of this report and will also have the opportunity of a further
+validation meeting wiht the consultant to review and discuss its content and identify
+development needs.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="588" y="80" width="194" height="446" uuid="feb9ba71-7b19-4256-aaa0-5834a758901a"/>
+				<imageExpression><![CDATA["page_2.jpg"]]></imageExpression>
+			</image>
+		</band>
+		<band height="595" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+			<componentElement>
+				<reportElement x="0" y="0" width="250" height="595" forecolor="#FFFFFF" uuid="ee3f629a-bb36-475d-bc9a-2c7b98dd9167">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="2bbe44ea-2023-46c2-bed5-3bd7aa0c26c1">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource
+                  	($F{inclusiveLeadershipStmtObj})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="250" uuid="746f7521-e6b7-44c3-881f-fe13deadd24f">
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="250" height="30" uuid="069a2737-cbb0-416d-bd78-8de3fb8696f7"/>
+								<box leftPadding="15"/>
+								<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,10 +1,14 @@
 package com.ilm.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
+import com.ilm.model.Message;
+//import com.ilm.model.MessageFragment;
 import com.ilm.model.User;
 
 import net.sf.jasperreports.engine.JRDataSource;
@@ -112,6 +116,47 @@ public class statementReportDao {
 		stData.setCollaborativePracticeValuesStmt(pageNineData);
 		stData.setCollaborativeCommunicationsStmt(pageTenData);
 		
+		
+		List<Message> inclusiveLeadershipStmtObjList = new ArrayList<Message>();
+		inclusiveLeadershipStmtObjList.add(new Message(divideMessageForOneColumnsLayout(pageOneData)));
+		stData.setInclusiveLeadershipStmtList(inclusiveLeadershipStmtObjList);
+		
+		List<Message> commercialImpactDiversityStmtList = new ArrayList<Message>();
+		commercialImpactDiversityStmtList.add(new Message(divideMessageForOneColumnsLayout(pageTwoData)));
+		stData.setCommercialImpactDiversityStmtList(commercialImpactDiversityStmtList);
+		
+		List<Message> inclusiveTeamsandTeamworkStmtList = new ArrayList<Message>();
+		inclusiveTeamsandTeamworkStmtList.add(new Message(divideMessageForOneColumnsLayout(pageThreeData)));
+		stData.setInclusiveTeamsandTeamworkStmtList(inclusiveTeamsandTeamworkStmtList);
+		
+		List<Message> inclusiveGoalsandObjectivesStmtList = new ArrayList<Message>();
+		inclusiveGoalsandObjectivesStmtList.add(new Message(divideMessageForOneColumnsLayout(pageFourData)));
+		stData.setInclusiveGoalsandObjectivesStmtList(inclusiveGoalsandObjectivesStmtList);
+		
+		List<Message> inclusiveRolesResponsibilitiesStmtList = new ArrayList<Message>();
+		inclusiveRolesResponsibilitiesStmtList.add(new Message(divideMessageForOneColumnsLayout(pageFiveData)));
+		stData.setInclusiveRolesResponsibilitiesStmtList(inclusiveRolesResponsibilitiesStmtList);
+		
+		List<Message> challengingPrejudiceStmtList = new ArrayList<Message>();
+		challengingPrejudiceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSixData)));
+		stData.setChallengingPrejudiceStmtList(challengingPrejudiceStmtList);
+		
+		List<Message> ethicalPracticeStmtList = new ArrayList<Message>();
+		ethicalPracticeStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSevenData)));
+		stData.setEthicalPracticeStmtList(ethicalPracticeStmtList);
+		
+		List<Message> commitmentToDifferenceStmtList = new ArrayList<Message>();
+		commitmentToDifferenceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageEightData)));
+		stData.setCommitmentToDifferenceStmtList(commitmentToDifferenceStmtList);
+		
+		List<Message> collaborativePracticeValuesStmttList = new ArrayList<Message>();
+		collaborativePracticeValuesStmttList.add(new Message(divideMessageForOneColumnsLayout(pageEightData)));
+		stData.setCollaborativePracticeValuesStmttList(collaborativePracticeValuesStmttList);
+		
+		List<Message> collaborativeCommunicationsStmtList = new ArrayList<Message>();
+		collaborativeCommunicationsStmtList.add(new Message(divideMessageForOneColumnsLayout(pageEightData)));
+		stData.setCollaborativeCommunicationsStmtList(collaborativeCommunicationsStmtList);
+		
 		LOGGER.info("stData :"+stData.toString());
 
 		stmtReportList.add(stData);
@@ -123,5 +168,69 @@ public class statementReportDao {
 		// Return the wrapped collection
 		return ds;
 	}
-
+	private String divideMessageForOneColumnsLayout(List<String> stmtList){
+		String mf = "";
+		for(String stmt : stmtList){
+			mf += wrapInBulletTag(stmt);
+		}
+		return mf;
+	}
+	
+//	private MessageFragment divideMessageForTwoColumnsLayout(List<String> stmtList){
+//		Map<Integer, MessageFragment> pageMap = new HashMap<Integer, MessageFragment>();
+//		Integer currentPage = 0;
+//		pageMap.put(currentPage, new MessageFragment("",""));
+//		for(String stmt : stmtList){
+//			if(moveToNextPage(pageMap, currentPage)){
+//				currentPage++;
+//				pageMap.put(currentPage, new MessageFragment("",""));
+//			}
+//			if(moveToRight(pageMap,currentPage)){
+//				MessageFragment mf = (MessageFragment) pageMap.get(currentPage);
+//				mf.setSecondHalfFragment(mf.getSecondHalfFragment()+wrapInBulletTag(stmt));
+//			}
+//			else{
+//				MessageFragment mf = (MessageFragment) pageMap.get(currentPage);
+//				mf.setFirstHalfFragment(mf.getFirstHalfFragment()+wrapInBulletTag(stmt));
+//			}
+//		}
+//		String left = "";
+//		String right = "";
+//		for(MessageFragment mf : pageMap.values()){
+//			left+=mf.getFirstHalfFragment();
+//			right+=mf.getSecondHalfFragment();
+//		}
+//		MessageFragment mf = new MessageFragment(left,right);
+//		return mf;
+//	}
+//	
+//	private Boolean moveToNextPage(Map pageMap, Integer currentPage){
+//		MessageFragment mf = (MessageFragment) pageMap.get(currentPage);
+//		if(mf.getFirstHalfFragment().length() + mf.getSecondHalfFragment().length() >= 300 )
+//			return true;
+//		else
+//			return false;
+//	}
+//	
+//	private Boolean moveToRight(Map pageMap, Integer currentPage){
+//		MessageFragment mf = (MessageFragment) pageMap.get(currentPage);
+//		if(mf.getFirstHalfFragment().length() >= 150)
+//			return true;
+//		return false;
+//	}
+	
+	private String generateStyledText(List<String> stmtList){
+		String formattedText = "";
+		for(String stmt : stmtList){
+			formattedText+=wrapInBulletTag(stmt);
+		}
+		return formattedText;
+	}
+	private String wrapInBulletTag(String s){
+		return "<li>" +s + "</li>";
+	}
+	
+	private String addNewLine(String s){
+		return s + "<br/>";
+	}
 }

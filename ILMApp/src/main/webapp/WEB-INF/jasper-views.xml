@@ -23,8 +23,6 @@
 		
 	<bean id="ilm_statement_pdfReport"
 		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
-		p:url="classpath:nclusivere_statement.jrxml"
+		p:url="classpath:new_inclusivere_statement.jrxml"
 		p:reportDataKey="datasource" />
-		
-		
 </beans>
