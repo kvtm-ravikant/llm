@@ -36,6 +36,9 @@ public class statementReportModel {
 	private List<String> collaborativeCommunicationsStmt;
 	
 	private List<Message> inclusiveLeadershipStmtList;
+	//private List<Message> inclusiveLeadershipStmtLeftList;
+	//private List<Message> inclusiveLeadershipStmtRightList;
+	
 	private List<Message> commercialImpactDiversityStmtList;
 	private List<Message> inclusiveTeamsandTeamworkStmtList;
 	private List<Message> inclusiveGoalsandObjectivesStmtList;
@@ -53,6 +56,23 @@ public class statementReportModel {
 	public void setInclusiveLeadershipStmtList(List<Message> inclusiveLeadershipStmtList) {
 		this.inclusiveLeadershipStmtList = inclusiveLeadershipStmtList;
 	}
+	
+	/*public List<Message> getInclusiveLeadershipStmtLeftList() {
+		return inclusiveLeadershipStmtLeftList;
+	}
+
+	public void setInclusiveLeadershipStmtLeftList(List<Message> inclusiveLeadershipStmtLeftList) {
+		this.inclusiveLeadershipStmtLeftList = inclusiveLeadershipStmtLeftList;
+	}
+
+	public List<Message> getInclusiveLeadershipStmtRightList() {
+		return inclusiveLeadershipStmtRightList;
+	}
+
+	public void setInclusiveLeadershipStmtRightList(List<Message> inclusiveLeadershipStmtRightList) {
+		this.inclusiveLeadershipStmtRightList = inclusiveLeadershipStmtRightList;
+	}*/
+
 	public List<Message> getCommercialImpactDiversityStmtList() {
 		return commercialImpactDiversityStmtList;
 	}

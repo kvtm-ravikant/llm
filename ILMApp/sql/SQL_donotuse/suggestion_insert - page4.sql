@@ -1,5 +1,5 @@
 -- truncate table suggestion_master_table;
--- PAGE - 4 : INCLUSIVE LEADERSHIP :
+-- PAGE - 4 : INCLUSIVE GOALS AND OBJECTIVES :
 ---------------------------------------------------------------------
 -- LEVEL 1 : Question Id - 16 to 24
 ---------------------------------------------------------------------

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="Raleway">
+		<normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/Raleway-ExtraBold.ttf]]></bold>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+</fontFamilies>

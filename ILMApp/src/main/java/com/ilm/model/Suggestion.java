@@ -30,7 +30,16 @@ public class Suggestion {
 
 	@Column(name = "suggestion")
 	private String suggestion;
-
+	
+	@Column(name = "report_type")
+	private String reportType;
+	
+	@Column(name = "left_suggestion")
+	private String leftSuggestion;
+	
+	@Column(name = "right_suggestion")
+	private String rightSuggestion;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -78,6 +87,30 @@ public class Suggestion {
 
 	public void setSuggestion(String suggestion) {
 		this.suggestion = suggestion;
+	}
+
+	public String getReportType() {
+		return reportType;
+	}
+
+	public void setReportType(String reportType) {
+		this.reportType = reportType;
+	}
+
+	public String getLeftSuggestion() {
+		return leftSuggestion;
+	}
+
+	public void setLeftSuggestion(String leftSuggestion) {
+		this.leftSuggestion = leftSuggestion;
+	}
+
+	public String getRightSuggestion() {
+		return rightSuggestion;
+	}
+
+	public void setRightSuggestion(String rightSuggestion) {
+		this.rightSuggestion = rightSuggestion;
 	}
 
 	@Override

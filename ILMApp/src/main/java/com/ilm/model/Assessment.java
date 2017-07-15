@@ -49,6 +49,9 @@ public class Assessment {
 	@Column(name = "score")
 	private Integer score;
 
+	@Column(name = "report_type")
+	private String reportType;
+
 	public int getId() {
 		return id;
 	}
@@ -120,6 +123,15 @@ public class Assessment {
 	public void setScore(Integer score) {
 		this.score = score;
 	}
+	
+	public String getReportType() {
+		return reportType;
+	}
+
+	public void setReportType(String reportType) {
+		this.reportType = reportType;
+	}
+
 
 	@Override
 	public String toString() {

@@ -54,6 +54,8 @@ public class SuggestionDaoImpl implements SuggestionDao {
 	public List<Object[]> findUserAssessmentStatement(Integer id) {
 		// TODO Auto-generated method stub
 		session = sessionFactory.openSession();
+		
+		
 //		Query query = session.createSQLQuery("select sgg.* from suggestion_master_table sgg, assessment_table ass "
 //				+ " where ass.question_id = sgg.question_id " + " and ass.option_id = sgg.option_id ");
 
@@ -61,9 +63,12 @@ public class SuggestionDaoImpl implements SuggestionDao {
 				+ " from assessment_table ass, user_table usr, suggestion_master_table sgg"
 				+ " where ass.user_id = usr.user_id"
 				+ " and ass.question_id = sgg.question_id"
+				+ " and ass.report_type = sgg.report_type"
 				+ " and usr.assessment_level = sgg.level_id"
 				+ " and ass.option_id<4"
 				+ " and usr.user_id = "+id);
+		
+		LOGGER.info("findUserAssessmentStatement QUERY \n "+query.toString());
 		
 		List<Object[]> dataList = query.list();
 		/*for (Object[] row : dataList) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-12T23:46:01 -->
+<!-- 2017-07-14T16:42:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -71,7 +71,7 @@
 				<reportElement x="270" y="0" width="562" height="200" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f"/>
 				<box leftPadding="10"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Arial" size="40" isBold="true"/>
+					<font fontName="Raleway" size="40" isBold="true"/>
 				</textElement>
 				<text><![CDATA[INCLUSIVE PERFORMANCE
 MEASURE™ REPORT]]></text>
