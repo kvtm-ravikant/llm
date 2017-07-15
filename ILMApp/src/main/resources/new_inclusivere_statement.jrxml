@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-15T13:04:37 -->
+<!-- 2017-07-15T13:15:04 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -269,6 +269,7 @@
 				<box leftPadding="25" rightPadding="25"/>
 				<textElement markup="styled">
 					<font fontName="RalewayMedium" size="10" isBold="true"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[The report produced on completion of this assessment aims to obtain a better insight into a participant’s inclusive leadership behaviour in a particular working environment. On the basis of the obtained information, it is possible to make well informed decisions concerning internal and external recruitment, promotion, learning and development, training etc. The results should not be used outside of this context.
 
