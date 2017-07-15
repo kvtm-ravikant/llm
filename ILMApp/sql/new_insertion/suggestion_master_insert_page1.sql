@@ -11,8 +11,7 @@ VALUES
 (1,3,1,1,'', 'A', '', ''),
 (1,4,1,1,'', 'A', '', ''),
 (1,5,1,1,'', 'A', '', ''),
-(1,6,1,1,'', 'A', '', 'views can influence behaviour towards others.<br><li>Ensure that information systems that guide decision making are free of bias.</li><li>Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.</li><li>Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.</li><li>Create employee resource groups, or
-networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).</li><li>Within the resource groups seek real assignments that are of tangible benefit to the business.</li>');
+(1,6,1,1,'', 'A', '', 'views can influence behaviour towards others.<li>Ensure that information systems that guide decision making are free of bias.</li><li>Select the right communication tool for the right task, and not necessarily the most efficient one best suited to your work habits.</li><li>Get involved in mentoring another person who requires support within the business, or seek mentoring to develop a new skill that is of interest and use.</li><li>Create employee resource groups, or networks of employees who share an affiliation (such as women, ethnic minorities, or young professionals).</li><li>Within the resource groups seek real assignments that are of tangible benefit to the business.</li>');
 commit;
 
 ---------------------------------------------------------------------
