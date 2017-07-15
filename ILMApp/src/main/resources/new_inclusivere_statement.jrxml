@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-14T16:42:59 -->
+<!-- 2017-07-15T13:04:37 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -64,17 +64,20 @@
 			</image>
 			<staticText>
 				<reportElement x="291" y="542" width="480" height="53" forecolor="#FFFFFF" uuid="7d9c658e-90a8-45a2-b878-1e81df70d659"/>
+				<textElement>
+					<font fontName="Raleway" size="10"/>
+				</textElement>
 				<text><![CDATA[nclusion, 22 Upper Ground, London, SE1 9PD
 +44 (0) 330 2233 548 support@inclusiveleaders.co.uk]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="270" y="0" width="562" height="200" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f"/>
+				<reportElement x="270" y="50" width="562" height="50" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f"/>
 				<box leftPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Raleway" size="40" isBold="true"/>
 				</textElement>
 				<text><![CDATA[INCLUSIVE PERFORMANCE
-MEASURE™ REPORT]]></text>
+]]></text>
 			</staticText>
 			<frame>
 				<reportElement x="270" y="200" width="572" height="240" uuid="f8d04f15-4314-411d-ae9c-91e97fd781d0">
@@ -92,7 +95,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Name: ]]></text>
 					</staticText>
@@ -101,7 +104,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
 					</textField>
@@ -115,14 +118,14 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Job Title:]]></text>
 					</staticText>
 					<textField>
 						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="0f573bdc-50f7-4cb4-8e60-868354aa0892"/>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
 					</textField>
@@ -136,7 +139,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Business Unit:]]></text>
 					</staticText>
@@ -145,7 +148,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
 					</textField>
@@ -157,7 +160,7 @@ MEASURE™ REPORT]]></text>
 					<staticText>
 						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="fb0afa9a-3543-44fc-b9de-9e1b0d41156a"/>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Organisation:]]></text>
 					</staticText>
@@ -166,7 +169,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
 					</textField>
@@ -178,7 +181,7 @@ MEASURE™ REPORT]]></text>
 					<staticText>
 						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="af91d472-e42f-4960-8336-d38fdbb83157"/>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Level:]]></text>
 					</staticText>
@@ -187,7 +190,7 @@ MEASURE™ REPORT]]></text>
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
 					</textField>
@@ -199,19 +202,41 @@ MEASURE™ REPORT]]></text>
 					<staticText>
 						<reportElement x="0" y="0" width="130" height="33" forecolor="#FFFFFF" uuid="ee267900-1ac3-4e9b-bba6-b68c60269876"/>
 						<textElement>
-							<font fontName="Arial" size="14" isBold="true"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<text><![CDATA[Date:]]></text>
 					</staticText>
 					<textField>
 						<reportElement x="130" y="0" width="402" height="33" forecolor="#FFFFFF" uuid="cf4d4507-73d7-4d6c-aaed-19fb2b64d7a1"/>
 						<textElement>
-							<font fontName="Arial" size="14"/>
+							<font fontName="RalewaySemibold" size="14" isBold="true"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{dtCompleted}.toString()]]></textFieldExpression>
 					</textField>
 				</frame>
 			</frame>
+			<staticText>
+				<reportElement x="270" y="100" width="250" height="50" forecolor="#FFFFFF" uuid="93bdd346-80f4-4afa-bcac-b276aa365f05">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Raleway" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MEASURE™]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="100" width="255" height="50" forecolor="#FFFFFF" uuid="0d3414b8-33fa-4fa8-98ef-472bba34d216">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Raleway" size="40" isBold="false"/>
+				</textElement>
+				<text><![CDATA[REPORT]]></text>
+			</staticText>
 		</band>
 		<band height="595">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -221,13 +246,12 @@ MEASURE™ REPORT]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="0" width="499" height="100" forecolor="#ED6826" uuid="6917a404-5f06-4db4-82c6-503ca2e86a79"/>
+				<reportElement x="70" y="0" width="499" height="60" forecolor="#ED6826" uuid="6917a404-5f06-4db4-82c6-503ca2e86a79"/>
 				<box topPadding="25" leftPadding="25"/>
 				<textElement verticalAlignment="Bottom" markup="styled">
-					<font fontName="Arial" size="26" isBold="false"/>
+					<font fontName="Raleway" size="25" isBold="true"/>
 				</textElement>
-				<text><![CDATA[<b>Inclusive Leaders
-Measurement</b>™ Report]]></text>
+				<text><![CDATA[Inclusive Leaders]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="70" y="112" width="498" height="30" forecolor="#ED6826" uuid="ac6dec09-c868-4ee7-9b4d-69bf23131ec6"/>
@@ -238,14 +262,15 @@ Measurement</b>™ Report]]></text>
 				<text><![CDATA[Introduction]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="150" width="498" height="444" forecolor="#FFFFFF" uuid="8d431ffd-65ef-47c6-a3b0-9d0d35d48759"/>
+				<reportElement x="70" y="175" width="498" height="414" forecolor="#FFFFFF" uuid="8d431ffd-65ef-47c6-a3b0-9d0d35d48759">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
 				<textElement markup="styled">
-					<font fontName="Arial" size="12"/>
+					<font fontName="RalewayMedium" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[<b>Aim and usage of the Inclusive Leaders Measurement ™ Report</b> 
-
-The report produced on completion of this assessment aims to obtain a better insight into a participant’s inclusive leadership behaviour in a particular working environment. On the basis of the obtained information, it is possible to make well informed decisions concerning internal and external recruitment, promotion, learning and development, training etc. The results should not be used outside of this context.
+				<text><![CDATA[The report produced on completion of this assessment aims to obtain a better insight into a participant’s inclusive leadership behaviour in a particular working environment. On the basis of the obtained information, it is possible to make well informed decisions concerning internal and external recruitment, promotion, learning and development, training etc. The results should not be used outside of this context.
 
 The value of this report is limited in time. Its content is intended to support decision-making but at a specific time and in relation to specific criteria. It is not, therefore, advisable to use it for other purposes. It should also not be used in isolation, nor should it be the sole input into the decision making process. It should be used in conjunction with other information about the participant such as performance data and should facilitate decision making, rather than be the deciding factor. It should also be used as a basis of discussion with the participant so as to obtain their views on the points raised and to add supplementary information to these conclusions.
 
@@ -256,6 +281,43 @@ This report is being sent to named recipients and it is each person’s responsi
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 			</line>
+			<staticText>
+				<reportElement x="70" y="30" width="221" height="60" forecolor="#ED6826" uuid="e6b624de-bc4c-4ce6-8421-a365274473fe">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box topPadding="25" leftPadding="25"/>
+				<textElement verticalAlignment="Bottom" markup="styled">
+					<font fontName="Raleway" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Measurement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="30" width="200" height="60" forecolor="#ED6826" uuid="da67720f-b0f0-4ae7-93c0-1ad7684261ae">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box topPadding="25" leftPadding="25"/>
+				<textElement verticalAlignment="Bottom" markup="styled">
+					<font fontName="RalewayMedium" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[™ Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="145" width="498" height="25" forecolor="#FFFFFF" uuid="25d732d1-d7b8-43af-9b15-8b2c09deb2db">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="25"/>
+				<textElement>
+					<font fontName="RalewayBold" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aim and usage of the Inclusive Leaders Measurement ™ Report]]></text>
+			</staticText>
 		</band>
 		<band height="595">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>

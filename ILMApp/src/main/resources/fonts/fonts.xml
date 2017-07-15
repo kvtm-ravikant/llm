@@ -5,4 +5,22 @@
 		<bold><![CDATA[fonts/Raleway-ExtraBold.ttf]]></bold>
 		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
 	</fontFamily>
+	
+	<fontFamily name="RalewayBold">
+		<normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/Raleway-Bold.ttf]]></bold>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	
+	<fontFamily name="RalewaySemibold">
+		<normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/Raleway-SemiBold.ttf]]></bold>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	
+	<fontFamily name="RalewayMedium">
+		<normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
+		<bold><![CDATA[fonts/Raleway-Medium.ttf]]></bold>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
 </fontFamilies>

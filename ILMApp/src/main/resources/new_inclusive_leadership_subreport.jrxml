@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-15T11:51:25 -->
+<!-- 2017-07-15T12:06:29 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -79,7 +79,7 @@ Measure™ Report]]></text>
 				</reportElement>
 				<box topPadding="0" bottomPadding="0"/>
 				<textField isStretchWithOverflow="true">
-					<reportElement mode="Opaque" x="0" y="0" width="245" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
+					<reportElement mode="Opaque" x="0" y="0" width="250" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
@@ -93,7 +93,7 @@ Measure™ Report]]></text>
 					<textFieldExpression><![CDATA[$F{leftText}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
-					<reportElement mode="Opaque" x="250" y="0" width="245" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="a87b106e-7f22-426e-914b-b9eabcf66ade">
+					<reportElement mode="Opaque" x="250" y="0" width="250" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="a87b106e-7f22-426e-914b-b9eabcf66ade">
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
