@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-16T15:40:16 -->
+<!-- 2017-07-16T23:28:29 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -103,7 +103,7 @@ Measure</b>™ Report]]></text>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<staticText>
-					<reportElement mode="Transparent" x="0" y="0" width="480" height="120" isPrintInFirstWholeBand="true" forecolor="#2A3768" backcolor="#FFFFFF" uuid="10bb1a58-98f4-4aba-be9d-682a03ce7bbd"/>
+					<reportElement mode="Transparent" x="0" y="0" width="480" height="120" isPrintInFirstWholeBand="true" forecolor="#2A3768" backcolor="#E6E3E3" uuid="10bb1a58-98f4-4aba-be9d-682a03ce7bbd"/>
 					<box topPadding="10" leftPadding="28" bottomPadding="0" rightPadding="0">
 						<pen lineWidth="0.0"/>
 					</box>
