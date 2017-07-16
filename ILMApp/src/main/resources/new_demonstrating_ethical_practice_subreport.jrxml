@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-15T11:32:49 -->
+<!-- 2017-07-16T23:15:52 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -78,31 +78,29 @@ Measure™ Report]]></text>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box topPadding="0" bottomPadding="0"/>
-				<textField isStretchWithOverflow="true">
-					<reportElement mode="Opaque" x="0" y="0" width="245" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="240" height="320" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
-					<box topPadding="10" leftPadding="25" bottomPadding="10" rightPadding="25">
+					<box topPadding="10" leftPadding="8" bottomPadding="0" rightPadding="0">
 						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
 					</box>
-					<textElement verticalAlignment="Top" markup="html">
-						<font fontName="Arial" size="9" isBold="false"/>
-						<paragraph lineSpacing="Double" lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
+					<textElement verticalAlignment="Top" markup="styled">
+						<font fontName="Raleway" size="10" isBold="false"/>
+						<paragraph lineSpacing="Fixed" lineSpacingSize="12.0" firstLineIndent="-10" leftIndent="25" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{leftText}]]></textFieldExpression>
 				</textField>
-				<textField isStretchWithOverflow="true">
-					<reportElement mode="Opaque" x="250" y="0" width="245" height="320" isPrintInFirstWholeBand="true" forecolor="#665F5F" backcolor="#FFFFFF" uuid="1caa80a7-cc81-4d07-9ee4-8b5f7356ad42">
-						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				<textField>
+					<reportElement mode="Opaque" x="240" y="0" width="240" height="320" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF" uuid="23ba1dfe-8891-46d4-8d1c-31a56d3ea995">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<box topPadding="10" leftPadding="25" bottomPadding="10" rightPadding="25">
+					<box topPadding="10" leftPadding="8" bottomPadding="0" rightPadding="0">
 						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
 					</box>
-					<textElement verticalAlignment="Top" markup="html">
-						<font fontName="Arial" size="9" isBold="false"/>
-						<paragraph lineSpacing="Double" lineSpacingSize="0.0" firstLineIndent="0" leftIndent="0" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
+					<textElement verticalAlignment="Top" markup="styled">
+						<font fontName="Raleway" size="10" isBold="false"/>
+						<paragraph lineSpacing="Fixed" lineSpacingSize="12.0" firstLineIndent="-10" leftIndent="25" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{rightText}]]></textFieldExpression>
 				</textField>
@@ -114,12 +112,12 @@ Measure™ Report]]></text>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<staticText>
-					<reportElement mode="Opaque" x="15" y="0" width="470" height="120" isPrintInFirstWholeBand="true" forecolor="#2A3768" backcolor="#C4C2C2" uuid="10bb1a58-98f4-4aba-be9d-682a03ce7bbd"/>
+					<reportElement mode="Opaque" x="15" y="0" width="470" height="120" isPrintInFirstWholeBand="true" forecolor="#2A3768" backcolor="#E6E3E3" uuid="10bb1a58-98f4-4aba-be9d-682a03ce7bbd"/>
 					<box topPadding="10" leftPadding="20" bottomPadding="0" rightPadding="0">
 						<pen lineWidth="0.0"/>
 					</box>
 					<textElement verticalAlignment="Top" markup="none">
-						<font fontName="Arial" size="16" isBold="true"/>
+						<font fontName="Raleway SemiBold" size="18" isBold="false"/>
 						<paragraph lineSpacing="Single" lineSpacingSize="0.0" firstLineIndent="0"/>
 					</textElement>
 					<text><![CDATA[Learning & Development Tasks]]></text>

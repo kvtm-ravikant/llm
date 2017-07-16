@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fontFamilies>
+ <fontFamily name="Raleway">
+  <normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
+  <bold><![CDATA[fonts/Raleway-Bold.ttf]]></bold>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
+ <fontFamily name="Raleway Bold">
+  <normal><![CDATA[fonts/Raleway-Bold.ttf]]></normal>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
+ <fontFamily name="Raleway ExtraBold">
+  <normal><![CDATA[fonts/Raleway-ExtraBold.ttf]]></normal>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
+ <fontFamily name="Raleway Medium">
+  <normal><![CDATA[fonts/Raleway-Medium.ttf]]></normal>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
+ <fontFamily name="Raleway SemiBold">
+  <normal><![CDATA[fonts/Raleway-SemiBold.ttf]]></normal>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
+</fontFamilies>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
 	<fontFamily name="Raleway">
 		<normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
 		<bold><![CDATA[fonts/Raleway-ExtraBold.ttf]]></bold>
@@ -23,4 +52,4 @@
 		<bold><![CDATA[fonts/Raleway-Medium.ttf]]></bold>
 		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
 	</fontFamily>
-</fontFamilies>
+</fontFamilies> -->

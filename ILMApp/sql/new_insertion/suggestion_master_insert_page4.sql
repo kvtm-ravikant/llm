@@ -1,3 +1,7 @@
+SET SQL_SAFE_UPDATES = 0;
+delete from suggestion_master_table
+where page_id =4;
+commit;
 -- PAGE - 4 : INCLUSIVE GOALS AND OBJECTIVES : 16 - 24
 ---------------------------------------------------------------------
 -- LEVEL 1
@@ -13,9 +17,7 @@ VALUES
 (4,21,1,1,'', 'A', '', ''),
 (4,22,1,1,'', 'A', '', ''),
 (4,23,1,1,'', 'A', '', ''),
-(4,24,1,1,'', 'A', '', '<li>seek mentoring to develop a new skill that is of interest and use.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to
-different ideas.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Model and promotes a culture of respect,
-fairness and trust where people feel appreciated and valued for their unique contribution.</li><li>Demonstrates openness to others’ ideas or to being influenced about another person (e.g., believing that others have something valuable to say or offer, no matter what position(s) they hold).</li><li>Facilitate open and honest dialogue and create a safe environment to learn, give and receive feedback.</li>');
+(4,24,1,1,'', 'A', '', '   seek mentoring to develop a new skill that is of interest and use.<li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Model and promotes a culture of respect, fairness and trust where people feel appreciated and valued for their unique contribution.</li><li>Demonstrates openness to others’ ideas or to being influenced about another person (e.g., believing that others have something valuable to say or offer, no matter what position(s) they hold).</li><li>Facilitate open and honest dialogue and create a safe environment to learn, give and receive feedback.</li>');
 commit;
 
 ---------------------------------------------------------------------

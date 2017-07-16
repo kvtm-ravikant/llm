@@ -1,3 +1,7 @@
+SET SQL_SAFE_UPDATES = 0;
+delete from suggestion_master_table
+where page_id =6;
+commit;
 -- PAGE - 6 : CHALLENGING PREJUDICE : 31 - 36
 ---------------------------------------------------------------------
 -- LEVEL 1

@@ -1,4 +1,7 @@
--- truncate table suggestion_master_table;
+SET SQL_SAFE_UPDATES = 0;
+delete from suggestion_master_table
+where page_id =2;
+commit;
 -- PAGE - 2 : COMMERCIAL IMPACT DIVERSITY: 7 - 9
 ---------------------------------------------------------------------
 -- LEVEL 1

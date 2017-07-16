@@ -1,4 +1,7 @@
-
+SET SQL_SAFE_UPDATES = 0;
+delete from suggestion_master_table
+where page_id =7;
+commit;
 -- PAGE - 7 : INCLUSIVE LEADERSHIP : 37 - 41
 ---------------------------------------------------------------------
 -- LEVEL 1
@@ -10,7 +13,7 @@ VALUES
 (7,38,1,1,'', 'A', '', ''),
 (7,39,1,1,'', 'A', '', ''),
 (7,40,1,1,'', 'A', '', ''),
-(7,41,1,1,'', 'A', '', '</li>trusted with it.</li><li>Learn what team members do best and work out how to maximise each other’s skills to team advantage.</li><li>Do something voluntarily to help people with a protected characteristic. This is called ‘positive action’. Taking positive action is legal if people with a protected characteristic: \n- are at a disadvantage \n- have particular needs \n- are under-represented in an activity or type of work</li><li>Be forgiving and offer helpful advice when mistakes are made.</li><li>Learn what team members do best and work out how to maximise each other’s skills to team advantage.</li><li>Promote evidence of eliminating unfair practices and or issues that threaten the wellbeing of colleagues.</li>');
+(7,41,1,1,'', 'A', '', '   trusted with it.<li>Learn what team members do best and work out how to maximise each other’s skills to team advantage.</li><li>Do something voluntarily to help people with a protected characteristic. This is called ‘positive action’. Taking positive action is legal if people with a protected characteristic: \n      - are at a disadvantage \n      - have particular needs \n      - are under-represented in an activity or type of work</li><li>Be forgiving and offer helpful advice when mistakes are made.</li><li>Learn what team members do best and work out how to maximise each other’s skills to team advantage.</li><li>Promote evidence of eliminating unfair practices and or issues that threaten the wellbeing of colleagues.</li>');
 commit;
 
 ---------------------------------------------------------------------
