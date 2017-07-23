@@ -94,56 +94,69 @@ public class statementReportDao {
 			if (row[1].equals(Integer.valueOf(1))) {
 				pageOneData.add(row[5].toString());
 				leftInclusiveLeadershipStmt.add(row[7].toString());
-				rightInclusiveLeadershipStmt.add(row[8].toString());
+				leftInclusiveLeadershipStmt.add(row[8].toString());
+
+//				leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
+//				rightInclusiveLeadershipStmt.add("");
 			}
 			if (row[1].equals(Integer.valueOf(2))) {
 				pageTwoData.add(row[5].toString());
 				LeftCommercialImpactDiversityStmt.add(row[7].toString());
-				rightCommercialImpactDiversityStmt.add(row[8].toString());
+				LeftCommercialImpactDiversityStmt.add(row[8].toString());
+//				rightCommercialImpactDiversityStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(3))) {
 				pageThreeData.add(row[5].toString());
 				leftInclusiveTeamsandTeamworkStmt.add(row[7].toString());
-				rightInclusiveTeamsandTeamworkStmt.add(row[8].toString());
+				leftInclusiveTeamsandTeamworkStmt.add(row[8].toString());
+//				rightInclusiveTeamsandTeamworkStmt.add(row[8].toString());
 				
 			}
 			if (row[1].equals(Integer.valueOf(4))) {
 				pageFourData.add(row[5].toString());
 				leftInclusiveGoalsandObjectivesStmt.add(row[7].toString());
-				rightInclusiveGoalsandObjectivesStmt.add(row[8].toString());
+				leftInclusiveGoalsandObjectivesStmt.add(row[8].toString());
+//				rightInclusiveGoalsandObjectivesStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(5))) {
 				pageFiveData.add(row[5].toString());
 				leftInclusiveRolesResponsibilitiesStmt.add(row[7].toString());
-				rightInclusiveRolesResponsibilitiesStmt.add(row[8].toString());
+				leftInclusiveRolesResponsibilitiesStmt.add(row[8].toString());
+//				rightInclusiveRolesResponsibilitiesStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(6))) {
 				pageSixData.add(row[5].toString());
 				leftChallengingPrejudiceStmt.add(row[7].toString());
-				rightChallengingPrejudiceStmt.add(row[8].toString());
+				leftChallengingPrejudiceStmt.add(row[8].toString());
+//				rightChallengingPrejudiceStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(7))) {
 				pageSevenData.add(row[5].toString());
 				leftEthicalPracticeStmt.add(row[7].toString());
-				rightEthicalPracticeStmt.add(row[8].toString());
+				leftEthicalPracticeStmt.add(row[8].toString());
+//				rightEthicalPracticeStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(8))) {
 				pageEightData.add(row[5].toString());
 				leftCommitmentToDifferenceStmt.add(row[7].toString());
-				rightCommitmentToDifferenceStmt.add(row[8].toString());
+				leftCommitmentToDifferenceStmt.add(row[8].toString());
+//				rightCommitmentToDifferenceStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(9))) {
 				pageNineData.add(row[5].toString());
 				leftCollaborativePracticeValuesStmtt.add(row[7].toString());
-				rightCollaborativePracticeValuesStmtt.add(row[8].toString());
+				leftCollaborativePracticeValuesStmtt.add(row[8].toString());
+//				rightCollaborativePracticeValuesStmtt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(10))) {
 				pageTenData.add(row[5].toString());
 				leftCollaborativeCommunicationsStmt.add(row[7].toString());
-				rightCollaborativeCommunicationsStmt.add(row[8].toString());
+				leftCollaborativeCommunicationsStmt.add(row[8].toString());
+//				rightCollaborativeCommunicationsStmt.add(row[8].toString());
 			}
 		}
-
+//		leftInclusiveLeadershipStmt = new ArrayList<>(); 
+//		leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
 		LOGGER.info(pageOneData.toString());
 		LOGGER.info("pageOneData length " + pageOneData.size());
 		LOGGER.info("pageTwoData length " + pageTwoData.size());

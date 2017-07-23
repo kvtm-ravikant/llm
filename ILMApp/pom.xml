@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ilm</groupId>
 	<artifactId>ILMApp</artifactId>
- 	<packaging>war</packaging>
+	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>Inclusive Leaders Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -91,7 +91,7 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
-			<version>6.2.0</version>
+			<version>6.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>

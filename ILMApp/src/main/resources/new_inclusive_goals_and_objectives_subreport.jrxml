@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-16T23:13:21 -->
+<!-- 2017-07-23T00:34:29 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -79,11 +79,10 @@ Measure™ Report]]></text>
 				</reportElement>
 				<box topPadding="0" bottomPadding="0"/>
 				<textField>
-					<reportElement mode="Opaque" x="0" y="0" width="240" height="320" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
+					<reportElement mode="Opaque" x="0" y="0" width="500" height="320" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
-					<box topPadding="10" leftPadding="8" bottomPadding="0" rightPadding="0">
+					<box topPadding="20" leftPadding="25" bottomPadding="10" rightPadding="20">
 						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
 					</box>
 					<textElement verticalAlignment="Top" markup="styled">
@@ -91,20 +90,6 @@ Measure™ Report]]></text>
 						<paragraph lineSpacing="Fixed" lineSpacingSize="12.0" firstLineIndent="-10" leftIndent="25" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{leftText}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement mode="Opaque" x="240" y="0" width="240" height="320" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#FFFFFF" uuid="52b7ba71-3a8a-4581-8702-3b3481b58ca6">
-						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					</reportElement>
-					<box topPadding="10" leftPadding="8" bottomPadding="0" rightPadding="0">
-						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
-					</box>
-					<textElement verticalAlignment="Top" markup="styled">
-						<font fontName="Raleway" size="10" isBold="false"/>
-						<paragraph lineSpacing="Fixed" lineSpacingSize="12.0" firstLineIndent="-10" leftIndent="25" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{rightText}]]></textFieldExpression>
 				</textField>
 			</frame>
 			<frame borderSplitType="DrawBorders">

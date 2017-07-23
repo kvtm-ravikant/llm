@@ -12,6 +12,7 @@ http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmai
 
 RUNNING REPORTs
 
-http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmail=lvl1@mail.com
+http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmail=lvl1@mail.com 
+http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmail=sharma.abhi@yahoo.com
 http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmail=lvl2@mail.com
 http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmail=lvl3@mail.com
