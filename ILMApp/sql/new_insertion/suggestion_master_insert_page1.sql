@@ -1,4 +1,8 @@
-truncate table suggestion_master_table;
+-- truncate table suggestion_master_table;
+SET SQL_SAFE_UPDATES = 0;
+delete from suggestion_master_table
+where page_id =1;
+commit;
 -- PAGE - 1 : INCLUSIVE LEADERSHIP : 1 - 6
 ---------------------------------------------------------------------
 -- LEVEL 1
