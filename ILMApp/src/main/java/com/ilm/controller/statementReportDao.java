@@ -39,13 +39,16 @@ public class statementReportDao {
 
 		List<String> leftInclusiveLeadershipStmt = new ArrayList<>();
 		List<String> rightInclusiveLeadershipStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveLeadershipStmt = new ArrayList<>();
 
 		List<String> LeftCommercialImpactDiversityStmt = new ArrayList<>();
 		List<String> rightCommercialImpactDiversityStmt = new ArrayList<>();
 
 		List<String> leftInclusiveTeamsandTeamworkStmt = new ArrayList<>();
 		List<String> rightInclusiveTeamsandTeamworkStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveTeamsandTeamworkStmt  = new ArrayList<>();
 
+		
 		List<String> leftInclusiveGoalsandObjectivesStmt = new ArrayList<>();
 		List<String> rightInclusiveGoalsandObjectivesStmt = new ArrayList<>();
 		
@@ -95,7 +98,9 @@ public class statementReportDao {
 				pageOneData.add(row[5].toString());
 				leftInclusiveLeadershipStmt.add(row[7].toString());
 				leftInclusiveLeadershipStmt.add(row[8].toString());
-
+				if(ldTaskInclusiveLeadershipStmt.isEmpty()){
+					ldTaskInclusiveLeadershipStmt.add(row[9].toString());
+				}
 //				leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
 //				rightInclusiveLeadershipStmt.add("");
 			}
@@ -109,6 +114,9 @@ public class statementReportDao {
 				pageThreeData.add(row[5].toString());
 				leftInclusiveTeamsandTeamworkStmt.add(row[7].toString());
 				leftInclusiveTeamsandTeamworkStmt.add(row[8].toString());
+				if(ldTaskInclusiveTeamsandTeamworkStmt.isEmpty()){
+					ldTaskInclusiveTeamsandTeamworkStmt.add(row[9].toString());
+				}
 //				rightInclusiveTeamsandTeamworkStmt.add(row[8].toString());
 				
 			}
@@ -183,10 +191,17 @@ public class statementReportDao {
 		List<Message> inclusiveLeadershipStmtObjList = new ArrayList<Message>();
 		inclusiveLeadershipStmtObjList.add(new Message(divideMessageForOneColumnsLayout(pageOneData),
 				divideMessageForOneColumnsLayout(leftInclusiveLeadershipStmt),
-				divideMessageForOneColumnsLayout(rightInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(rightInclusiveLeadershipStmt),divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setInclusiveLeadershipStmtList(inclusiveLeadershipStmtObjList);
 
-		List<Message> commercialImpactDiversityStmtList = new ArrayList<Message>();
+		List<Message> inclusiveTeamsandTeamworkStmtList = new ArrayList<Message>();
+		inclusiveTeamsandTeamworkStmtList.add(new Message(divideMessageForOneColumnsLayout(pageThreeData), 
+				divideMessageForOneColumnsLayout(leftInclusiveTeamsandTeamworkStmt),
+				divideMessageForOneColumnsLayout(rightInclusiveTeamsandTeamworkStmt),divideMessageForOneColumnsLayout(ldTaskInclusiveTeamsandTeamworkStmt)));
+		stData.setInclusiveTeamsandTeamworkStmtList(inclusiveTeamsandTeamworkStmtList);
+
+		
+		/*List<Message> commercialImpactDiversityStmtList = new ArrayList<Message>();
 		commercialImpactDiversityStmtList.add(new Message(divideMessageForOneColumnsLayout(pageTwoData),
 				divideMessageForOneColumnsLayout(LeftCommercialImpactDiversityStmt),
 				divideMessageForOneColumnsLayout(rightCommercialImpactDiversityStmt)));
@@ -242,7 +257,7 @@ public class statementReportDao {
 				.add(new Message(divideMessageForOneColumnsLayout(pageEightData),
 						divideMessageForOneColumnsLayout(leftCollaborativeCommunicationsStmt),
 						divideMessageForOneColumnsLayout(rightCollaborativeCommunicationsStmt)));
-		stData.setCollaborativeCommunicationsStmtList(collaborativeCommunicationsStmtList);
+		stData.setCollaborativeCommunicationsStmtList(collaborativeCommunicationsStmtList);*/
 
 		LOGGER.info("stData :" + stData.toString());
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-23T00:45:49 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 4.6.0  -->
+<!-- 2017-07-27T21:45:28 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -16,6 +16,7 @@
 	<field name="text" class="java.lang.String"/>
 	<field name="leftText" class="java.lang.String"/>
 	<field name="rightText" class="java.lang.String"/>
+	<field name="ldTaskText" class="java.lang.String"/>
 	<background>
 		<band height="595">
 			<image>
@@ -111,6 +112,10 @@ Measure™ Report]]></text>
 					</textElement>
 					<text><![CDATA[Learning & Development Tasks]]></text>
 				</staticText>
+				<textField>
+					<reportElement x="23" y="34" width="442" height="79" uuid="d41293d3-088a-4f8b-9d2a-df5f4073c957"/>
+					<textFieldExpression><![CDATA[$F{ldTaskText}]]></textFieldExpression>
+				</textField>
 			</frame>
 		</band>
 	</detail>
