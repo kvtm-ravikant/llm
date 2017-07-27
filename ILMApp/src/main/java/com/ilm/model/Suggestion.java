@@ -40,9 +40,6 @@ public class Suggestion {
 	@Column(name = "right_suggestion")
 	private String rightSuggestion;
 	
-	@Column(name = "learning_tasks")
-	private String learningTasks;
-
 	public Integer getId() {
 		return id;
 	}
@@ -58,6 +55,7 @@ public class Suggestion {
 	public void setPageId(Integer pageId) {
 		this.pageId = pageId;
 	}
+
 	
 	public Integer getQuestionId() {
 		return questionId;
@@ -115,20 +113,10 @@ public class Suggestion {
 		this.rightSuggestion = rightSuggestion;
 	}
 
-	public String getLearningTasks() {
-		return learningTasks;
-	}
-
-	public void setLearningTasks(String learningTasks) {
-		this.learningTasks = learningTasks;
-	}
-	
 	@Override
 	public String toString() {
-		return "Suggestion [id=" + id + ", pageId=" + pageId + ", questionId=" + questionId + ", optionId=" + optionId
-				+ ", levelId=" + levelId + ", suggestion=" + suggestion + ", reportType=" + reportType
-				+ ", leftSuggestion=" + leftSuggestion + ", rightSuggestion=" + rightSuggestion + ", learningTasks="
-				+ learningTasks + "]";
+		return "Suggestion [id=" + id + ", questionId=" + questionId + ", optionId=" + optionId + ", levelId=" + levelId
+				+ ", suggestion=" + suggestion + "]";
 	}
 
 	

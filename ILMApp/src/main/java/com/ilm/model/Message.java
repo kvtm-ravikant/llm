@@ -6,18 +6,16 @@ public class Message {
 		this.text = text;
 	}*/
 
-	public Message(String text, String leftText, String rightText,String ldTaskText) {
+	public Message(String text, String leftText, String rightText) {
 		
 		this.text = text;
 		this.leftText = leftText;
 		this.rightText = rightText;
-		this.ldTaskText = ldTaskText;
 	}
 
 	private String text;
 	private String leftText;
 	private String rightText;
-	private String ldTaskText;
 	
 
 	public String getText() {
@@ -44,12 +42,4 @@ public class Message {
 		this.rightText = rightText;
 	}
 
-	public String getLdTaskText() {
-		return ldTaskText;
-	}
-
-	public void setLdTaskText(String ldTaskText) {
-		this.ldTaskText = ldTaskText;
-	}
-	
 }
