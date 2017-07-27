@@ -98,9 +98,9 @@ public class statementReportDao {
 				pageOneData.add(row[5].toString());
 				leftInclusiveLeadershipStmt.add(row[7].toString());
 				leftInclusiveLeadershipStmt.add(row[8].toString());
-				if(ldTaskInclusiveLeadershipStmt.isEmpty()){
+				/*if(ldTaskInclusiveLeadershipStmt.isEmpty()){
 					ldTaskInclusiveLeadershipStmt.add(row[9].toString());
-				}
+				}*/
 //				leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
 //				rightInclusiveLeadershipStmt.add("");
 			}
