@@ -39,6 +39,7 @@ public class statementReportDao {
 
 		List<String> leftInclusiveLeadershipStmt = new ArrayList<>();
 		List<String> rightInclusiveLeadershipStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveLeadershipStmt  = new ArrayList<>();
 
 		List<String> LeftCommercialImpactDiversityStmt = new ArrayList<>();
 		List<String> rightCommercialImpactDiversityStmt = new ArrayList<>();
@@ -95,7 +96,7 @@ public class statementReportDao {
 				pageOneData.add(row[5].toString());
 				leftInclusiveLeadershipStmt.add(row[7].toString());
 				leftInclusiveLeadershipStmt.add(row[8].toString());
-
+				ldTaskInclusiveLeadershipStmt.add(row[9].toString());
 //				leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
 //				rightInclusiveLeadershipStmt.add("");
 			}
@@ -183,65 +184,75 @@ public class statementReportDao {
 		List<Message> inclusiveLeadershipStmtObjList = new ArrayList<Message>();
 		inclusiveLeadershipStmtObjList.add(new Message(divideMessageForOneColumnsLayout(pageOneData),
 				divideMessageForOneColumnsLayout(leftInclusiveLeadershipStmt),
-				divideMessageForOneColumnsLayout(rightInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(rightInclusiveLeadershipStmt), 
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setInclusiveLeadershipStmtList(inclusiveLeadershipStmtObjList);
 
 		List<Message> commercialImpactDiversityStmtList = new ArrayList<Message>();
 		commercialImpactDiversityStmtList.add(new Message(divideMessageForOneColumnsLayout(pageTwoData),
 				divideMessageForOneColumnsLayout(LeftCommercialImpactDiversityStmt),
-				divideMessageForOneColumnsLayout(rightCommercialImpactDiversityStmt)));
+				divideMessageForOneColumnsLayout(rightCommercialImpactDiversityStmt),
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setCommercialImpactDiversityStmtList(commercialImpactDiversityStmtList);
 
 		List<Message> inclusiveTeamsandTeamworkStmtList = new ArrayList<Message>();
 		inclusiveTeamsandTeamworkStmtList.add(new Message(divideMessageForOneColumnsLayout(pageThreeData), 
 				divideMessageForOneColumnsLayout(leftInclusiveTeamsandTeamworkStmt),
-				divideMessageForOneColumnsLayout(rightInclusiveTeamsandTeamworkStmt)));
+				divideMessageForOneColumnsLayout(rightInclusiveTeamsandTeamworkStmt),
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setInclusiveTeamsandTeamworkStmtList(inclusiveTeamsandTeamworkStmtList);
 
 		List<Message> inclusiveGoalsandObjectivesStmtList = new ArrayList<Message>();
 		inclusiveGoalsandObjectivesStmtList
 				.add(new Message(divideMessageForOneColumnsLayout(pageFourData),
 						divideMessageForOneColumnsLayout(leftInclusiveGoalsandObjectivesStmt),
-						divideMessageForOneColumnsLayout(rightInclusiveGoalsandObjectivesStmt)));
+						divideMessageForOneColumnsLayout(rightInclusiveGoalsandObjectivesStmt),
+						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setInclusiveGoalsandObjectivesStmtList(inclusiveGoalsandObjectivesStmtList);
 
 		List<Message> inclusiveRolesResponsibilitiesStmtList = new ArrayList<Message>();
 		inclusiveRolesResponsibilitiesStmtList
 				.add(new Message(divideMessageForOneColumnsLayout(pageFiveData),
 						divideMessageForOneColumnsLayout(leftInclusiveRolesResponsibilitiesStmt),
-						divideMessageForOneColumnsLayout(rightInclusiveRolesResponsibilitiesStmt)));
+						divideMessageForOneColumnsLayout(rightInclusiveRolesResponsibilitiesStmt),
+						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setInclusiveRolesResponsibilitiesStmtList(inclusiveRolesResponsibilitiesStmtList);
 
 		List<Message> challengingPrejudiceStmtList = new ArrayList<Message>();
 		challengingPrejudiceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSixData),
 				divideMessageForOneColumnsLayout(leftChallengingPrejudiceStmt),
-				divideMessageForOneColumnsLayout(rightChallengingPrejudiceStmt)));
+				divideMessageForOneColumnsLayout(rightChallengingPrejudiceStmt),
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setChallengingPrejudiceStmtList(challengingPrejudiceStmtList);
 
 		List<Message> ethicalPracticeStmtList = new ArrayList<Message>();
 		ethicalPracticeStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSevenData), 
 				divideMessageForOneColumnsLayout(leftEthicalPracticeStmt),
-				divideMessageForOneColumnsLayout(rightEthicalPracticeStmt)));
+				divideMessageForOneColumnsLayout(rightEthicalPracticeStmt),
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setEthicalPracticeStmtList(ethicalPracticeStmtList);
 
 		List<Message> commitmentToDifferenceStmtList = new ArrayList<Message>();
 		commitmentToDifferenceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageEightData), 
 				divideMessageForOneColumnsLayout(leftCommitmentToDifferenceStmt),
-				divideMessageForOneColumnsLayout(rightCommitmentToDifferenceStmt)));
+				divideMessageForOneColumnsLayout(rightCommitmentToDifferenceStmt),
+				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setCommitmentToDifferenceStmtList(commitmentToDifferenceStmtList);
 
 		List<Message> collaborativePracticeValuesStmttList = new ArrayList<Message>();
 		collaborativePracticeValuesStmttList
 				.add(new Message(divideMessageForOneColumnsLayout(pageEightData),
 						divideMessageForOneColumnsLayout(leftCollaborativePracticeValuesStmtt),
-						divideMessageForOneColumnsLayout(rightCollaborativePracticeValuesStmtt)));
+						divideMessageForOneColumnsLayout(rightCollaborativePracticeValuesStmtt),
+						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setCollaborativePracticeValuesStmttList(collaborativePracticeValuesStmttList);
 
 		List<Message> collaborativeCommunicationsStmtList = new ArrayList<Message>();
 		collaborativeCommunicationsStmtList
 				.add(new Message(divideMessageForOneColumnsLayout(pageEightData),
 						divideMessageForOneColumnsLayout(leftCollaborativeCommunicationsStmt),
-						divideMessageForOneColumnsLayout(rightCollaborativeCommunicationsStmt)));
+						divideMessageForOneColumnsLayout(rightCollaborativeCommunicationsStmt),
+						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
 		stData.setCollaborativeCommunicationsStmtList(collaborativeCommunicationsStmtList);
 
 		LOGGER.info("stData :" + stData.toString());

@@ -71,12 +71,12 @@ public class SuggestionDaoImpl implements SuggestionDao {
 		LOGGER.info("findUserAssessmentStatement QUERY \n "+query.toString());
 		
 		List<Object[]> dataList = query.list();
-		/*for (Object[] row : dataList) {
+		for (Object[] row : dataList) {
 			for (Object obj : row) {
 				LOGGER.info(obj + "::");
 			}
 			LOGGER.info("\n");
-		}*/
+		}
 		return dataList;
 	}
 
