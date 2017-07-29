@@ -43,30 +43,39 @@ public class statementReportDao {
 
 		List<String> LeftCommercialImpactDiversityStmt = new ArrayList<>();
 		List<String> rightCommercialImpactDiversityStmt = new ArrayList<>();
+		List<String> ldTaskCommercialImpactDiversityStmt  = new ArrayList<>();
 
 		List<String> leftInclusiveTeamsandTeamworkStmt = new ArrayList<>();
 		List<String> rightInclusiveTeamsandTeamworkStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveTeamsandTeamworkStmt = new ArrayList<>();
 
 		List<String> leftInclusiveGoalsandObjectivesStmt = new ArrayList<>();
 		List<String> rightInclusiveGoalsandObjectivesStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveGoalsandObjectivesStmt = new ArrayList<>();
 		
 		List<String> leftInclusiveRolesResponsibilitiesStmt = new ArrayList<>();
 		List<String> rightInclusiveRolesResponsibilitiesStmt = new ArrayList<>();
+		List<String> ldTaskInclusiveRolesResponsibilitiesStmt = new ArrayList<>();
 		
 		List<String> leftChallengingPrejudiceStmt = new ArrayList<>();
 		List<String> rightChallengingPrejudiceStmt = new ArrayList<>();
+		List<String> ldTaskChallengingPrejudiceStmt = new ArrayList<>();
 		
 		List<String> leftEthicalPracticeStmt = new ArrayList<>();
 		List<String> rightEthicalPracticeStmt = new ArrayList<>();
+		List<String> ldTaskEthicalPracticeStmt = new ArrayList<>();
 		
 		List<String> leftCommitmentToDifferenceStmt = new ArrayList<>();
 		List<String> rightCommitmentToDifferenceStmt = new ArrayList<>();
+		List<String> ldTaskCommitmentToDifferenceStmt = new ArrayList<>();
 		
 		List<String> leftCollaborativePracticeValuesStmtt = new ArrayList<>();
 		List<String> rightCollaborativePracticeValuesStmtt = new ArrayList<>();
+		List<String> ldTaskCollaborativePracticeValuesStmtt = new ArrayList<>();
 				
 		List<String> leftCollaborativeCommunicationsStmt = new ArrayList<>();
 		List<String> rightCollaborativeCommunicationsStmt = new ArrayList<>();
+		List<String> ldTaskCollaborativeCommunicationsStmt = new ArrayList<>();
 
 		// Create an array list of DemoModal
 		List<statementReportModel> stmtReportList = new ArrayList<statementReportModel>();
@@ -96,7 +105,9 @@ public class statementReportDao {
 				pageOneData.add(row[5].toString());
 				leftInclusiveLeadershipStmt.add(row[7].toString());
 				leftInclusiveLeadershipStmt.add(row[8].toString());
-				ldTaskInclusiveLeadershipStmt.add(row[9].toString());
+				if(row[9] != null){
+					ldTaskInclusiveLeadershipStmt.add(row[9].toString());
+				}
 //				leftInclusiveLeadershipStmt.add("<li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li><li>Acknowledge all faiths present in your workplace.</li><li>Demonstrate a knowledge and interest in other cultures.</li><li>Admit you don’t know the answer when you don’t, and seek opinions from those around you.</li><li>Exert effort to identify your own biases, and find ways to manage them in the workplace.</li><li>Demonstrate open-mindedness, a passion for learning, and a desire for exposure to different ideas</li><li>Show acceptance of everyone without bias.</li><li>Have self-awareness of how preconceived</li><li>Learn about the cultural backgrounds, lives and interests of colleagues outside of the work place.</li><li>Be creative, flexible and look for new ways of doing things.</li>");
 //				rightInclusiveLeadershipStmt.add("");
 			}
@@ -104,12 +115,18 @@ public class statementReportDao {
 				pageTwoData.add(row[5].toString());
 				LeftCommercialImpactDiversityStmt.add(row[7].toString());
 				LeftCommercialImpactDiversityStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskCommercialImpactDiversityStmt.add(row[9].toString());
+				}
 //				rightCommercialImpactDiversityStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(3))) {
 				pageThreeData.add(row[5].toString());
 				leftInclusiveTeamsandTeamworkStmt.add(row[7].toString());
 				leftInclusiveTeamsandTeamworkStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskInclusiveTeamsandTeamworkStmt.add(row[9].toString());	
+				}
 //				rightInclusiveTeamsandTeamworkStmt.add(row[8].toString());
 				
 			}
@@ -117,42 +134,63 @@ public class statementReportDao {
 				pageFourData.add(row[5].toString());
 				leftInclusiveGoalsandObjectivesStmt.add(row[7].toString());
 				leftInclusiveGoalsandObjectivesStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskInclusiveGoalsandObjectivesStmt.add(row[9].toString());
+				}
 //				rightInclusiveGoalsandObjectivesStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(5))) {
 				pageFiveData.add(row[5].toString());
 				leftInclusiveRolesResponsibilitiesStmt.add(row[7].toString());
 				leftInclusiveRolesResponsibilitiesStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskInclusiveRolesResponsibilitiesStmt.add(row[9].toString());
+				}
 //				rightInclusiveRolesResponsibilitiesStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(6))) {
 				pageSixData.add(row[5].toString());
 				leftChallengingPrejudiceStmt.add(row[7].toString());
 				leftChallengingPrejudiceStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskChallengingPrejudiceStmt.add(row[9].toString());
+				}
 //				rightChallengingPrejudiceStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(7))) {
 				pageSevenData.add(row[5].toString());
 				leftEthicalPracticeStmt.add(row[7].toString());
 				leftEthicalPracticeStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskEthicalPracticeStmt.add(row[9].toString());
+				}
 //				rightEthicalPracticeStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(8))) {
 				pageEightData.add(row[5].toString());
 				leftCommitmentToDifferenceStmt.add(row[7].toString());
 				leftCommitmentToDifferenceStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskCommitmentToDifferenceStmt.add(row[9].toString());
+				}
 //				rightCommitmentToDifferenceStmt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(9))) {
 				pageNineData.add(row[5].toString());
 				leftCollaborativePracticeValuesStmtt.add(row[7].toString());
 				leftCollaborativePracticeValuesStmtt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskCollaborativePracticeValuesStmtt.add(row[9].toString());
+				}
 //				rightCollaborativePracticeValuesStmtt.add(row[8].toString());
 			}
 			if (row[1].equals(Integer.valueOf(10))) {
 				pageTenData.add(row[5].toString());
 				leftCollaborativeCommunicationsStmt.add(row[7].toString());
 				leftCollaborativeCommunicationsStmt.add(row[8].toString());
+				if(row[9] != null){
+					ldTaskCollaborativeCommunicationsStmt.add(row[9].toString());
+				}
 //				rightCollaborativeCommunicationsStmt.add(row[8].toString());
 			}
 		}
@@ -192,14 +230,14 @@ public class statementReportDao {
 		commercialImpactDiversityStmtList.add(new Message(divideMessageForOneColumnsLayout(pageTwoData),
 				divideMessageForOneColumnsLayout(LeftCommercialImpactDiversityStmt),
 				divideMessageForOneColumnsLayout(rightCommercialImpactDiversityStmt),
-				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(ldTaskCommercialImpactDiversityStmt)));
 		stData.setCommercialImpactDiversityStmtList(commercialImpactDiversityStmtList);
 
 		List<Message> inclusiveTeamsandTeamworkStmtList = new ArrayList<Message>();
 		inclusiveTeamsandTeamworkStmtList.add(new Message(divideMessageForOneColumnsLayout(pageThreeData), 
 				divideMessageForOneColumnsLayout(leftInclusiveTeamsandTeamworkStmt),
 				divideMessageForOneColumnsLayout(rightInclusiveTeamsandTeamworkStmt),
-				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(ldTaskInclusiveTeamsandTeamworkStmt)));
 		stData.setInclusiveTeamsandTeamworkStmtList(inclusiveTeamsandTeamworkStmtList);
 
 		List<Message> inclusiveGoalsandObjectivesStmtList = new ArrayList<Message>();
@@ -207,7 +245,7 @@ public class statementReportDao {
 				.add(new Message(divideMessageForOneColumnsLayout(pageFourData),
 						divideMessageForOneColumnsLayout(leftInclusiveGoalsandObjectivesStmt),
 						divideMessageForOneColumnsLayout(rightInclusiveGoalsandObjectivesStmt),
-						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+						divideMessageForOneColumnsLayout(ldTaskInclusiveGoalsandObjectivesStmt)));
 		stData.setInclusiveGoalsandObjectivesStmtList(inclusiveGoalsandObjectivesStmtList);
 
 		List<Message> inclusiveRolesResponsibilitiesStmtList = new ArrayList<Message>();
@@ -215,28 +253,28 @@ public class statementReportDao {
 				.add(new Message(divideMessageForOneColumnsLayout(pageFiveData),
 						divideMessageForOneColumnsLayout(leftInclusiveRolesResponsibilitiesStmt),
 						divideMessageForOneColumnsLayout(rightInclusiveRolesResponsibilitiesStmt),
-						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+						divideMessageForOneColumnsLayout(ldTaskInclusiveRolesResponsibilitiesStmt)));
 		stData.setInclusiveRolesResponsibilitiesStmtList(inclusiveRolesResponsibilitiesStmtList);
 
 		List<Message> challengingPrejudiceStmtList = new ArrayList<Message>();
 		challengingPrejudiceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSixData),
 				divideMessageForOneColumnsLayout(leftChallengingPrejudiceStmt),
 				divideMessageForOneColumnsLayout(rightChallengingPrejudiceStmt),
-				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(ldTaskChallengingPrejudiceStmt)));
 		stData.setChallengingPrejudiceStmtList(challengingPrejudiceStmtList);
 
 		List<Message> ethicalPracticeStmtList = new ArrayList<Message>();
 		ethicalPracticeStmtList.add(new Message(divideMessageForOneColumnsLayout(pageSevenData), 
 				divideMessageForOneColumnsLayout(leftEthicalPracticeStmt),
 				divideMessageForOneColumnsLayout(rightEthicalPracticeStmt),
-				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(ldTaskEthicalPracticeStmt)));
 		stData.setEthicalPracticeStmtList(ethicalPracticeStmtList);
 
 		List<Message> commitmentToDifferenceStmtList = new ArrayList<Message>();
 		commitmentToDifferenceStmtList.add(new Message(divideMessageForOneColumnsLayout(pageEightData), 
 				divideMessageForOneColumnsLayout(leftCommitmentToDifferenceStmt),
 				divideMessageForOneColumnsLayout(rightCommitmentToDifferenceStmt),
-				divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+				divideMessageForOneColumnsLayout(ldTaskCommitmentToDifferenceStmt)));
 		stData.setCommitmentToDifferenceStmtList(commitmentToDifferenceStmtList);
 
 		List<Message> collaborativePracticeValuesStmttList = new ArrayList<Message>();
@@ -244,7 +282,7 @@ public class statementReportDao {
 				.add(new Message(divideMessageForOneColumnsLayout(pageEightData),
 						divideMessageForOneColumnsLayout(leftCollaborativePracticeValuesStmtt),
 						divideMessageForOneColumnsLayout(rightCollaborativePracticeValuesStmtt),
-						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+						divideMessageForOneColumnsLayout(ldTaskCollaborativePracticeValuesStmtt)));
 		stData.setCollaborativePracticeValuesStmttList(collaborativePracticeValuesStmttList);
 
 		List<Message> collaborativeCommunicationsStmtList = new ArrayList<Message>();
@@ -252,7 +290,7 @@ public class statementReportDao {
 				.add(new Message(divideMessageForOneColumnsLayout(pageEightData),
 						divideMessageForOneColumnsLayout(leftCollaborativeCommunicationsStmt),
 						divideMessageForOneColumnsLayout(rightCollaborativeCommunicationsStmt),
-						divideMessageForOneColumnsLayout(ldTaskInclusiveLeadershipStmt)));
+						divideMessageForOneColumnsLayout(ldTaskCollaborativeCommunicationsStmt)));
 		stData.setCollaborativeCommunicationsStmtList(collaborativeCommunicationsStmtList);
 
 		LOGGER.info("stData :" + stData.toString());

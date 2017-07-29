@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-23T00:36:59 -->
+<!-- 2017-07-29T11:44:19 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -16,6 +16,7 @@
 	<field name="text" class="java.lang.String"/>
 	<field name="leftText" class="java.lang.String"/>
 	<field name="rightText" class="java.lang.String"/>
+	<field name="ldTaskText" class="java.lang.String"/>
 	<background>
 		<band height="595">
 			<image>
@@ -110,6 +111,20 @@ Measure™ Report]]></text>
 					</textElement>
 					<text><![CDATA[Learning & Development Tasks]]></text>
 				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="15" y="40" width="470" height="80" isPrintInFirstWholeBand="true" forecolor="#000000" backcolor="#E6E3E3" uuid="d7adefda-4944-475e-9689-6e34ae8f23d3">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box topPadding="20" leftPadding="25" bottomPadding="10" rightPadding="20">
+						<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+						<font fontName="Raleway" size="10" isBold="false"/>
+						<paragraph lineSpacing="Fixed" lineSpacingSize="12.0" firstLineIndent="-10" leftIndent="25" rightIndent="0" spacingBefore="0" spacingAfter="0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ldTaskText}]]></textFieldExpression>
+				</textField>
 			</frame>
 		</band>
 	</detail>
