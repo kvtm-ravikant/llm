@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `ilm_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `ilm_db`;
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
 -- Host: localhost    Database: ilm_db
@@ -201,7 +199,15 @@ CREATE TABLE `user_table` (
   `BUSINESS_UNIT` varchar(50) DEFAULT NULL,
   `ASSESSMENT_LEVEL` varchar(10) DEFAULT NULL,
   `COUNTRY` varchar(50) DEFAULT NULL,
-  `DATE_COMPLETED` datetime DEFAULT CURRENT_TIMESTAMP,
+  `AGE` varchar(255) DEFAULT NULL,
+  `TELEPHONE_NUMBER` varchar(255) DEFAULT NULL,
+  `ETHNICITY` varchar(255) DEFAULT NULL,
+  `GENDER` varchar(255) DEFAULT NULL,
+  `CARER` varchar(255) DEFAULT NULL,
+  `DISABLED` varchar(255) DEFAULT NULL,
+  `SEXUAL_ORIENTATION` varchar(255) DEFAULT NULL,
+  `DEGREE_EDUCATED` varchar(255) DEFAULT NULL,
+  `RELIGION` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`USER_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -212,7 +218,7 @@ CREATE TABLE `user_table` (
 
 LOCK TABLES `user_table` WRITE;
 /*!40000 ALTER TABLE `user_table` DISABLE KEYS */;
-INSERT INTO `user_table` VALUES (1,'Dan','','Gallagher ','CLIENT','dan@articasearch.com','articasearch','research','1','UK','2017-07-24 22:40:02'),(2,'Puneet','','Shekhar','SW','abc@mail.com','SELF','SELF','2','IN','2017-07-24 22:40:02'),(3,'User','A','ONE  ','CLIENT','lvl1@mail.com','articasearch','research','1','UK','2017-07-24 22:40:02'),(4,'User','A','Two ','CLIENT','lvl2@mail.com','articasearch','research','2','UK','2017-07-24 22:40:02'),(5,'User','A','Three ','CLIENT','lvl3@mail.com','articasearch','research','3','UK','2017-07-24 22:40:02'),(6,'User','','Four ','CLIENT','lvl4@mail.com','articasearch','research','4','UK','2017-07-24 22:40:02'),(7,'User','','Three ','CLIENT','lvl5@mail.com','articasearch','research','5','UK','2017-07-24 22:40:02'),(8,'User','B','One ','CLIENT','lvl1b@mail.com','articasearch','research','1','UK','2017-07-24 22:40:02'),(9,'User','B','Two ','CLIENT','lvl2b@mail.com','articasearch','research','2','UK','2017-07-24 22:40:02'),(10,'User','B','Three ','CLIENT','lvl3b@mail.com','articasearch','research','3','UK','2017-07-24 22:40:02'),(11,'User','C','One ','CLIENT','lvl1c@mail.com','articasearch','research','1','UK','2017-07-24 22:40:02'),(12,'User','C','Two ','CLIENT','lvl2c@mail.com','articasearch','research','2','UK','2017-07-24 22:40:02'),(13,'User','C','Three ','CLIENT','lvl3c@mail.com','articasearch','research','3','UK','2017-07-24 22:40:02');
+INSERT INTO `user_table` VALUES (1,'Dan','','Gallagher ','CLIENT','dan@articasearch.com','articasearch','research','1','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(2,'Puneet','','Shekhar','SW','abc@mail.com','SELF','SELF','2','IN',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'User','A','ONE  ','CLIENT','lvl1@mail.com','articasearch','research','1','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'User','A','Two ','CLIENT','lvl2@mail.com','articasearch','research','2','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(5,'User','A','Three ','CLIENT','lvl3@mail.com','articasearch','research','3','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,'User','','Four ','CLIENT','lvl4@mail.com','articasearch','research','4','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(7,'User','','Three ','CLIENT','lvl5@mail.com','articasearch','research','5','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(8,'User','B','One ','CLIENT','lvl1b@mail.com','articasearch','research','1','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,'User','B','Two ','CLIENT','lvl2b@mail.com','articasearch','research','2','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'User','B','Three ','CLIENT','lvl3b@mail.com','articasearch','research','3','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,'User','C','One ','CLIENT','lvl1c@mail.com','articasearch','research','1','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(12,'User','C','Two ','CLIENT','lvl2c@mail.com','articasearch','research','2','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(13,'User','C','Three ','CLIENT','lvl3c@mail.com','articasearch','research','3','UK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -225,4 +231,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-07-29 11:48:24
+-- Dump completed on 2017-07-30 19:24:27

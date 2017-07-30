@@ -49,9 +49,36 @@ public class User implements Serializable{
 
 	@Column(name = "COUNTRY")
 	private String country;
+	
+	@Column(name = "AGE")
+	private String age;
+	
+	@Column(name = "TELEPHONE_NUMBER")
+	private String telephone;
+	
+	@Column(name = "ETHNICITY")
+	private String ethnicity;
+	
+	@Column(name = "GENDER")
+	private String gender;
+	
+	@Column(name = "CARER")
+	private String carer;
+	
+	@Column(name = "DISABLED")
+	private String disabled;
+	
+	@Column(name = "SEXUAL_ORIENTATION")
+	private String sexualOrientation;
+	
+	@Column(name = "DEGREE_EDUCATED")
+	private String degreeEducated;
+	
+	@Column(name = "RELIGION")
+	private String religion;
 
-	@Column(name = "DATE_COMPLETED")
-	private Timestamp dtCompleted;
+	/*@Column(name = "DATE_COMPLETED")
+	private Timestamp dtCompleted;*/
 
 	public int getUserId() {
 		return userId;
@@ -133,24 +160,99 @@ public class User implements Serializable{
 		this.country = country;
 	}
 
-	public Timestamp getDtCompleted() {
+	/*public Timestamp getDtCompleted() {
 		return dtCompleted;
 	}
 
 	public void setDtCompleted(Timestamp dtCompleted) {
 		this.dtCompleted = dtCompleted;
-	}
+	}*/
 
+	
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	public String getEthnicity() {
+		return ethnicity;
+	}
+
+	public void setEthnicity(String ethnicity) {
+		this.ethnicity = ethnicity;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getCarer() {
+		return carer;
+	}
+
+	public void setCarer(String carer) {
+		this.carer = carer;
+	}
+
+	public String getDisabled() {
+		return disabled;
+	}
+
+	public void setDisabled(String disabled) {
+		this.disabled = disabled;
+	}
+
+	public String getSexualOrientation() {
+		return sexualOrientation;
+	}
+
+	public void setSexualOrientation(String sexualOrientation) {
+		this.sexualOrientation = sexualOrientation;
+	}
+
+	public String getDegreeEducated() {
+		return degreeEducated;
+	}
+
+	public void setDegreeEducated(String degreeEducated) {
+		this.degreeEducated = degreeEducated;
+	}
+
+	public String getReligion() {
+		return religion;
+	}
+
+	public void setReligion(String religion) {
+		this.religion = religion;
 	}
 
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
 				+ lastName + ", jobTitle=" + jobTitle + ", workEmail=" + workEmail + ", org=" + org + ", businessUnit="
-				+ businessUnit + ", assessmentLvl=" + assessmentLvl + ", country=" + country + ", dtCompleted="
-				+ dtCompleted + "]";
+				+ businessUnit + ", assessmentLvl=" + assessmentLvl + ", country=" + country + ", age=" + age
+				+ ", telephone=" + telephone + ", ethnicity=" + ethnicity + ", gender=" + gender + ", carer=" + carer
+				+ ", disabled=" + disabled + ", sexualOrientation=" + sexualOrientation + ", degreeEducated="
+				+ degreeEducated + ", religion=" + religion + "]";
 	}
 	
 	

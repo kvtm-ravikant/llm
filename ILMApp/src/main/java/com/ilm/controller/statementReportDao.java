@@ -1,6 +1,7 @@
 package com.ilm.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +25,7 @@ public class statementReportDao {
 	 * 
 	 * @return a JRBeanCollectionDataSource collection
 	 */
-	public JRDataSource getDataSource(User u, List<Object[]> stmt) {
+	public JRDataSource getDataSource(User u, List<Object[]> stmt, Date date) {
 
 		List<String> pageOneData = new ArrayList<>();
 		List<String> pageTwoData = new ArrayList<>();
@@ -98,7 +99,9 @@ public class statementReportDao {
 
 		// String formattedDate = new
 		// SimpleDateFormat("yyyyMMdd").format(u.getDtCompleted());
-		stData.setDtCompleted(u.getDtCompleted());
+//		stData.setDtCompleted(u.getDtCompleted());
+
+		stData.setDtCompleted(date);
 
 		for (Object[] row : stmt) {
 			if (row[1].equals(Integer.valueOf(1))) {

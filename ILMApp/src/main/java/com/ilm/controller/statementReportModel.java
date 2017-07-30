@@ -221,7 +221,7 @@ public class statementReportModel {
 		return dtCompleted;
 	}
 
-	public void setDtCompleted(Timestamp dtCompleted) {
+	public void setDtCompleted(Date dtCompleted) {
 
 		// java.util.Date utilDate = new java.util.Date();
 		java.sql.Date sqlDate = new java.sql.Date(dtCompleted.getTime());

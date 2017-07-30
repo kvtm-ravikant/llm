@@ -125,13 +125,14 @@ public class ReportController {
 		
 		if(isValidUser){
 			
-//		assessmentList = assessmentServices.findByUserId(user.getUserId());
+		assessmentList = assessmentServices.findByUserId(user.getUserId());
 //		suggestionList = suggestionServices.findByLvlId(1);
 
 		List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
 //		LOGGER.info("dataList "+dataList.toString());
 		
-//		LOGGER.info("assessmentList "+assessmentList.toString());
+		LOGGER.info("assessmentList "+assessmentList.toString());
+		LOGGER.info("assessmentList dateData "+assessmentList.get(0).getDate());
 		
 		// Retrieve our data from a custom data provider
 		// Our data comes from a DAO layer
@@ -141,7 +142,7 @@ public class ReportController {
 		// Assign the datasource to an instance of JRDataSource
 		// JRDataSource is the datasource that Jasper understands
 		// This is basically a wrapper to Java's collection classes
-		JRDataSource datasource = dataprovider.getDataSource(user, statements);
+		JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
 		
 		LOGGER.info("datasource "+datasource.toString());
 
