@@ -1,6 +1,9 @@
-
+SET SQL_SAFE_UPDATES = 0;
+delete from assessment_table
+where user_id =12;
+commit;
 ---------------------------------------------------------------------
--- INCLUSIVE LEADERSHIP : LEVEL - 1
+-- INCLUSIVE LEADERSHIP : LEVEL - 2
 ---------------------------------------------------------------------
 INSERT INTO `assessment_table` 
 (`assessment_id`, `user_id`, `question_id`, `option_id`, `score`, `level_id`, `report_type`)
