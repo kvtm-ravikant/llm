@@ -165,4 +165,75 @@ public class ReportController {
 		// Return the View and the Model combined
 		return modelAndView;
 	}
+	
+	/**
+	 * Retrieves the download file in PDF format
+	 * 
+	 * @return
+	 */
+	@RequestMapping(value = "/download/IPMReportPDF", method = RequestMethod.GET)
+	public ModelAndView doIndividualIPMReportPDF(ModelAndView modelAndView,
+			@RequestParam("workmail") final String email, @RequestParam("id") final Integer assId) {
+
+		LOGGER.debug("doIndividualIPMReportPDF : Received request to download PDF report");
+		LOGGER.info("doIndividualIPMReportPDF : Received request to download PDF report");
+		
+		boolean isValidUser = true;
+
+		List<User> userList = null;
+		User user = null;
+		List<Assessment> assessmentList = null;
+		List<Suggestion> suggestionList = null;
+		
+		userList = userServices.findByWorkMail(email);
+		
+		if(userList.isEmpty() || userList == null){
+			isValidUser = false;
+		}else{
+			user = userList.get(0);	
+		}
+		
+		
+		if(isValidUser){
+			
+		assessmentList = assessmentServices.findByUserIdAssId(user.getUserId(), assId);
+//		suggestionList = suggestionServices.findByLvlId(1);
+
+		List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
+//		LOGGER.info("dataList "+dataList.toString());
+		
+		LOGGER.info("assessmentList "+assessmentList.toString());
+		LOGGER.info("assessmentList dateData "+assessmentList.get(0).getDate());
+		
+		// Retrieve our data from a custom data provider
+		// Our data comes from a DAO layer
+		// DemoDAO dataprovider = new DemoDAO();
+		statementReportDao dataprovider = new statementReportDao();
+
+		// Assign the datasource to an instance of JRDataSource
+		// JRDataSource is the datasource that Jasper understands
+		// This is basically a wrapper to Java's collection classes
+		JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
+		
+		LOGGER.info("datasource "+datasource.toString());
+
+		// In order to use Spring's built-in Jasper support,
+		// We are required to pass our datasource as a map parameter
+		// parameterMap is the Model of our application
+		Map<String, Object> parameterMap = new HashMap<String, Object>();
+//		parameterMap.put("username", user.getFirstName()+" "+user.getLastName());
+		parameterMap.put("datasource", datasource);
+
+		// pdfReport is the View of our application
+		// This is declared inside the /WEB-INF/jasper-views.xml
+			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);	
+		}
+		else{
+//			modelAndView.addObject("errorMessage", "No data found");
+			ModelAndView mav = new ModelAndView("/404");
+		}
+		
+		// Return the View and the Model combined
+		return modelAndView;
+	}
 }

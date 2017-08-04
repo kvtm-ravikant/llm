@@ -45,6 +45,23 @@ public class AssessmentDaoImpl implements AssessmentDao{
 		session.close();
 		return assessment;
 	}
+	
+	@Override
+	public List<Assessment> findByUserIdAssId(Integer userId, Integer assId) {
+
+		LOGGER.info("userId : "+userId);
+		session = sessionFactory.openSession();
+		tx = session.beginTransaction();
+		Criteria cr =session.createCriteria(Assessment.class);
+		cr.add(Restrictions.eq("userId", userId));
+		cr.add(Restrictions.eq("assessmentId", assId));
+		List<Assessment> assessment = cr.list();
+		
+//		User user = (User) session.get(User.class, userName);
+		tx.commit();
+		session.close();
+		return assessment;
+	}
 
 	@Override
 	public Assessment save(Assessment assessment) {

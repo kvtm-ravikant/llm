@@ -2,6 +2,8 @@ package com.ilm.services.impl;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.ilm.dao.AssessmentDao;
@@ -23,6 +25,12 @@ public class AssessmentServicesImpl implements AssessmentServices{
 	public List<Assessment> findByUserId(Integer userId) {
 		// TODO Auto-generated method stub
 		return assessmentDao.findByUserId(userId);
+	}
+
+	@Override
+	public List<Assessment> findByUserIdAssId(Integer userId, Integer assId) {
+
+		return assessmentDao.findByUserIdAssId(userId, assId);
 	}
 
 	@Override
