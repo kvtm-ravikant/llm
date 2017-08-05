@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-16T22:36:26 -->
+<!-- 2017-08-05T16:42:58 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -106,7 +106,9 @@
 						<textElement>
 							<font fontName="Raleway SemiBold" size="14" isBold="false"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{firstName}+" "+$F{middleName}+" "+$F{lastName}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[($F{firstName} == null ? "" : $F{firstName}+ " ") +
+($F{middleName} == null ? "" : $F{middleName}+ " ") +
+($F{lastName} == null ? "" : $F{lastName}  + " ")]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
@@ -127,7 +129,7 @@
 						<textElement>
 							<font fontName="Raleway SemiBold" size="14" isBold="false"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[($F{jobTitle} == null ? "" : $F{jobTitle}+ " ")]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
@@ -150,7 +152,7 @@
 						<textElement>
 							<font fontName="Raleway SemiBold" size="14" isBold="false"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{businessUnit}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[($F{businessUnit} == null ? "" : $F{businessUnit}+ " ")]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
@@ -171,7 +173,7 @@
 						<textElement>
 							<font fontName="Raleway SemiBold" size="14" isBold="false"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{org}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[($F{org} == null ? "" : $F{org}+ " ")]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
@@ -192,7 +194,7 @@
 						<textElement>
 							<font fontName="Raleway SemiBold" size="14" isBold="false"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[($F{level} == null ? "" : $F{level}+ " ")]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
