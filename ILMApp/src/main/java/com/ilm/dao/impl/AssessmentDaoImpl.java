@@ -7,6 +7,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -38,6 +39,9 @@ public class AssessmentDaoImpl implements AssessmentDao{
 		tx = session.beginTransaction();
 		Criteria cr =session.createCriteria(Assessment.class);
 		cr.add(Restrictions.eq("userId", userId));
+		cr.addOrder(Order.desc("assessmentId"));
+		cr.setMaxResults(58);
+		
 		List<Assessment> assessment = cr.list();
 		
 //		User user = (User) session.get(User.class, userName);
