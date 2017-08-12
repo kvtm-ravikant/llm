@@ -51,6 +51,9 @@ public class Assessment {
 
 	@Column(name = "report_type")
 	private String reportType;
+	
+	@Column(name = "report_id")
+	private String reportId;
 
 	public int getId() {
 		return id;
@@ -132,11 +135,19 @@ public class Assessment {
 		this.reportType = reportType;
 	}
 
+	public String getReportId() {
+		return reportId;
+	}
+
+	public void setReportId(String reportId) {
+		this.reportId = reportId;
+	}
 
 	@Override
 	public String toString() {
 		return "Assessment [id=" + id + ", assessmentId=" + assessmentId + ", userId=" + userId + ", question="
-				+ question + ", option=" + option + ", level=" + level + ", date=" + date + ", score=" + score + "]";
+				+ question + ", option=" + option + ", level=" + level + ", date=" + date + ", score=" + score
+				+ ", reportType=" + reportType + ", reportId=" + reportId + "]";
 	}
 	
 	

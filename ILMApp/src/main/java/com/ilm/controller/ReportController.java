@@ -33,11 +33,11 @@ public class ReportController {
 
 	@Autowired
 	UserServices userServices;
-	
+
 	@Autowired
 	AssessmentServices assessmentServices;
-	
-	@Autowired 
+
+	@Autowired
 	SuggestionServices suggestionServices;
 
 	/**
@@ -106,66 +106,118 @@ public class ReportController {
 
 		LOGGER.debug("Received request to download PDF report");
 		LOGGER.info("Received request to download PDF report");
-		
+
 		boolean isValidUser = true;
 
 		List<User> userList = null;
 		User user = null;
 		List<Assessment> assessmentList = null;
 		List<Suggestion> suggestionList = null;
-		
+
 		userList = userServices.findByWorkMail(email);
-		
-		if(userList.isEmpty() || userList == null){
+
+		if (userList.isEmpty() || userList == null) {
 			isValidUser = false;
-		}else{
-			user = userList.get(0);	
+		} else {
+			user = userList.get(0);
 		}
-		
-		
-		if(isValidUser){
-			
-		assessmentList = assessmentServices.findByUserId(user.getUserId());
-//		suggestionList = suggestionServices.findByLvlId(1);
 
-		List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
-//		LOGGER.info("dataList "+dataList.toString());
-		
-		LOGGER.info("assessmentList "+assessmentList.toString());
-		LOGGER.info("assessmentList dateData "+assessmentList.get(0).getDate());
-		
-		// Retrieve our data from a custom data provider
-		// Our data comes from a DAO layer
-		// DemoDAO dataprovider = new DemoDAO();
-		statementReportDao dataprovider = new statementReportDao();
+		if (isValidUser) {
 
-		// Assign the datasource to an instance of JRDataSource
-		// JRDataSource is the datasource that Jasper understands
-		// This is basically a wrapper to Java's collection classes
-		JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
-		
-		LOGGER.info("datasource "+datasource.toString());
+			assessmentList = assessmentServices.findByUserId(user.getUserId());
+			// suggestionList = suggestionServices.findByLvlId(1);
 
-		// In order to use Spring's built-in Jasper support,
-		// We are required to pass our datasource as a map parameter
-		// parameterMap is the Model of our application
-		Map<String, Object> parameterMap = new HashMap<String, Object>();
-//		parameterMap.put("username", user.getFirstName()+" "+user.getLastName());
-		parameterMap.put("datasource", datasource);
+			List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
+			// LOGGER.info("dataList "+dataList.toString());
 
-		// pdfReport is the View of our application
-		// This is declared inside the /WEB-INF/jasper-views.xml
-			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);	
-		}
-		else{
-//			modelAndView.addObject("errorMessage", "No data found");
+			LOGGER.info("assessmentList " + assessmentList.toString());
+			LOGGER.info("assessmentList dateData " + assessmentList.get(0).getDate());
+
+			// Retrieve our data from a custom data provider
+			// Our data comes from a DAO layer
+			// DemoDAO dataprovider = new DemoDAO();
+			statementReportDao dataprovider = new statementReportDao();
+
+			// Assign the datasource to an instance of JRDataSource
+			// JRDataSource is the datasource that Jasper understands
+			// This is basically a wrapper to Java's collection classes
+			JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
+
+			LOGGER.info("datasource " + datasource.toString());
+
+			// In order to use Spring's built-in Jasper support,
+			// We are required to pass our datasource as a map parameter
+			// parameterMap is the Model of our application
+			Map<String, Object> parameterMap = new HashMap<String, Object>();
+			// parameterMap.put("username", user.getFirstName()+"
+			// "+user.getLastName());
+			parameterMap.put("datasource", datasource);
+
+			// pdfReport is the View of our application
+			// This is declared inside the /WEB-INF/jasper-views.xml
+			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);
+		} else {
+			// modelAndView.addObject("errorMessage", "No data found");
 			ModelAndView mav = new ModelAndView("/404");
 		}
-		
+
 		// Return the View and the Model combined
 		return modelAndView;
 	}
-	
+
+	/**
+	 * Retrieves the report using UUID in PDF format
+	 * 
+	 * @return
+	 */
+	@RequestMapping(value = "/i", method = RequestMethod.GET)
+	public ModelAndView doUniqueReport(ModelAndView modelAndView, @RequestParam("id") final String reportId) {
+
+		LOGGER.debug("doUniqueReport : Received unique report request to download PDF report" + reportId);
+		LOGGER.info("doUniqueReport : Received unique report request to download PDF report" + reportId);
+
+		boolean isValidUser = true;
+
+		List<User> userList = null;
+		User user = null;
+		List<Assessment> assessmentList = null;
+		List<Suggestion> suggestionList = null;
+
+		assessmentList = assessmentServices.findByReportId(reportId);
+		LOGGER.info("assessmentList " + assessmentList.toString());
+		LOGGER.info("assessmentList.get(0).getUserId() " + assessmentList.get(0).getUserId());
+		userList = userServices.findByUserId(assessmentList.get(0).getUserId());
+		LOGGER.info("@@@@@@@@@@@@@@userList " + userList.toString());
+
+		if (userList.isEmpty() || userList == null) {
+			isValidUser = false;
+		} else {
+			user = userList.get(0);
+		}
+
+		if (isValidUser) {
+
+			List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
+
+			LOGGER.info("assessmentList dateData " + assessmentList.get(0).getDate());
+			statementReportDao dataprovider = new statementReportDao();
+
+			JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
+
+			LOGGER.info("datasource " + datasource.toString());
+
+			Map<String, Object> parameterMap = new HashMap<String, Object>();
+			parameterMap.put("datasource", datasource);
+
+			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);
+		} else {
+			// modelAndView.addObject("errorMessage", "No data found");
+			ModelAndView mav = new ModelAndView("/404");
+		}
+
+		return modelAndView;
+	}
+
 	/**
 	 * Retrieves the download file in PDF format
 	 * 
@@ -177,62 +229,61 @@ public class ReportController {
 
 		LOGGER.debug("doIndividualIPMReportPDF : Received request to download PDF report");
 		LOGGER.info("doIndividualIPMReportPDF : Received request to download PDF report");
-		
+
 		boolean isValidUser = true;
 
 		List<User> userList = null;
 		User user = null;
 		List<Assessment> assessmentList = null;
 		List<Suggestion> suggestionList = null;
-		
+
 		userList = userServices.findByWorkMail(email);
-		
-		if(userList.isEmpty() || userList == null){
+
+		if (userList.isEmpty() || userList == null) {
 			isValidUser = false;
-		}else{
-			user = userList.get(0);	
+		} else {
+			user = userList.get(0);
 		}
-		
-		
-		if(isValidUser){
-			
-		assessmentList = assessmentServices.findByUserIdAssId(user.getUserId(), assId);
-//		suggestionList = suggestionServices.findByLvlId(1);
 
-		List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
-//		LOGGER.info("dataList "+dataList.toString());
-		
-		LOGGER.info("assessmentList "+assessmentList.toString());
-		LOGGER.info("assessmentList dateData "+assessmentList.get(0).getDate());
-		
-		// Retrieve our data from a custom data provider
-		// Our data comes from a DAO layer
-		// DemoDAO dataprovider = new DemoDAO();
-		statementReportDao dataprovider = new statementReportDao();
+		if (isValidUser) {
 
-		// Assign the datasource to an instance of JRDataSource
-		// JRDataSource is the datasource that Jasper understands
-		// This is basically a wrapper to Java's collection classes
-		JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
-		
-		LOGGER.info("datasource "+datasource.toString());
+			assessmentList = assessmentServices.findByUserIdAssId(user.getUserId(), assId);
+			// suggestionList = suggestionServices.findByLvlId(1);
 
-		// In order to use Spring's built-in Jasper support,
-		// We are required to pass our datasource as a map parameter
-		// parameterMap is the Model of our application
-		Map<String, Object> parameterMap = new HashMap<String, Object>();
-//		parameterMap.put("username", user.getFirstName()+" "+user.getLastName());
-		parameterMap.put("datasource", datasource);
+			List statements = suggestionServices.findUserAssessmentStatement(user.getUserId());
+			// LOGGER.info("dataList "+dataList.toString());
 
-		// pdfReport is the View of our application
-		// This is declared inside the /WEB-INF/jasper-views.xml
-			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);	
-		}
-		else{
-//			modelAndView.addObject("errorMessage", "No data found");
+			LOGGER.info("assessmentList " + assessmentList.toString());
+			LOGGER.info("assessmentList dateData " + assessmentList.get(0).getDate());
+
+			// Retrieve our data from a custom data provider
+			// Our data comes from a DAO layer
+			// DemoDAO dataprovider = new DemoDAO();
+			statementReportDao dataprovider = new statementReportDao();
+
+			// Assign the datasource to an instance of JRDataSource
+			// JRDataSource is the datasource that Jasper understands
+			// This is basically a wrapper to Java's collection classes
+			JRDataSource datasource = dataprovider.getDataSource(user, statements, assessmentList.get(0).getDate());
+
+			LOGGER.info("datasource " + datasource.toString());
+
+			// In order to use Spring's built-in Jasper support,
+			// We are required to pass our datasource as a map parameter
+			// parameterMap is the Model of our application
+			Map<String, Object> parameterMap = new HashMap<String, Object>();
+			// parameterMap.put("username", user.getFirstName()+"
+			// "+user.getLastName());
+			parameterMap.put("datasource", datasource);
+
+			// pdfReport is the View of our application
+			// This is declared inside the /WEB-INF/jasper-views.xml
+			modelAndView = new ModelAndView("ilm_statement_pdfReport", parameterMap);
+		} else {
+			// modelAndView.addObject("errorMessage", "No data found");
 			ModelAndView mav = new ModelAndView("/404");
 		}
-		
+
 		// Return the View and the Model combined
 		return modelAndView;
 	}

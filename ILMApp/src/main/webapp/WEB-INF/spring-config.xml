@@ -24,7 +24,7 @@
 		<property name="username" value="root" />
 		<property name="password" value="niograph" />
 		  
-<!-- 		<property name="url" value="jdbc:mysql://localhost:3306/ilm_db" />
+ 	<!-- 	<property name="url" value="jdbc:mysql://localhost:3306/ilm_db" />
 		<property name="username" value="root" />
 		<property name="password" value="123456" /> -->
 	</bean>

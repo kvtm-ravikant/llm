@@ -1,4 +1,4 @@
-package com.ilm.controller;
+/*package com.ilm.controller;
 
 import java.util.List;
 
@@ -51,3 +51,4 @@ public class UserController {
 		return user.get(0);
 	}
 }
+*/

@@ -17,13 +17,13 @@ public class AssessmentServicesImpl implements AssessmentServices{
 
 	@Override
 	public List<Assessment> findByAssessmentId(Integer assessmentId) {
-		// TODO Auto-generated method stub
+		 
 		return null;
 	}
 
 	@Override
 	public List<Assessment> findByUserId(Integer userId) {
-		// TODO Auto-generated method stub
+		 
 		return assessmentDao.findByUserId(userId);
 	}
 
@@ -35,14 +35,19 @@ public class AssessmentServicesImpl implements AssessmentServices{
 
 	@Override
 	public Assessment save(Assessment assessment) {
-		// TODO Auto-generated method stub
+		 
 		return null;
 	}
 
 	@Override
 	public List<Assessment> getEntityList() throws Exception {
-		// TODO Auto-generated method stub
+		
 		return assessmentDao.getEntityList();
+	}
+
+	@Override
+	public List<Assessment> findByReportId(String reportId) {
+		return assessmentDao.findByReportId(reportId);
 	}
 
 }

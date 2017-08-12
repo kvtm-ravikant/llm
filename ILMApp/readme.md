@@ -20,3 +20,5 @@ http://localhost:8080/ILMApp/api/reports/download/userStatementReportPDF?workmai
 
 http://localhost:8080/ILMApp/api/reports/download/IPMReportPDF?workmail=lvl1@mail.com&id=1
 
+http://localhost:8080/ILMApp/api/reports/i?id=710b962e-041c-11e1-9234-0123456789ab
+

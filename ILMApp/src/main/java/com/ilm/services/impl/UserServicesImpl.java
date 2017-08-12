@@ -15,19 +15,19 @@ public class UserServicesImpl implements UserServices{
 
 	@Override
 	public List<User> getEntityList() throws Exception {
-		// TODO Auto-generated method stub
+		
 		return userDao.getEntityList();
 	}
 
 	@Override
 	public List<User> findByUserId(Integer userId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return userDao.findByUserId(userId);
 	}
 
 	@Override
 	public List<User> findByWorkMail(String email) {
-		// TODO Auto-generated method stub
+		 
 		return userDao.findByWorkMail(email);
 	}
 

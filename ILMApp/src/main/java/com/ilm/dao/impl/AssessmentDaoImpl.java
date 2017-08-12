@@ -11,13 +11,12 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.ilm.controller.UserController;
 import com.ilm.dao.AssessmentDao;
 import com.ilm.model.Assessment;
 
 public class AssessmentDaoImpl implements AssessmentDao{
 	
-	static final Logger LOGGER = Logger.getLogger(UserController.class);
+	static final Logger LOGGER = Logger.getLogger(AssessmentDaoImpl.class);
 	
 	@Autowired
 	SessionFactory sessionFactory;
@@ -83,6 +82,23 @@ public class AssessmentDaoImpl implements AssessmentDao{
 		tx.commit();
 		session.close();
 		return dataList;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Assessment> findByReportId(String reportId) {
+		LOGGER.info("reportId : "+reportId);
+		session = sessionFactory.openSession();
+		tx = session.beginTransaction();
+		Criteria cr =session.createCriteria(Assessment.class);
+		cr.add(Restrictions.eq("reportId", reportId));
+				
+		List<Assessment> assessment = cr.list();
+		
+//		User user = (User) session.get(User.class, userName);
+		tx.commit();
+		session.close();
+		return assessment;
 	}
 	
 

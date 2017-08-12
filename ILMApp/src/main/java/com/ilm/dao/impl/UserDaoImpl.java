@@ -40,8 +40,17 @@ public class UserDaoImpl implements UserDao{
 
 	@Override
 	public List<User> findByUserId(Integer userId) {
-		// TODO Auto-generated method stub
-		return null;
+		LOGGER.info("userId : "+userId);
+		session = sessionFactory.openSession();
+		tx = session.beginTransaction();
+		Criteria cr =session.createCriteria(User.class);
+		cr.add(Restrictions.eq("userId", userId));
+		List<User> user = cr.list();
+		
+//		User user = (User) session.get(User.class, userName);
+		tx.commit();
+		session.close();
+		return user;
 	}
 
 
