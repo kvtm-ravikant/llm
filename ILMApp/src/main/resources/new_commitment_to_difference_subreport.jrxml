@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-29T11:42:45 -->
+<!-- 2017-08-17T12:32:26 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -42,7 +42,7 @@
 						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
 					</box>
 					<textElement textAlignment="Left" verticalAlignment="Bottom">
-						<font fontName="Arial" size="25" isBold="true"/>
+						<font fontName="Raleway" size="25" isBold="false"/>
 					</textElement>
 					<text><![CDATA[Inclusion Performance
 Measure™ Report]]></text>
@@ -53,7 +53,7 @@ Measure™ Report]]></text>
 					</reportElement>
 					<box leftPadding="25"/>
 					<textElement verticalAlignment="Bottom">
-						<font fontName="Arial" size="19"/>
+						<font fontName="Raleway SemiBold" size="18"/>
 					</textElement>
 					<text><![CDATA[Commitment to Difference]]></text>
 				</staticText>
