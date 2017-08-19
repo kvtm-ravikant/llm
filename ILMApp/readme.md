@@ -22,3 +22,10 @@ http://localhost:8080/ILMApp/api/reports/download/IPMReportPDF?workmail=lvl1@mai
 
 http://localhost:8080/ILMApp/api/reports/i?id=710b962e-041c-11e1-9234-0123456789ab
 
+Production DB details
+============================
+Master name : ipm-prod
+UserName: ipmprod
+URL : ipm-prod.c80yagugevil.eu-west-2.rds.amazonaws.com:3306
+============================
+
