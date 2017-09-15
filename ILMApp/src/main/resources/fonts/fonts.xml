@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fontFamilies>
+
+ <fontFamily name="Nclusion">
+  <normal><![CDATA[fonts/nclusion.ttf]]></normal>
+  <bold><![CDATA[fonts/nclusion.ttf]]></bold>
+  <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ </fontFamily>
+ 
  <fontFamily name="Raleway">
   <normal><![CDATA[fonts/Raleway-Regular.ttf]]></normal>
   <bold><![CDATA[fonts/Raleway-Bold.ttf]]></bold>

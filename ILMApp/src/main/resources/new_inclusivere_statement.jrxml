@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-08-05T16:42:58 -->
+<!-- 2017-09-15T22:16:51 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -68,16 +68,17 @@
 					<font fontName="Raleway" size="10"/>
 				</textElement>
 				<text><![CDATA[nclusion, 22 Upper Ground, London, SE1 9PD
-+44 (0) 330 2233 548 support@inclusiveleaders.co.uk]]></text>
++44 (0) 330 2233 548 support@nclusion.io]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="270" y="50" width="562" height="50" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f"/>
+				<reportElement x="270" y="50" width="90" height="50" forecolor="#FFFFFF" uuid="8be9bc34-8fa3-46c3-9248-edd2f47ffc8f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
 				<box leftPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Raleway" size="40" isBold="true"/>
 				</textElement>
-				<text><![CDATA[INCLUSIVE PERFORMANCE
-]]></text>
+				<text><![CDATA[The]]></text>
 			</staticText>
 			<frame>
 				<reportElement x="270" y="200" width="572" height="240" uuid="f8d04f15-4314-411d-ae9c-91e97fd781d0">
@@ -218,26 +219,37 @@
 				</frame>
 			</frame>
 			<staticText>
-				<reportElement x="270" y="100" width="250" height="50" forecolor="#FFFFFF" uuid="93bdd346-80f4-4afa-bcac-b276aa365f05">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				<reportElement x="350" y="50" width="180" height="50" forecolor="#FFFFFF" uuid="93bdd346-80f4-4afa-bcac-b276aa365f05">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box leftPadding="10"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Raleway" size="40" isBold="true"/>
+					<font fontName="Nclusion" size="40" isBold="false"/>
 				</textElement>
-				<text><![CDATA[MEASURE™]]></text>
+				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="500" y="100" width="255" height="50" forecolor="#FFFFFF" uuid="0d3414b8-33fa-4fa8-98ef-472bba34d216">
+				<reportElement x="270" y="100" width="255" height="50" forecolor="#FFFFFF" uuid="0d3414b8-33fa-4fa8-98ef-472bba34d216">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box leftPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Raleway" size="40" isBold="false"/>
 				</textElement>
 				<text><![CDATA[REPORT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="50" width="230" height="50" forecolor="#FFFFFF" uuid="5ba23814-abc8-41cf-8127-c80256bad8d8">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Raleway" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[™ Measure]]></text>
 			</staticText>
 		</band>
 		<band height="595">

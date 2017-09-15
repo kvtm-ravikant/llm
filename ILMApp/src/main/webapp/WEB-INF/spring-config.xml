@@ -26,13 +26,13 @@
 		<property name="password" value="ipm-nclusion" />
  	-->
  	<!-- AWS - PROD  connection-->
- 		<property name="url" value="jdbc:mysql://ipm-prod.c80yagugevil.eu-west-2.rds.amazonaws.com:3306/ilm_db" />
+ 		<!-- <property name="url" value="jdbc:mysql://ipm-prod.c80yagugevil.eu-west-2.rds.amazonaws.com:3306/ilm_db" />
 		<property name="username" value="ipmprod" />
-		<property name="password" value="ipm-prod" />
+		<property name="password" value="ipm-prod" /> -->
 				  
- 	<!-- 	<property name="url" value="jdbc:mysql://localhost:3306/ilm_db" />
+ 	 	<property name="url" value="jdbc:mysql://localhost:3306/ilm_db" />
 		<property name="username" value="root" />
-		<property name="password" value="123456" /> -->
+		<property name="password" value="123456" />
 	</bean>
 
 	<bean id="sessionFactory"
