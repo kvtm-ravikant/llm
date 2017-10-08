@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-08-17T12:30:26 -->
+<!-- 2017-10-05T22:47:23 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -35,19 +35,6 @@
 					<bottomPen lineWidth="0.0" lineColor="#FFFFFF"/>
 				</box>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="30" width="500" height="70" forecolor="#3B516E" backcolor="#FFFFFF" uuid="4db1bd6e-f508-4da1-9c10-e884accd7b0a">
-						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-					</reportElement>
-					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
-						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
-					</box>
-					<textElement textAlignment="Left" verticalAlignment="Bottom">
-						<font fontName="Raleway" size="25" isBold="false"/>
-					</textElement>
-					<text><![CDATA[Inclusion Performance
-Measure™ Report]]></text>
-				</staticText>
-				<staticText>
 					<reportElement mode="Opaque" x="0" y="103" width="500" height="30" forecolor="#3B516E" uuid="8566f1e1-994e-4f43-a638-a33abca8e559">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
@@ -66,6 +53,49 @@ Measure™ Report]]></text>
 						<pen lineWidth="1.0"/>
 					</graphicElement>
 				</line>
+				<staticText>
+					<reportElement mode="Opaque" x="125" y="30" width="250" height="30" forecolor="#3B516E" backcolor="#FFFFFF" uuid="6a4a6878-649a-46e5-8896-f83f96799f0d">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
+						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom" markup="styled">
+						<font fontName="Raleway" size="25" isBold="false"/>
+					</textElement>
+					<text><![CDATA[<b>measure report</b>]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="30" width="130" height="30" forecolor="#3B516E" backcolor="#FFFFFF" uuid="d79dd92d-05bf-4880-b714-169dd710d564">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
+						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom" markup="styled">
+						<font fontName="Nclusion" size="25" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Nclusion]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="93" y="30" width="50" height="30" forecolor="#3B516E" backcolor="#FFFFFF" uuid="41972107-112b-407e-ba1f-98dc58360f28">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
+						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom" markup="styled">
+						<font fontName="Raleway" size="25" isBold="false"/>
+					</textElement>
+					<text><![CDATA[™]]></text>
+				</staticText>
 			</frame>
 		</band>
 	</pageHeader>
