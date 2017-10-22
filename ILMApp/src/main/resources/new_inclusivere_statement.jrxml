@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-09T00:02:50 -->
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nclusivereporta4_wide" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="438acba2-ebb2-4097-afe4-4f6d6f1ffe90">
 	<property name="ireport.zoom" value="0.90909090909091"/>
 	<property name="ireport.x" value="26"/>
@@ -62,14 +61,6 @@
 				<reportElement x="0" y="0" width="842" height="595" uuid="48d7a712-87d3-4acf-910f-66d6e7758dec"/>
 				<imageExpression><![CDATA["bg1.jpg"]]></imageExpression>
 			</image>
-			<staticText>
-				<reportElement x="291" y="542" width="480" height="53" forecolor="#FFFFFF" uuid="7d9c658e-90a8-45a2-b878-1e81df70d659"/>
-				<textElement>
-					<font fontName="Raleway" size="10"/>
-				</textElement>
-				<text><![CDATA[Nclusion, The Stanley Building, 7 Pancras Square, London, NC1 4AG
-+44 (0) 330 2233 548 reports@nclusion]]></text>
-			</staticText>
 			<frame>
 				<reportElement x="270" y="200" width="572" height="240" uuid="f8d04f15-4314-411d-ae9c-91e97fd781d0">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -237,6 +228,16 @@
 				</textElement>
 				<text><![CDATA[™]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="290" y="542" width="510" height="53" forecolor="#FFFFFF" uuid="34618a9d-193c-45bf-be63-e8d02b25fcc9">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement markup="html">
+					<font fontName="Raleway" size="10"/>
+				</textElement>
+				<text><![CDATA[<span style="font-family:Nclusion">Nclusion</span>, The Stanley Building, 7 Pancras Square, London, NC1 4AG <br>
++44 (0) 330 2233 548 reports@nclusion]]></text>
+			</staticText>
 		</band>
 		<band height="595">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -246,7 +247,7 @@
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="ac6dec09-c868-4ee7-9b4d-69bf23131ec6">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="ac6dec09-c868-4ee7-9b4d-69bf23131ec6">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -256,7 +257,7 @@
 				<text><![CDATA[Introduction]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="165" width="498" height="414" forecolor="#FFFFFF" uuid="8d431ffd-65ef-47c6-a3b0-9d0d35d48759">
+				<reportElement x="70" y="185" width="498" height="405" forecolor="#FFFFFF" uuid="8d431ffd-65ef-47c6-a3b0-9d0d35d48759">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -271,13 +272,13 @@ The value of this report is limited in time. Its content is intended to support 
 This report is being sent to named recipients and it is each person’s responsibility to ensure this report and its contents are kept confidential and are not passed to third parties, or used for any purposes other than those specified above. The participant will recieve a copy of this report and will also have the opportunity of a further validation meeting with the consultant to review and discuss its content and identify development needs.]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="80" width="460" height="1" forecolor="#ED6826" uuid="93eecb3a-3bc1-42c6-9e4d-4c65cac81704">
+				<reportElement x="96" y="100" width="460" height="1" forecolor="#ED6826" uuid="93eecb3a-3bc1-42c6-9e4d-4c65cac81704">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="350" height="60" forecolor="#ED6826" uuid="e6b624de-bc4c-4ce6-8421-a365274473fe">
+				<reportElement x="190" y="20" width="350" height="60" forecolor="#ED6826" uuid="e6b624de-bc4c-4ce6-8421-a365274473fe">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -289,7 +290,7 @@ This report is being sent to named recipients and it is each person’s responsi
 				<text><![CDATA[Measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="135" width="160" height="25" forecolor="#FFFFFF" uuid="25d732d1-d7b8-43af-9b15-8b2c09deb2db">
+				<reportElement x="70" y="155" width="160" height="25" forecolor="#FFFFFF" uuid="25d732d1-d7b8-43af-9b15-8b2c09deb2db">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -302,7 +303,7 @@ This report is being sent to named recipients and it is each person’s responsi
 				<text><![CDATA[Aim and usage of the ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="80" y="0" width="115" height="60" forecolor="#ED6826" uuid="c0615cd1-b24d-4762-aa74-f7853a7ecebd">
+				<reportElement x="80" y="20" width="115" height="60" forecolor="#ED6826" uuid="c0615cd1-b24d-4762-aa74-f7853a7ecebd">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -313,7 +314,7 @@ This report is being sent to named recipients and it is each person’s responsi
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="240" y="135" width="150" height="25" forecolor="#FFFFFF" uuid="112f0efb-32e9-4b50-bc7e-6d1c1e5b3007">
+				<reportElement x="240" y="155" width="150" height="25" forecolor="#FFFFFF" uuid="112f0efb-32e9-4b50-bc7e-6d1c1e5b3007">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -324,7 +325,7 @@ This report is being sent to named recipients and it is each person’s responsi
 				<text><![CDATA[™ Measure Report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="195" y="135" width="80" height="25" forecolor="#FFFFFF" uuid="f6259270-f23d-457a-a4ac-d040f2430916">
+				<reportElement x="195" y="155" width="80" height="25" forecolor="#FFFFFF" uuid="f6259270-f23d-457a-a4ac-d040f2430916">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -334,7 +335,7 @@ This report is being sent to named recipients and it is each person’s responsi
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="95df65e0-c9bc-46ae-a41a-6982cdede060">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="95df65e0-c9bc-46ae-a41a-6982cdede060">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -353,11 +354,11 @@ This report is being sent to named recipients and it is each person’s responsi
 				<imageExpression><![CDATA["bg3_1.jpg"]]></imageExpression>
 			</image>
 			<frame>
-				<reportElement x="70" y="121" width="498" height="389" uuid="562af855-86a8-4e88-ba05-10ed7349e505">
+				<reportElement x="70" y="135" width="498" height="435" uuid="562af855-86a8-4e88-ba05-10ed7349e505">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<frame>
-					<reportElement x="0" y="5" width="498" height="35" uuid="b4cfa159-337f-44de-a80d-6fc7160e9438">
+					<reportElement x="0" y="6" width="498" height="35" uuid="b4cfa159-337f-44de-a80d-6fc7160e9438">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 					</reportElement>
 					<box leftPadding="9"/>
@@ -398,7 +399,7 @@ while also accepting them, leveraging their thinking and values.]]></text>
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="0" y="50" width="498" height="35" uuid="3ba7ac62-cbfa-4688-bac4-c52280459726">
+					<reportElement x="0" y="51" width="498" height="35" uuid="3ba7ac62-cbfa-4688-bac4-c52280459726">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 					</reportElement>
 					<box leftPadding="9"/>
@@ -478,7 +479,7 @@ and inclusive leadership skills training.]]></text>
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="0" y="140" width="498" height="35" uuid="608de6dc-208b-46c8-afcc-ab03cd8d4f2d">
+					<reportElement x="0" y="138" width="498" height="35" uuid="608de6dc-208b-46c8-afcc-ab03cd8d4f2d">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -520,7 +521,7 @@ greater than the parts.]]></text>
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="0" y="185" width="498" height="35" uuid="03f672dc-0201-4582-a131-bc1ffde638f1">
+					<reportElement x="0" y="182" width="498" height="35" uuid="03f672dc-0201-4582-a131-bc1ffde638f1">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
@@ -564,7 +565,7 @@ managing difference.]]></text>
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="0" y="230" width="498" height="35" uuid="180882f6-e3af-48e2-babd-688d24da0155">
+					<reportElement x="0" y="224" width="498" height="35" uuid="180882f6-e3af-48e2-babd-688d24da0155">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 					</reportElement>
 					<box leftPadding="9"/>
@@ -603,7 +604,7 @@ the organisation through cultural transition.]]></text>
 					</frame>
 				</frame>
 				<frame>
-					<reportElement x="0" y="275" width="498" height="35" uuid="6256ed32-c8e5-49f8-b46c-f4fa086f0ac0">
+					<reportElement x="0" y="267" width="498" height="35" uuid="6256ed32-c8e5-49f8-b46c-f4fa086f0ac0">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -649,7 +650,7 @@ the legitimate needs and standards of the organisation.]]></text>
 					</frame>
 				</frame>
 				<frame>
-					<reportElement x="0" y="320" width="498" height="35" uuid="f291bbc4-0b25-445a-bbdf-248c332e5f40">
+					<reportElement x="0" y="310" width="498" height="35" uuid="f291bbc4-0b25-445a-bbdf-248c332e5f40">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -695,7 +696,7 @@ to a conclusion.]]></text>
 					</frame>
 				</frame>
 				<frame>
-					<reportElement x="0" y="365" width="498" height="35" uuid="505c4379-a8b5-4305-b68e-1090d06f6310">
+					<reportElement x="0" y="353" width="498" height="35" uuid="505c4379-a8b5-4305-b68e-1090d06f6310">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
@@ -741,7 +742,7 @@ continuously improving both performance and wellbeing.]]></text>
 					</frame>
 				</frame>
 				<frame>
-					<reportElement x="0" y="410" width="498" height="35" uuid="ef008a3f-eecc-4440-8d48-ebd786f85e8f">
+					<reportElement x="0" y="396" width="498" height="35" uuid="ef008a3f-eecc-4440-8d48-ebd786f85e8f">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -795,15 +796,15 @@ interaction, with a view to achieving common ground.]]></text>
 					<bottomPen lineWidth="0.0" lineColor="#FFFFFF"/>
 				</box>
 				<staticText>
-					<reportElement mode="Transparent" x="0" y="70" width="500" height="30" forecolor="#D21A58" uuid="f2f802a7-19db-4cdf-9fa8-a5b9448f41aa"/>
+					<reportElement mode="Transparent" x="0" y="90" width="93" height="30" forecolor="#D21A58" uuid="f2f802a7-19db-4cdf-9fa8-a5b9448f41aa"/>
 					<box leftPadding="27"/>
 					<textElement verticalAlignment="Bottom">
 						<font fontName="Raleway SemiBold" size="18"/>
 					</textElement>
-					<text><![CDATA[The 10 Nclusion™ competencies]]></text>
+					<text><![CDATA[The 10 ]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="145" y="30" width="350" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="2be7e8ee-bb4d-4eb2-a2d6-df2364671c06">
+					<reportElement mode="Transparent" x="145" y="50" width="350" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="2be7e8ee-bb4d-4eb2-a2d6-df2364671c06">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -817,7 +818,7 @@ interaction, with a view to achieving common ground.]]></text>
 					<text><![CDATA[<b>measure report</b>]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="0" y="30" width="130" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="f1a96c86-955d-4a6b-b72f-993634f0f9eb">
+					<reportElement mode="Transparent" x="0" y="50" width="130" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="f1a96c86-955d-4a6b-b72f-993634f0f9eb">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -830,7 +831,7 @@ interaction, with a view to achieving common ground.]]></text>
 					<text><![CDATA[Nclusion]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="93" y="30" width="50" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="3c5b68b2-0f52-4d55-b705-143cc9be1fec">
+					<reportElement mode="Transparent" x="93" y="50" width="50" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="3c5b68b2-0f52-4d55-b705-143cc9be1fec">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -843,8 +844,24 @@ interaction, with a view to achieving common ground.]]></text>
 					<text><![CDATA[™]]></text>
 				</staticText>
 				<line>
-					<reportElement x="25" y="70" width="470" height="1" forecolor="#F54400" uuid="5cc5fa75-c78c-406e-bc33-c8feeec1d167"/>
+					<reportElement x="25" y="90" width="470" height="1" forecolor="#F54400" uuid="5cc5fa75-c78c-406e-bc33-c8feeec1d167"/>
 				</line>
+				<staticText>
+					<reportElement mode="Transparent" x="62" y="90" width="118" height="30" forecolor="#D21A58" uuid="9af9af6e-89e6-42c9-85c8-3b329ae49d73"/>
+					<box leftPadding="27"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Nclusion" size="18"/>
+					</textElement>
+					<text><![CDATA[Nclusion]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="135" y="90" width="360" height="30" forecolor="#D21A58" uuid="119ba97f-5e21-4b75-9b70-eb2d1affce01"/>
+					<box leftPadding="27"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Raleway SemiBold" size="18"/>
+					</textElement>
+					<text><![CDATA[™ competencies]]></text>
+				</staticText>
 			</frame>
 		</band>
 		<band height="595" splitType="Stretch">
@@ -944,7 +961,7 @@ interaction, with a view to achieving common ground.]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="1ddabed7-8bf3-4034-b546-6b727a149f4e">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="1ddabed7-8bf3-4034-b546-6b727a149f4e">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -954,7 +971,7 @@ interaction, with a view to achieving common ground.]]></text>
 				<text><![CDATA[Developing Inclusive Goals & Objectives]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="110" y="120" width="460" height="160" forecolor="#FFFFFF" uuid="b0d6c493-f835-41f5-bc42-842bf45d6901">
+				<reportElement x="110" y="140" width="460" height="180" forecolor="#FFFFFF" uuid="b0d6c493-f835-41f5-bc42-842bf45d6901">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box leftPadding="0" rightPadding="25"/>
@@ -965,21 +982,23 @@ interaction, with a view to achieving common ground.]]></text>
 				<text><![CDATA[This section of the report will help guide you in structuring your inclusive development
 goals and objectives with tips, notes and worksheets to guide you on how to intrepret your
 inclusive profile and what to action.
+
 Additional coaching and/or facilitation is also available to help you interpret your profile and
 to identify some learning plans.
+
 Most people find it useful to reflect further on their profile and this section of the report
 will help you do this. This reflection can then be utilised to coach and develop your own
 objectives or those of your immediate team or the wider organisation if you are senior
 manager.]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="75" width="460" height="1" forecolor="#ED6826" uuid="105c6b4c-b1c9-45ae-b061-72ca520bac01">
+				<reportElement x="96" y="95" width="460" height="1" forecolor="#ED6826" uuid="105c6b4c-b1c9-45ae-b061-72ca520bac01">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="250" height="60" forecolor="#ED6826" uuid="bc7ee886-f133-431b-a79e-4ae3c199bde7">
+				<reportElement x="190" y="20" width="250" height="60" forecolor="#ED6826" uuid="bc7ee886-f133-431b-a79e-4ae3c199bde7">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -990,7 +1009,7 @@ manager.]]></text>
 				<text><![CDATA[measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="0" width="120" height="60" forecolor="#ED6826" uuid="bedcfbc0-63c3-4b37-9621-3391ce36fbc7">
+				<reportElement x="70" y="20" width="120" height="60" forecolor="#ED6826" uuid="bedcfbc0-63c3-4b37-9621-3391ce36fbc7">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1001,7 +1020,7 @@ manager.]]></text>
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="71" y="280" width="498" height="30" forecolor="#ED6826" uuid="d541e1cd-dfdb-418f-8b3b-7dfb50b61913">
+				<reportElement x="71" y="320" width="498" height="30" forecolor="#ED6826" uuid="d541e1cd-dfdb-418f-8b3b-7dfb50b61913">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -1011,7 +1030,7 @@ manager.]]></text>
 				<text><![CDATA[What is Inclusion?]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="310" width="498" height="90" forecolor="#FFFFFF" uuid="04d08d60-3b82-4ff7-ae53-2aa1e0d2f0fb">
+				<reportElement x="70" y="350" width="498" height="90" forecolor="#FFFFFF" uuid="04d08d60-3b82-4ff7-ae53-2aa1e0d2f0fb">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -1026,7 +1045,7 @@ behaviours, attitudes, culture and a style of leadership that will enable organi
 optimum performance through difference.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="400" width="498" height="30" forecolor="#ED6826" uuid="8af680a7-9fff-4be2-a21e-6ed77c067060">
+				<reportElement x="70" y="440" width="498" height="30" forecolor="#ED6826" uuid="8af680a7-9fff-4be2-a21e-6ed77c067060">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -1036,7 +1055,7 @@ optimum performance through difference.]]></text>
 				<text><![CDATA[Why is it important?]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="430" width="498" height="90" forecolor="#FFFFFF" uuid="be3ec9a8-907a-4de9-9f7c-5d15d4c47761">
+				<reportElement x="70" y="470" width="498" height="90" forecolor="#FFFFFF" uuid="be3ec9a8-907a-4de9-9f7c-5d15d4c47761">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -1047,7 +1066,7 @@ optimum performance through difference.]]></text>
 				<text><![CDATA[Organisational difference can enable an organisation to be ready for the future by taking steps, which create an environment that allows ALL employees to understand, embody and deliver the organisation’s objectives.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="41053cf3-4645-4f30-b47d-6c27379b720a">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="41053cf3-4645-4f30-b47d-6c27379b720a">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1059,7 +1078,7 @@ optimum performance through difference.]]></text>
 				<text><![CDATA[™]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="120" width="60" height="160" forecolor="#FFFFFF" uuid="4db778b9-694d-4f9d-a92a-78f298c51089">
+				<reportElement x="70" y="140" width="60" height="160" forecolor="#FFFFFF" uuid="4db778b9-694d-4f9d-a92a-78f298c51089">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -1070,6 +1089,8 @@ optimum performance through difference.]]></text>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[1. 
+
+
 
 2. 
 
@@ -1086,7 +1107,7 @@ optimum performance through difference.]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="425c4b28-7a54-491b-acf9-255efc44388a">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="425c4b28-7a54-491b-acf9-255efc44388a">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -1096,7 +1117,7 @@ optimum performance through difference.]]></text>
 				<text><![CDATA[Where do I start?]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="110" y="120" width="460" height="160" forecolor="#FFFFFF" uuid="d4ad79f7-09d6-48fb-be34-b064ffabcd00">
+				<reportElement x="110" y="140" width="460" height="160" forecolor="#FFFFFF" uuid="d4ad79f7-09d6-48fb-be34-b064ffabcd00">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1106,19 +1127,21 @@ optimum performance through difference.]]></text>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[First consider those areas where you need to adapt, i.e. where are your lower self ratings.
+
 Or you can recognise where your current approach may not suit a particular circumstance,
 or interperonsal situation; you can identify how to change this.
+
 You can also, importantly, get a clear understanding of your inclusive strengths and how to
 further leverage these.]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="75" width="460" height="1" forecolor="#ED6826" uuid="9286278f-f113-42e8-94f5-83f4060a4593">
+				<reportElement x="96" y="95" width="460" height="1" forecolor="#ED6826" uuid="9286278f-f113-42e8-94f5-83f4060a4593">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="250" height="60" forecolor="#ED6826" uuid="53be9319-d0b2-4434-91c7-5a3decaee0da">
+				<reportElement x="190" y="20" width="250" height="60" forecolor="#ED6826" uuid="53be9319-d0b2-4434-91c7-5a3decaee0da">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -1129,7 +1152,7 @@ further leverage these.]]></text>
 				<text><![CDATA[measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="0" width="120" height="60" forecolor="#ED6826" uuid="41a25a07-c2c0-45db-a669-c37a20195ef4">
+				<reportElement x="70" y="20" width="120" height="60" forecolor="#ED6826" uuid="41a25a07-c2c0-45db-a669-c37a20195ef4">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1140,7 +1163,7 @@ further leverage these.]]></text>
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="6d89a3a1-58b0-4302-9644-b3ce7240003c">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="6d89a3a1-58b0-4302-9644-b3ce7240003c">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1152,7 +1175,7 @@ further leverage these.]]></text>
 				<text><![CDATA[™]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="120" width="60" height="160" forecolor="#FFFFFF" uuid="3338ce3d-80df-4601-8cbc-82aa57bfc590">
+				<reportElement x="70" y="140" width="60" height="160" forecolor="#FFFFFF" uuid="3338ce3d-80df-4601-8cbc-82aa57bfc590">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1163,7 +1186,9 @@ further leverage these.]]></text>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[1. 
+
 2. 
+
 
 3. 
 
@@ -1177,7 +1202,7 @@ further leverage these.]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="dbd597bc-51d2-4b69-a0e5-2caef7e11787">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="dbd597bc-51d2-4b69-a0e5-2caef7e11787">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -1187,7 +1212,7 @@ further leverage these.]]></text>
 				<text><![CDATA[Developing my Inclusive approach]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="220" width="498" height="150" forecolor="#FFFFFF" uuid="c6d57253-c3bb-444c-9674-bf718277f64e">
+				<reportElement x="70" y="279" width="498" height="150" forecolor="#FFFFFF" uuid="c6d57253-c3bb-444c-9674-bf718277f64e">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box leftPadding="40" rightPadding="25"/>
@@ -1206,13 +1231,13 @@ further leverage these.]]></text>
 • Collaborate Communications]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="75" width="460" height="1" forecolor="#ED6826" uuid="7cac27a5-17ec-435c-abf1-b34457d5bbc1">
+				<reportElement x="96" y="95" width="460" height="1" forecolor="#ED6826" uuid="7cac27a5-17ec-435c-abf1-b34457d5bbc1">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="250" height="60" forecolor="#ED6826" uuid="5f4c5819-8a3c-44a5-98b2-f11e58625046">
+				<reportElement x="190" y="20" width="250" height="60" forecolor="#ED6826" uuid="5f4c5819-8a3c-44a5-98b2-f11e58625046">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -1223,7 +1248,7 @@ further leverage these.]]></text>
 				<text><![CDATA[measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="0" width="120" height="60" forecolor="#ED6826" uuid="eeb86008-b822-4794-8518-35f008a0714a">
+				<reportElement x="70" y="20" width="120" height="60" forecolor="#ED6826" uuid="eeb86008-b822-4794-8518-35f008a0714a">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1234,7 +1259,7 @@ further leverage these.]]></text>
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="a7868041-8d6e-4974-bc95-a1be6e87afb1">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="a7868041-8d6e-4974-bc95-a1be6e87afb1">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1246,7 +1271,7 @@ further leverage these.]]></text>
 				<text><![CDATA[™]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="120" width="498" height="40" forecolor="#FFFFFF" uuid="930bda34-47c4-49e5-ac88-5626fcedc0da">
+				<reportElement x="70" y="140" width="498" height="40" forecolor="#FFFFFF" uuid="930bda34-47c4-49e5-ac88-5626fcedc0da">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -1259,7 +1284,7 @@ context. Consider the following;
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="155" width="470" height="65" forecolor="#FFFFFF" uuid="43023475-6061-4dbe-8deb-a24fcb76ce20">
+				<reportElement x="100" y="175" width="470" height="95" forecolor="#FFFFFF" uuid="43023475-6061-4dbe-8deb-a24fcb76ce20">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -1269,13 +1294,15 @@ context. Consider the following;
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[How capable are you of embracing difference in this role and in this organisation?
+
 Focus on capturing that extra edge that can only be achieved by taking into account the
 circumstances in which individuals, teams and organisations find themselves.
+
 Consider the areas you have analysed:
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="155" width="60" height="65" forecolor="#FFFFFF" uuid="c43b757d-beb8-42c3-b1cf-d42b0a6e0da0">
+				<reportElement x="70" y="174" width="60" height="105" forecolor="#FFFFFF" uuid="c43b757d-beb8-42c3-b1cf-d42b0a6e0da0">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1285,13 +1312,15 @@ Consider the areas you have analysed:
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="0.0"/>
 				</textElement>
 				<text><![CDATA[1. 
+
 2. 
+
 
 3. 
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="370" width="498" height="150" forecolor="#FFFFFF" uuid="eda54dfd-aca3-4933-8e7e-7d396515ad42">
+				<reportElement x="70" y="437" width="498" height="133" forecolor="#FFFFFF" uuid="eda54dfd-aca3-4933-8e7e-7d396515ad42">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -1310,7 +1339,7 @@ to fine tune and in which circumstances.]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="de8feba8-893d-46a0-95c7-11c57e2ccc29">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="de8feba8-893d-46a0-95c7-11c57e2ccc29">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -1320,7 +1349,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[Developing my Inclusion Action Plan]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="120" width="498" height="20" forecolor="#FFFFFF" uuid="6193fc7e-55d5-4cee-8d75-e63e566738a3">
+				<reportElement x="70" y="140" width="498" height="20" forecolor="#FFFFFF" uuid="6193fc7e-55d5-4cee-8d75-e63e566738a3">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -1332,13 +1361,13 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[STEP 1 - Answer the following questions]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="75" width="460" height="1" forecolor="#ED6826" uuid="43f77719-c4a7-486e-a6ec-f42fa185a847">
+				<reportElement x="96" y="95" width="460" height="1" forecolor="#ED6826" uuid="43f77719-c4a7-486e-a6ec-f42fa185a847">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="250" height="60" forecolor="#ED6826" uuid="c7722263-ae63-47c6-94fa-4a1e9df81cbd">
+				<reportElement x="190" y="20" width="250" height="60" forecolor="#ED6826" uuid="c7722263-ae63-47c6-94fa-4a1e9df81cbd">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -1349,7 +1378,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="0" width="120" height="60" forecolor="#ED6826" uuid="51c5e93a-1dec-4ead-a47e-122e7fab815e">
+				<reportElement x="70" y="20" width="120" height="60" forecolor="#ED6826" uuid="51c5e93a-1dec-4ead-a47e-122e7fab815e">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1360,7 +1389,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="2e932649-4d6e-49bc-ae7b-fc7ca2af1669">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="2e932649-4d6e-49bc-ae7b-fc7ca2af1669">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1372,7 +1401,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[™]]></text>
 			</staticText>
 			<frame>
-				<reportElement x="67" y="150" width="510" height="200" uuid="bfc3d5e2-bde3-40ec-bee5-7b17a435b2f8">
+				<reportElement x="67" y="170" width="510" height="200" uuid="bfc3d5e2-bde3-40ec-bee5-7b17a435b2f8">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -1529,7 +1558,7 @@ to fine tune and in which circumstances.]]></text>
 				<imageExpression><![CDATA["bg18.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement mode="Transparent" x="75" y="30" width="130" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="07c5e6ef-5adc-4aa0-83d3-8d114e91c9e8">
+				<reportElement mode="Transparent" x="75" y="50" width="130" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="07c5e6ef-5adc-4aa0-83d3-8d114e91c9e8">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -1542,7 +1571,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="215" y="30" width="450" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="b80897f2-92b9-4e63-a5ca-2e985ffdd8cb">
+				<reportElement mode="Transparent" x="215" y="50" width="450" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="b80897f2-92b9-4e63-a5ca-2e985ffdd8cb">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -1555,7 +1584,7 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[<b>measure report</b>]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="165" y="30" width="50" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="ce9c07ab-b322-4773-aca0-ad21207f9cd2">
+				<reportElement mode="Transparent" x="165" y="50" width="50" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="ce9c07ab-b322-4773-aca0-ad21207f9cd2">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -1568,14 +1597,14 @@ to fine tune and in which circumstances.]]></text>
 				<text><![CDATA[™]]></text>
 			</staticText>
 			<line>
-				<reportElement x="100" y="75" width="460" height="1" forecolor="#ED6826" uuid="805250db-bc2c-4fca-8f08-59cbed25cd3b">
+				<reportElement x="100" y="95" width="460" height="1" forecolor="#ED6826" uuid="805250db-bc2c-4fca-8f08-59cbed25cd3b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 			</line>
 			<frame>
-				<reportElement x="70" y="140" width="701" height="454" uuid="a182d819-7b9d-4099-b1ae-dd14d602cc1c">
+				<reportElement x="70" y="154" width="701" height="440" uuid="a182d819-7b9d-4099-b1ae-dd14d602cc1c">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -2084,7 +2113,7 @@ practice values]]></text>
 					</frame>
 				</frame>
 				<staticText>
-					<reportElement x="30" y="-20" width="200" height="20" uuid="8d0d15d6-dec1-4733-8bca-1ae73d3f1875">
+					<reportElement x="30" y="-7" width="200" height="20" uuid="8d0d15d6-dec1-4733-8bca-1ae73d3f1875">
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
@@ -2122,14 +2151,14 @@ practice values]]></text>
 					<text><![CDATA[MEASURING SUCCESS]]></text>
 				</staticText>
 				<image>
-					<reportElement x="550" y="410" width="140" height="30" uuid="e294e34d-042e-4516-adba-c6714bfeebd4">
+					<reportElement x="550" y="395" width="140" height="30" uuid="e294e34d-042e-4516-adba-c6714bfeebd4">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
 					<imageExpression><![CDATA["nclusion.png"]]></imageExpression>
 				</image>
 			</frame>
 			<staticText>
-				<reportElement mode="Transparent" x="75" y="80" width="515" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="a56444f3-d11a-4e4c-b979-d76e80da38a4">
+				<reportElement mode="Transparent" x="75" y="100" width="515" height="30" forecolor="#F54400" backcolor="#FFFFFF" uuid="a56444f3-d11a-4e4c-b979-d76e80da38a4">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -2150,7 +2179,7 @@ practice values]]></text>
 				<imageExpression><![CDATA["bg2.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="70" y="90" width="498" height="30" forecolor="#ED6826" uuid="1adcb84c-bc7d-4c73-8eb8-b2325f073683">
+				<reportElement x="70" y="110" width="498" height="30" forecolor="#ED6826" uuid="1adcb84c-bc7d-4c73-8eb8-b2325f073683">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25"/>
@@ -2160,7 +2189,7 @@ practice values]]></text>
 				<text><![CDATA[Developing my Inclusion Action Plan]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="110" y="140" width="460" height="145" forecolor="#FFFFFF" uuid="44c517e5-6a88-42b9-b1e0-705c68d11ece">
+				<reportElement x="110" y="160" width="460" height="145" forecolor="#FFFFFF" uuid="44c517e5-6a88-42b9-b1e0-705c68d11ece">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2176,13 +2205,13 @@ Also identify what you do really well and what facilitates this, so you can defi
 Keep returning to the checklists to review your progress. It is likely to take weekly reflection and repitition to achieve real change.]]></text>
 			</staticText>
 			<line>
-				<reportElement x="96" y="75" width="460" height="1" forecolor="#ED6826" uuid="43e3c44a-abe6-421e-bfe5-e9b920216a80">
+				<reportElement x="96" y="95" width="460" height="1" forecolor="#ED6826" uuid="43e3c44a-abe6-421e-bfe5-e9b920216a80">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 			</line>
 			<staticText>
-				<reportElement x="190" y="0" width="250" height="60" forecolor="#ED6826" uuid="05586e8f-694a-41dd-8a27-6eb68df62447">
+				<reportElement x="190" y="20" width="250" height="60" forecolor="#ED6826" uuid="05586e8f-694a-41dd-8a27-6eb68df62447">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -2193,7 +2222,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 				<text><![CDATA[measure report]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="0" width="120" height="60" forecolor="#ED6826" uuid="6801e906-108c-4d47-a7b5-5bba452d361e">
+				<reportElement x="70" y="20" width="120" height="60" forecolor="#ED6826" uuid="6801e906-108c-4d47-a7b5-5bba452d361e">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -2204,7 +2233,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 				<text><![CDATA[Nclusion]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="290" width="498" height="30" forecolor="#ED6826" uuid="1ae0b4c8-0736-4726-a4fe-d6d612412dbe"/>
+				<reportElement x="70" y="310" width="498" height="30" forecolor="#ED6826" uuid="1ae0b4c8-0736-4726-a4fe-d6d612412dbe"/>
 				<box leftPadding="25"/>
 				<textElement markup="styled">
 					<font fontName="Raleway" size="18"/>
@@ -2212,7 +2241,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 				<text><![CDATA[Coaching Model - <b>INCLUDE</b>]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="165" y="0" width="50" height="60" forecolor="#ED6826" uuid="6eff8e4e-0326-4d1d-99a1-3092a1e04514">
+				<reportElement x="165" y="20" width="50" height="60" forecolor="#ED6826" uuid="6eff8e4e-0326-4d1d-99a1-3092a1e04514">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2234,7 +2263,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="97296757-911f-4628-84a6-491cf40878f1">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="97296757-911f-4628-84a6-491cf40878f1">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2244,7 +2273,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 						<text><![CDATA[<b>I</b>nitiate]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="ac348e7c-dac3-4225-9e28-006b75bc170b">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="ac348e7c-dac3-4225-9e28-006b75bc170b">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2262,7 +2291,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="3318d782-6d53-4cae-83f9-691cf76a8421">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="3318d782-6d53-4cae-83f9-691cf76a8421">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2272,7 +2301,7 @@ Keep returning to the checklists to review your progress. It is likely to take w
 						<text><![CDATA[<b>N</b>udge]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="412177e2-635a-406b-a1fd-373a1b8c18a8">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="412177e2-635a-406b-a1fd-373a1b8c18a8">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2292,7 +2321,7 @@ incentivise change?]]></text>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="1bbac2ec-9e83-4c87-940b-064219f4a63e">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="1bbac2ec-9e83-4c87-940b-064219f4a63e">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2302,7 +2331,7 @@ incentivise change?]]></text>
 						<text><![CDATA[<b>L</b>ink]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="7f4ca012-2bdf-4659-ab30-3ed5cecb25dc">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="7f4ca012-2bdf-4659-ab30-3ed5cecb25dc">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2320,7 +2349,7 @@ Can any approaches be joined up?]]></text>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="1eb76552-d6e1-4302-b292-a97d5d3830e7">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="1eb76552-d6e1-4302-b292-a97d5d3830e7">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2330,7 +2359,7 @@ Can any approaches be joined up?]]></text>
 						<text><![CDATA[<b>U</b>t i l i s e]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="1c8e4563-2752-4b3f-b257-fa38e8ca5373">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="1c8e4563-2752-4b3f-b257-fa38e8ca5373">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2348,7 +2377,7 @@ Can any approaches be joined up?]]></text>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="27d69f78-8b5b-4b35-8af9-d3cb4f0e722d">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="27d69f78-8b5b-4b35-8af9-d3cb4f0e722d">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2358,7 +2387,7 @@ Can any approaches be joined up?]]></text>
 						<text><![CDATA[<b>D</b>evelop]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="82bd002e-b81c-46a7-b5be-cd726011088a">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="82bd002e-b81c-46a7-b5be-cd726011088a">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2376,7 +2405,7 @@ you communicate the focus and to who?]]></text>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					</reportElement>
 					<staticText>
-						<reportElement x="5" y="0" width="110" height="30" forecolor="#ED6826" uuid="2826a454-a10f-4f27-8e46-8f33cba3f3c7">
+						<reportElement x="5" y="20" width="110" height="30" forecolor="#ED6826" uuid="2826a454-a10f-4f27-8e46-8f33cba3f3c7">
 							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						</reportElement>
 						<box leftPadding="25"/>
@@ -2386,7 +2415,7 @@ you communicate the focus and to who?]]></text>
 						<text><![CDATA[<b>E</b>valuate]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="110" y="0" width="380" height="30" forecolor="#FFFFFF" uuid="ce3cee35-2347-485d-8275-745c8905f6eb">
+						<reportElement x="110" y="20" width="380" height="30" forecolor="#FFFFFF" uuid="ce3cee35-2347-485d-8275-745c8905f6eb">
 							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						</reportElement>
@@ -2401,7 +2430,7 @@ are the next stages?]]></text>
 				</frame>
 			</frame>
 			<staticText>
-				<reportElement x="75" y="525" width="498" height="60" forecolor="#FFFFFF" uuid="c9765645-00af-411a-a76e-a2b029a49171">
+				<reportElement x="75" y="538" width="498" height="54" forecolor="#FFFFFF" uuid="c9765645-00af-411a-a76e-a2b029a49171">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -2416,7 +2445,7 @@ are the next stages?]]></text>
 report section along with our inclusive leadership case study exercises - ADEPT®]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="70" y="120" width="500" height="15" forecolor="#FFFFFF" uuid="a9593f46-06f6-49be-9f3b-5658d8198169">
+				<reportElement x="70" y="140" width="500" height="15" forecolor="#FFFFFF" uuid="a9593f46-06f6-49be-9f3b-5658d8198169">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box leftPadding="25" rightPadding="25"/>
@@ -2427,7 +2456,7 @@ report section along with our inclusive leadership case study exercises - ADEPT�
 				<text><![CDATA[STEP 3]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="75" y="140" width="60" height="145" forecolor="#FFFFFF" uuid="2759f4db-c96f-41e5-acea-d6cc142b1774">
+				<reportElement x="75" y="160" width="60" height="145" forecolor="#FFFFFF" uuid="2759f4db-c96f-41e5-acea-d6cc142b1774">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2463,7 +2492,7 @@ report section along with our inclusive leadership case study exercises - ADEPT�
 				<textElement markup="html">
 					<font fontName="Raleway" size="10"/>
 				</textElement>
-				<text><![CDATA[<span style="font-family:Nclusion">Nclusion</span>, The Stanley Building, 7 Pancras Square, London, NC1 4AG
+				<text><![CDATA[<span style="font-family:Nclusion">Nclusion</span>, The Stanley Building, 7 Pancras Square, London, NC1 4AG <br>
 +44 (0) 330 2233 548 reports@nclusion]]></text>
 			</staticText>
 			<image>

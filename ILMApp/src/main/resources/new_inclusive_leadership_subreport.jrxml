@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-05T22:41:23 -->
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -45,7 +44,7 @@
 					<text><![CDATA[Inclusive Leadership]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="145" y="30" width="350" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="f84e0412-2a95-4707-bd38-292932d8575a">
+					<reportElement mode="Transparent" x="145" y="50" width="350" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="f84e0412-2a95-4707-bd38-292932d8575a">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -59,7 +58,7 @@
 					<text><![CDATA[<b>measure report</b>]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="0" y="30" width="130" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="503d56a1-91a6-4947-b842-8b6df7278a14">
+					<reportElement mode="Transparent" x="0" y="50" width="130" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="503d56a1-91a6-4947-b842-8b6df7278a14">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -72,7 +71,7 @@
 					<text><![CDATA[Nclusion]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="93" y="30" width="50" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="6c52a92c-5fb2-48b6-8447-bc4f1e709303">
+					<reportElement mode="Transparent" x="93" y="50" width="50" height="30" forecolor="#D21A58" backcolor="#FFFFFF" uuid="6c52a92c-5fb2-48b6-8447-bc4f1e709303">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -97,7 +96,7 @@
 				</reportElement>
 				<box topPadding="0" bottomPadding="0"/>
 				<textField>
-					<reportElement isPrintRepeatedValues="false" mode="Opaque" x="0" y="0" width="500" height="320" forecolor="#000000" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
+					<reportElement isPrintRepeatedValues="false" mode="Opaque" x="0" y="-3" width="500" height="320" forecolor="#000000" backcolor="#FFFFFF" uuid="625204fd-27af-488f-8ecc-cd4127ca8449">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
 					<box topPadding="20" leftPadding="25" bottomPadding="10" rightPadding="20">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-05T22:45:35 -->
+<!-- 2017-10-14T22:15:40 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="il_subreport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="6ae6a1fa-441d-428f-8070-a2fb6445bfdb">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
@@ -54,12 +54,12 @@
 					</graphicElement>
 				</line>
 				<staticText>
-					<reportElement mode="Opaque" x="120" y="30" width="250" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="58009282-ef1c-499e-bae8-bdace7939362">
+					<reportElement mode="Opaque" x="145" y="50" width="350" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="58009282-ef1c-499e-bae8-bdace7939362">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					</reportElement>
-					<box topPadding="0" leftPadding="25" bottomPadding="0" rightPadding="0">
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
 						<bottomPen lineWidth="0.0" lineColor="#ED6826"/>
 					</box>
 					<textElement textAlignment="Left" verticalAlignment="Bottom" markup="styled">
@@ -68,7 +68,7 @@
 					<text><![CDATA[<b>measure report</b>]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="0" y="30" width="130" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="c0e9214d-4fa2-4877-a206-64c5793e1b55">
+					<reportElement mode="Transparent" x="0" y="50" width="130" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="c0e9214d-4fa2-4877-a206-64c5793e1b55">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -82,7 +82,7 @@
 					<text><![CDATA[Nclusion]]></text>
 				</staticText>
 				<staticText>
-					<reportElement mode="Transparent" x="93" y="30" width="50" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="31d892e2-6e41-45f1-8547-827dfcbcbac7">
+					<reportElement mode="Transparent" x="93" y="50" width="50" height="30" forecolor="#003366" backcolor="#FFFFFF" uuid="31d892e2-6e41-45f1-8547-827dfcbcbac7">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
